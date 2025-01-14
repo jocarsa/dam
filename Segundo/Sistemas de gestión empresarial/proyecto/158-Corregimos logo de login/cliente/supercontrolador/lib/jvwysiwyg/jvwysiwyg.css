@@ -1,0 +1,27 @@
+.jvwysiwyg .editor{
+	width:500px;
+	height:500px;
+	border:1px solid grey;
+	box-sizing:border-box;
+	padding:20px;
+}
+.jvwysiwyg .botonera{
+	width:500px;
+	height:43px;
+	border:1px solid grey;
+	box-sizing:border-box;
+	padding:5px;
+	box-sizing:border-box;
+}
+.jvwysiwyg .botonera button,.jvwysiwyg .botonera input,.jvwysiwyg .botonera select{
+	width:30px;
+	height:30px;
+	text-align:center;
+	margin:0px;
+	margin-right:5px;
+	padding:4px;
+}
+.jvwysiwyg .botonera input[type="color"]{
+	position:relative;
+	top:2px;
+}

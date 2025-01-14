@@ -1,0 +1,105 @@
+body, html {
+    background: DarkSlateBlue;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif, monospace;
+}
+
+header {
+    min-height: 40px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+header h1 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 20px;
+}
+
+header, nav {
+    background: DarkSlateBlue;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+
+form {
+    width: 400px;
+    background: white;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align:center;
+}
+
+form h1 {
+    margin-bottom: 20px;
+    color: DarkSlateBlue;
+    text-align: center;
+    font-size: 24px;
+}
+
+form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input::placeholder {
+    color: #888;
+}
+
+form input[type="submit"] {
+    background: DarkSlateBlue;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #483D8B; /* Slightly darker shade of DarkSlateBlue */
+    transform: scale(1.05);
+}
+
+form a {
+    color: DarkSlateBlue;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px 0;
+    transition: color 0.3s;
+}
+
+form a:hover {
+    color: #2E2B5F; /* Darker hover effect */
+}
+
+form p {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+#logo{
+	margin:auto;
+}
+

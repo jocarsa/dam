@@ -1,0 +1,64 @@
+
+@font-face {
+  font-family: Ubuntu;
+  src: url(../Ubuntu-R.ttf);
+}
+html,body{
+  padding:50px;
+  margin:0px;
+  background:crimson;
+  color:white;
+    font-family:Ubuntu,sans-serif;
+    text-align:center;
+}
+main {
+box-sizing:border-box;
+    padding:20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+      grid-auto-rows: calc(16.5rem * 9 / 16);
+      gap: 10px;
+      padding: 40px;
+      transform-style: preserve-3d;
+      transition: transform 0.1s ease;
+      width: 100%;
+  }
+
+  .aplicacion {
+      border: 0px solid #fff;
+      display: block;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.7;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      background: white;
+      position: relative;
+      cursor: pointer;
+      border-radius:5px;
+      color:crimson;
+      box-shadow:0px 0px 0px rgba(0,0,0,0.3);
+      transition:all 1s;
+  }
+  .icono{
+  	font-size:72px;
+  	width:100%;
+  	font-weight:bold;
+  }
+  #logo{
+  width:50px;
+  }
+  
+  .aplicacion:hover{
+  opacity: 1;
+  	box-shadow:0px 10px 20px rgba(0,0,0,0.3);
+  }
+  #cerrarsesion{
+  	position:absolute;
+  	top:10px;
+  	right:10px;
+  	width:50px;
+  }

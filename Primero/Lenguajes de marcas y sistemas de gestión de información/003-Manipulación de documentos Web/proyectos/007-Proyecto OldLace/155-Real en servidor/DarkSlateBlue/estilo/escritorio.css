@@ -1,0 +1,249 @@
+/* 
+	Docstring del documento
+	Y esta es otra linea 
+*/
+body, html {
+    background: DarkSlateBlue;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Updated font for a more professional look */
+    color: white;
+}
+
+header {
+    min-height: 50px; /* Slightly taller header */
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background: DarkSlateBlue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid white; /* Added a bottom border for emphasis */
+}
+
+header h1 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 24px; /* Adjusted font size for better readability */
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%;
+}
+
+nav {
+    width: 20%;
+    height: 100%;
+    background: DarkSlateBlue;
+    border-right: 2px solid white; /* Added border for visual separation */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    color: white;
+    padding: 15px 20px; /* Adjusted padding for spacing */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Softer borders */
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffdc00; /* Highlight on hover */
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    width: 80%;
+    background: white;
+    height: 100%;
+    color: DarkSlateBlue;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow-y: auto;
+    border-top-left-radius: 10px; /* Softened section corners */
+    border-bottom-left-radius: 10px;
+}
+
+section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: DarkSlateBlue;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead tr {
+    background: DarkSlateBlue;
+    color: white;
+}
+
+table thead tr td {
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(odd) {
+    background: #f9f9f9; /* Softer background for odd rows */
+}
+
+table tbody tr:nth-child(even) {
+    background: white;
+}
+
+table tbody tr td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Added borders for clarity */
+    transition: background 0.3s;
+}
+
+table tbody tr:hover {
+    background: rgba(72, 61, 139, 0.1); /* Highlight row on hover */
+}
+
+table img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px; /* Rounded image edges */
+}
+
+section #nuevo {
+    background: DarkSlateBlue;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+section #nuevo:hover {
+    background: #483D8B; /* Slightly darker hover */
+    transform: scale(1.1);
+}
+
+section .eliminar {
+    background: red;
+    color: white;
+    border: none;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+section .eliminar:hover {
+    background: darkred;
+}
+
+form input, form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input:focus {
+    border-color: DarkSlateBlue;
+    outline: none;
+    box-shadow: 0 0 5px rgba(72, 61, 139, 0.5);
+}
+
+form input[type="submit"] {
+    background: DarkSlateBlue;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #483D8B;
+    transform: scale(1.05);
+}
+
+td {
+    transition: all 0.3s;
+}
+
+.celdaactiva {
+    background: yellow;
+    transform: scale(1.1);
+}
+.destacado{
+	background:white;
+	color:DarkSlateBlue;
+}
+@media print {
+	header,nav{display:none;}
+	body,html{background:white;}
+	main,section{
+		display:block;
+		width:100%;
+	}
+	#tablapie{
+		position:absolute;
+		bottom:50px;
+		width:95%;
+	}
+	h1{
+		text-align:center;
+		font-size:48px;
+	}
+}
+#logo{
+	width:60px;
+}
+h1{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+#cerrarsesion a{
+	color:inherit;
+	text-decoration:none;
+}

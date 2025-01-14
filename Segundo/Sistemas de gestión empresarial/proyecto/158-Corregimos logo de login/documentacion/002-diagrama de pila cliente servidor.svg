@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.1 (9b9bdc1480, 2023-11-25, custom)"
+   sodipodi:docname="002-diagrama de pila cliente servidor.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.4396184"
+     inkscape:cx="346.96694"
+     inkscape:cy="530.00156"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="ArrowWide"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path1" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.964999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1"
+       id="rect1"
+       width="57.777634"
+       height="25.390774"
+       x="72.657349"
+       y="78.058601"
+       ry="4.1294065" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.10136px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.15837;stroke-linecap:round;stroke-linejoin:round"
+       x="75.757462"
+       y="86.171211"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.15837"
+         x="75.757462"
+         y="86.171211">html</tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.964999;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1"
+       id="rect2"
+       width="57.777634"
+       height="25.390774"
+       x="72.657349"
+       y="90.965378"
+       ry="4.1294065" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.10136px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.15837;stroke-linecap:round;stroke-linejoin:round"
+       x="75.757462"
+       y="99.077988"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.15837"
+         x="75.757462"
+         y="99.077988">js</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.47387px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05584;stroke-linecap:round;stroke-linejoin:round"
+       x="-111.93127"
+       y="70.251038"
+       id="text3"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05584"
+         x="-111.93127"
+         y="70.251038">carpeta &quot;cliente&quot;</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.964999;stroke-linecap:round;stroke-linejoin:round"
+       id="rect4"
+       width="57.777634"
+       height="25.390774"
+       x="72.289772"
+       y="142.05829"
+       ry="4.1294065" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.10136px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.15837;stroke-linecap:round;stroke-linejoin:round"
+       x="73.809052"
+       y="151.22607"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.15837"
+         x="73.809052"
+         y="151.22607">php</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.47387px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05584;stroke-linecap:round;stroke-linejoin:round"
+       x="-166.53706"
+       y="70.251038"
+       id="text7"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan7"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.05584"
+         x="-166.53706"
+         y="70.251038">carpeta &quot;servidor&quot;</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.964999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;marker-end:url(#ArrowWide)"
+       d="m 91.763021,107.28039 0,45.18441"
+       id="path7"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.964999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;marker-end:url(#ArrowWide)"
+       d="M 108.8681,152.90591 V 107.7215"
+       id="path9"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.964999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="rect3"
+       width="31.598129"
+       height="9.0233049"
+       x="84.810898"
+       y="111.62371"
+       ry="4.1294065" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.964999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="circle9"
+       cx="108.96856"
+       cy="129.83261"
+       r="5.2598548" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.74813px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.74707;stroke-linecap:round;stroke-linejoin:round"
+       x="93.641083"
+       y="118.05705"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.74707"
+         x="93.641083"
+         y="118.05705">fetch</tspan></text>
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.964999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="path5"
+       cx="91.863487"
+       cy="129.83261"
+       r="5.2598548" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.71285px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.12847;stroke-linecap:round;stroke-linejoin:round"
+       x="88.069016"
+       y="131.00983"
+       id="text6"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.12847"
+         x="88.069016"
+         y="131.00983">json</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.71285px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.12847;stroke-linecap:round;stroke-linejoin:round"
+       x="105.17409"
+       y="131.00983"
+       id="text10"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.12847"
+         x="105.17409"
+         y="131.00983">json</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.964999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="rect7"
+       width="31.598129"
+       height="9.0233049"
+       x="84.810898"
+       y="138.9064"
+       ry="4.1294065" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.41555px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.734176;stroke-linecap:round;stroke-linejoin:round"
+       x="86.561195"
+       y="143.59782"
+       id="text8"><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.734176"
+         x="86.561195"
+         y="143.59782">php://input, GET, POST</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.964999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;marker-end:url(#ArrowWide)"
+       d="m 92.208719,153.61291 16.297521,-0.20418"
+       id="path8"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.41555px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.734176;stroke-linecap:round;stroke-linejoin:round"
+       x="91.495621"
+       y="158.27776"
+       id="text9"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.734176"
+         x="91.495621"
+         y="158.27776">PHP procesa</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.964999;stroke-linecap:round;stroke-linejoin:round"
+       id="rect10"
+       width="57.777634"
+       height="25.390774"
+       x="72.289772"
+       y="172.75948"
+       ry="4.1294065" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.10136px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.15837;stroke-linecap:round;stroke-linejoin:round"
+       x="73.809052"
+       y="193.71741"
+       id="text11"><tspan
+         sodipodi:role="line"
+         id="tspan11"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.15837"
+         x="73.809052"
+         y="193.71741">MySQL</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.964999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;marker-end:url(#ArrowWide);stroke-dasharray:0.96499902,0.96499902;stroke-dashoffset:0"
+       d="m 91.763021,153.26467 0,26.39864"
+       id="path11"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.964999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.964999, 0.964999;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ArrowWide)"
+       d="M 108.37149,180.10442 V 153.70578"
+       id="path12"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>

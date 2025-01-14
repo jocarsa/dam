@@ -1,0 +1,51 @@
+[
+	{
+		"nombre":"Nombre",
+		"tipo":"text",
+		"min":5,
+		"max":30,
+		"valorejemplo":"p.ej.: Juan",
+		"titulo":"Nombre",
+		"descripcion": "A continuación introduce el nombre propio del cliente",
+		"tabla":"clientes",
+		"campo":"nombre",
+		"jvvalidador":""
+	},
+	{
+		"nombre":"Apellidos",
+		"tipo":"text",
+		"min":5,
+		"max":30,
+		"valorejemplo":"p.ej: Garcia Lopez",
+		"titulo":"Apellidos",
+		"descripcion": "A continuación introduce los apellidos del cliente",
+		"tabla":"clientes",
+		"campo":"apellidos",
+		"jvvalidador":""
+	},
+	{
+		"nombre":"Email",
+		"tipo":"email",
+		"min":5,
+		"max":30,
+		"valorejemplo":"p.ej: info@jocarsa.com",
+		"titulo":"Email",
+		"descripcion": "A continuación introduce el email del cliente",
+		"tabla":"clientes",
+		"campo":"email",
+		"jvvalidador":""
+	}
+	,
+	{
+		"nombre":"CodigoPostal",
+		"tipo":"number",
+		"min":1,
+		"max":15,
+		"valorejemplo":"p.ej: 12345",
+		"titulo":"Código Postal",
+		"descripcion": "Introduce un código postal válido",
+		"tabla":"clientes",
+		"campo":"cp",
+		"jvvalidador":"cp"
+	}
+]

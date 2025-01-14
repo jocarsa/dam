@@ -1,0 +1,14 @@
+{
+	"titulo":{
+		"contenido":"Enterprise Resource Planning CRIMSON"
+	},
+	"login":{
+		"contenido":"Log in"
+	},
+	"usuario":{
+		"contenido":"User:"
+	},
+	"contrasena":{
+		"contenido":"Password:"
+	}
+}

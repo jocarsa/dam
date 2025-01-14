@@ -1,0 +1,140 @@
+<style>
+	#contenedor{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: stretch;
+		align-content: stretch;
+	}
+	.izquierda{
+		width:30%;
+	}
+	.derecha{
+		width:70%;
+	}
+	input[type=checkbox],p{
+		display:inline-block;
+	}
+	label{
+		width:100%;
+		display:block;
+	}
+	#contienecampos{
+		column-count:2;
+	}
+	.peticion{
+		background:black;
+		color:white;
+		padding:20px;
+		border-radius:20px;
+		font-family:monospace;
+		text-shadow:0px 0px 4px green,0px 0px 4px green,0px 0px 4px green,0px 0px 4px green;
+		margin-bottom:20px;
+	}
+</style>
+<h1></h1>
+<div id="contenedor">
+	<div class="izquierda">
+		<p>1.-Selecciona la tabla para trabajar</p>
+		<select id="tablas">
+			<option>Selecciona una tabla...</option>
+		</select>
+		<p>2.-Selecciona los campos con los que quieres trabajar</p>
+		<div id="contienecampos">
+		
+		</div>
+		<p>3.-Selecciona los campos con los que quieres trabajar</p>
+		<input type="number" id="limite">
+	</div>
+	<div class="derecha">
+		<div class="peticion">
+			
+		</div>
+		<div id="resultadotabla">
+			
+		</div>
+	</div>
+</div>
+<script>
+			let peticion = "SELECT "
+			let tabla = ""
+			let columnas = "*"
+			let desde = " FROM "
+			let limite = 100;
+			
+			ejecutaPeticion()
+			
+			fetch("../../servidor/?o=listatablas")
+			.then(function(response){
+				return response.json()
+			})
+			.then(function(datos){
+				datos.forEach(function(tabla){
+					let elemento = document.createElement("option")
+					elemento.value = tabla.Tables_in_crimson
+					elemento.textContent = tabla.Tables_in_crimson
+					document.querySelector("#tablas").appendChild(elemento)
+				})
+			})
+			document.querySelector("#tablas").onchange = function () {
+				 console.log("Tabla seleccionada, vamos con el siguiente paso");
+				 tabla = this.value;
+				 ejecutaPeticion()
+				 fetch("../../servidor/?o=columnastabla&tabla=" + this.value)
+					  .then(function (response) {
+						   return response.json();
+					  })
+					  .then(function (datos) {
+						   let contenedor = document.querySelector("#contienecampos");
+						   contenedor.innerHTML = ""; // Limpiar el contenedor antes de agregar nuevos elementos
+						   datos.forEach(function (dato) {
+						       let etiqueta = document.createElement("label");
+						       let elemento = document.createElement("input");
+						       elemento.setAttribute("type", "checkbox");
+						       elemento.setAttribute("name", dato.Field);
+						       elemento.classList.add("campo")
+
+						       // Añadir evento al checkbox
+						       elemento.onclick = function () {
+						           let campos = document.querySelectorAll(".campo")
+						           console.log(campos)
+						           columnas = ""
+						           campos.forEach(function(campo){
+						           		if(campo.checked){
+						           			columnas += campo.name+","
+						           		}
+						           })
+						           columnas = columnas.slice(0, -1);
+						           ejecutaPeticion()
+						       };
+
+						       // Añadir el texto al label
+						       etiqueta.appendChild(elemento);
+						       let texto = document.createElement("p");
+						       texto.textContent = dato.Field;
+						       etiqueta.appendChild(texto);
+
+						       // Añadir el label al contenedor
+						       contenedor.appendChild(etiqueta);
+						   });
+					  });
+			};
+			function ejecutaPeticion(){
+				let sql = peticion + columnas + desde + tabla +" LIMIT "+limite
+				document.querySelector(".peticion").textContent = sql;
+				
+				fetch("ejecuta.php?sql="+encodeURI(sql))
+				.then(function (response) {
+						   return response.text();
+					  })
+					  .then(function (datos) {
+					  		document.querySelector("#resultadotabla").innerHTML = datos
+					  })
+				
+			}
+			document.querySelector("#limite").onchange = function(){
+				limite = this.value
+				ejecutaPeticion()
+			}
+		</script>

@@ -1,0 +1,70 @@
+/* Archivo que contiene los estilos generales aplicados en el login de la aplicación */
+@font-face {
+  font-family: Ubuntu;
+  src: url(Ubuntu-R.ttf);
+}
+body{
+  font-family:Ubuntu,sans-serif;
+  background:crimson;
+}
+#formlogin{
+  width:300px;
+  height:380px;
+  margin:auto;
+  margin-top:100px;
+  background:white;
+  padding:30px;
+  text-align:center;
+}
+#logo{
+  width:50%;
+}
+input,button{
+  width:100%;
+  padding:10px 0px;
+  margin-bottom:10px;
+  margin-top:10px;
+  border:none;
+  border-bottom:2px solid crimson;
+  transition:all 1s;
+  font-family:Ubuntu,sans-serif;
+}
+input:focus{
+	outline:none;
+	background:crimson;
+	color:white;
+}
+button{
+	background:crimson;
+	color:white;
+	border:none;
+	padding:10px;
+	border-radius:20px;
+}
+#toast{
+	width:400px;
+	height:50px;
+	line-height:50px;
+	background:white;
+	color:crimson;
+	border-radius:100px;
+	position:absolute;
+	left:50%;
+	margin-left:-200px;
+	bottom:100px;
+	text-align:center;
+	opacity:0;
+}
+.animado{
+	animation: aparece 10s;
+}
+@keyframes aparece{
+	0%{display:block;opacity:0;}
+	10%{display:block;opacity:1;}
+	90%{display:block;opacity:1;}
+	100%{display:block;opacity:0;}
+}
+
+
+
+

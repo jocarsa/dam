@@ -1,0 +1,51 @@
+/* Estilos título tabla */
+.titulotabla{
+  display:inline-block;
+  padding-left:10px;
+}
+.titulotabla *{
+  margin:0px;
+}
+.titulotabla h5{
+  font-size:16px;
+}
+.titulotabla p{
+  font-size:12px;
+}
+/* Estilos cabecera */
+header{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+header h1{
+	padding:0px;
+	margin:0px;
+}
+header nav button{
+	
+}
+h1{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+h1 img{
+	width:60px;
+}
+.titulotabla{
+	background:white;
+	color:crimson;
+	padding:10px 30px;
+	border-radius:5px;
+	min-width:300px;
+	min-height:40px;
+	
+}

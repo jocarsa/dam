@@ -1,0 +1,33 @@
+<!-- 
+
+Este archivo contiene el formulario de inicio estático en formato html que da acceso al panel de control este archivo consta de un formulario que lleva al archivo login.php donde nuestras credenciales de acceso serán validadas para confirmar si se nos da acceso al sistema 
+
+
+-->
+<!doctype html>
+<html>
+  <head lang="es">
+    <title>jocarsa | DarkSlateBlue</title>
+    <meta charset="utf-8">
+    <link rel="Stylesheet" href="estilo/login.css">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+
+  </head>
+  <body>
+    <main>
+    
+      <form action="login.php" method="POST"> 
+      	<img src="logo.svg" id="logo">
+        <h1>Iniciar sesión</h1>
+        
+		     <input type="email" placeholder="Email" name="email">
+		     <input type="password" placeholder="Contraseña" name="contrasena">
+		     <input type="checkbox">Recordar
+		     <a href="recordar.php">Olvidé la contraseña</a>
+		     <input type="submit" value="Acceder">
+        <p>No tengo cuenta</p>
+        <a href="crear.php">Crear una</a>
+      </form>
+    </main>
+  </body>
+</html>

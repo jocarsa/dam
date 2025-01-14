@@ -1,0 +1,29 @@
+@font-face {
+  font-family: personalizada;
+  src: url(personalizada.ttf);
+}
+*{transition:all 1s;}
+.jvampliador{
+	position:fixed;
+	top:10px;
+	right:10px;
+}
+.jvampliador button{
+	border:none;
+	margin:0px;
+	padding:5px;
+	background:black;
+	color:white;
+	width:30px;
+	height:30px;
+	font-weight:bold;
+	font-size:26px;
+	line-height:16px;
+	
+}
+.jvampliador button:first-child{
+	border-radius:30px 0px 0px 30px;
+}
+.jvampliador button:last-child{
+	border-radius:0px 30px 30px 0px;
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="28.92716mm"
+   height="28.92716mm"
+   viewBox="0 0 28.92716 28.92716"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.1 (9b9bdc1480, 2023-11-25, custom)"
+   sodipodi:docname="iconodocumento.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="5.986532"
+     inkscape:cx="53.787401"
+     inkscape:cy="51.61586"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-15.451634,-35.226548)">
+    <path
+       id="rect6"
+       style="fill:none;stroke:#ff0a0a;stroke-width:2.51;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="M 26.539846 39.687258 L 22.691502 43.535602 L 22.691502 58.793068 C 22.691502 58.958765 22.825012 59.092275 22.990709 59.092275 L 36.039008 59.092275 C 36.204705 59.092275 36.338214 58.958765 36.338214 58.793068 L 36.338214 39.986464 C 36.338214 39.820767 36.204705 39.687258 36.039008 39.687258 L 26.539846 39.687258 z " />
+    <path
+       style="fill:none;stroke:#ff0a0a;stroke-width:2.51;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 26.703002,39.981837 v 4.076651 h -3.899827"
+       id="path7" />
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Test</title>
+</head>
+<body>
+    <h1>Performance Test</h1>
+    <p id="result"></p>
+    <p id="time"></p>
+
+    <script>
+        const start = performance.now();
+
+        let numero = 1.00000000435;
+        for (let i = 0; i < 1000000000; i++) {
+            numero *= 1.0000000000054;
+        }
+
+        const end = performance.now();
+        const duration = (end - start) / 1000; // Convert milliseconds to seconds
+
+        document.getElementById("result").textContent = `Resultado: ${numero}`;
+        document.getElementById("time").textContent = `Tiempo transcurrido: ${duration} segundos`;
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+[
+	{
+		"nombre":"Nombre",
+		"tipo":"text",
+		"min":5,
+		"max":30,
+		"valorejemplo":"p.ej.: Nombre del producto",
+		"titulo":"Nombre",
+		"descripcion": "Introduce el nombre del producto",
+		"tabla":"productos",
+		"campo":"nombre",
+		"jvvalidador":""
+	},
+	{
+		"nombre":"Descripcion",
+		"tipo":"text",
+		"min":5,
+		"max":30,
+		"valorejemplo":"p.ej: pon una descripción",
+		"titulo":"Descripción",
+		"descripcion": "Pon la descrición del producto",
+		"tabla":"productos",
+		"campo":"descripcion",
+		"jvvalidador":""
+	}
+]

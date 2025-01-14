@@ -1,0 +1,7 @@
+main {
+  flex: 1 1 auto; /* Takes remaining vertical space */
+  display: grid;
+  grid-template-columns: 20% 1fr; /* Fixed width for nav, rest for section */
+  grid-template-rows: 1fr; /* Single row */
+  overflow: hidden; /* Prevent scrolling on main */
+}

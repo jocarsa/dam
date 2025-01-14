@@ -1,0 +1,22 @@
+
+		SELECT * FROM usuarios 
+		WHERE usuario = '' 
+		AND contrasena = ''
+	
+
+
+		SELECT * FROM usuarios 
+		WHERE usuario = '' 
+		AND contrasena = ''
+	
+
+
+		SELECT * FROM usuarios 
+		WHERE usuario = '' 
+		AND contrasena = ''
+	
+
+		SELECT * FROM usuarios 
+		WHERE usuario = '' 
+		AND contrasena = ''
+	

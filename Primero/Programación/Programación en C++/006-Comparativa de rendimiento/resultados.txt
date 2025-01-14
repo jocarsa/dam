@@ -1,0 +1,7 @@
+C++ 2.5851s
+C++ 0.84s (con flags y bajando precision)
+Python 34.4568s
+Python numpy = 0.00000596s
+PHP 3.7s
+js (via node) 0.859s
+js (via Chrome) 4.75930s

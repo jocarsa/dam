@@ -1,0 +1,16 @@
+[
+	{
+		"entidad":"clientes",
+		"aplicaciones":[
+			"ficha_de_cliente",
+			"historico_de_compra"
+		]
+	},
+	{
+		"entidad":"pedidos",
+		"aplicaciones":[
+			"detalle_de_pedido",
+			"factura_del_pedido"
+		]
+	}
+]

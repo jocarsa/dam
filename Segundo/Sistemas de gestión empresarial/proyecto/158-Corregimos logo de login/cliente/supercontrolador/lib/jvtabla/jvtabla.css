@@ -1,0 +1,17 @@
+.jvtabla{
+	width:100%;
+	font-family:monospace;
+	border-collapse: collapse;
+}
+.jvtabla thead tr{
+	background:crimson;
+	color:white;
+	
+}
+.jvtabla thead tr th{
+	padding:10px;
+}
+.jvtabla tbody tr td{
+	padding:10px;
+}
+

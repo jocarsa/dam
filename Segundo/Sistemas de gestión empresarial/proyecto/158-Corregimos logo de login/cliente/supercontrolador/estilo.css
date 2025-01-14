@@ -1,0 +1,111 @@
+@font-face {
+  font-family: Ubuntu;
+  src: url(../Ubuntu-R.ttf);
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background: crimson;
+  font-family: Ubuntu, sans-serif;
+  color: white;
+  font-size:12px;
+}
+header, footer {
+  flex: 0 0 auto; /* Tamaño fijo */
+  padding: 10px;
+}
+
+.aparece{
+  animation:animaparece 1s;
+  animation-fill-mode:forwards;
+}
+@keyframes animaparece{
+  0%{opacity:0%;}
+  100%{opacity:100%;}
+}
+.desaparece{
+  animation:animdesaparece 1s;
+  animation-fill-mode:forwards;
+}
+@keyframes animdesaparece{
+  0%{opacity:100%;}
+  100%{opacity:0%;}
+}
+
+.menuseleccionado{
+  background:white;
+  color:crimson;
+}
+td{
+	transition:all 1s;
+}
+td:focus{
+	background:yellow;
+	transform:scale(1.4,1.4);
+}
+
+table article{
+	width:200px;
+	height:300px;
+	border:1px solid grey;
+	background:white;
+	box-shadow:0px 4px 8px rgba(0,0,0,0.4);
+	display:inline-block;
+	margin:5px;
+	padding:10px;
+	font-size:9px;
+	font-family:monospace;
+	overflow:hidden;
+}
+.boton{
+	width:30px;
+	height:30px;
+	display:inline-block;
+	text-align:center;
+	line-height:30px;
+	border:none;
+	border-radius:5px;
+}
+.botonrojo{
+	background:crimson;
+	
+}
+.botonblanco{
+	background:white;
+	
+}
+.boton img{
+	width:70%;
+	line-height:30px;
+	position:relative;
+	top:5px;
+}
+
+iframe{
+	border:0px;
+	background:white;
+}
+@media print {
+	header{
+		display:none;
+	}
+	nav{
+		display:none;
+	}
+	body{
+		background:none;
+	}
+	main section{
+		width:100%;
+	}
+}
+
+input[type=text],input[type=textarea],input[type=number],select{
+	width:100%;
+	padding:10px;
+	box-sizing:border-box;
+	border:none;
+}
+
