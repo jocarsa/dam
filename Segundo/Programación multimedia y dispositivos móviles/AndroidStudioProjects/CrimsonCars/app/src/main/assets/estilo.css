@@ -1,0 +1,13 @@
+body{
+	padding:20px;
+}
+.coche{
+	border:1px solid grey;
+	border-radius:20px;
+	box-sizing:border-box;
+	padding:20px;
+	margin-bottom:20px;
+}
+.coche img{
+	width:100%;
+}

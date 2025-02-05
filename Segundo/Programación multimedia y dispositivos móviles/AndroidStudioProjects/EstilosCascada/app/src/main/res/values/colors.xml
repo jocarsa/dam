@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <style name="mi_propio_estilo">
+        <item name="android:textColor">#0000ff</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

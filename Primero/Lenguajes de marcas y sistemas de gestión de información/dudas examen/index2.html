@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<div id="contienearticulos">
+			
+		</div>
+		<template id="articulo">
+			<div class="articulo">
+				<h3>Titulo del articulo</h3>
+				<p>Texto del articulo</p>
+				<img src="loquesea.png">
+			</div>
+		</template>
+	</body>
+	<script>
+		let contenedor = document.querySelector("#contienearticulos")
+		let plantilla = document.querySelector("#articulo")
+		
+		for(let i = 0;i<10;i++){
+			let clon = plantilla.content.cloneNode(true)
+			clon.querySelector("h3").textContent = "este es el titulo "+i
+			contenedor.appendChild(clon)
+		}
+		
+		
+	</script>
+</html>

@@ -1,0 +1,748 @@
+Fecha,Texto
+2025-01-13 23:15:26,"jocarsa | darkturquoise es un software web para texto de teleprompter, y se puede usar gratuitamente en: https://darkturquoise.jocarsa.com/"
+2025-01-13 21:23:30,Moon
+2025-01-05 23:03:32,"Actualización de la aplicación jocarsa | teal, que tendrá su lanzamiento oficial en los próximos meses. Mediante esta aplicación, cualquier organización puede construir, de forma autónoma, su propio software de gestión de empresa sin necesidad de saber programar. 
+
+En los últimos días se han añadido actualizaciones importantes: ahora una organización puede crear, dentro de su cuenta, diferentes aplicaciones, tan interconectadas o independientes como se desee (por ejemplo: departamentos dentro de una empresa). Adicionalmente, dentro de cada ""aplicación"", pueden crearse no solo tablas, sino carpetas de tablas (con opción de recursividad), para organizar y visualizar mejor la información - en el video aparece solo una pequeña muestra de esta característica, en breve publicaré vídeos con walkthroughs más extensos, en los cuales se podrá apreciar mejor la potencia de esta característica.
+
+Para las próximas semanas, están previstas muchas novedades interesantes de forma previa al lanzamiento oficial. Más información en https://jocarsa.com"
+2025-01-04 20:03:40,"jocarsa | forestGreen es una aplicación de mensajería instantánea mediante la cual los miembros de una organización pueden comunicarse entre sí - es un producto pensado en ofrecer una solución personalizada, adaptable y corporativa como alternativa a las aplicaciones de mensajería de uso general. Más información en https://jocarsa.com"
+2025-01-03 16:46:07,"Hoy he publicado otro proyecto de código abierto (licencia GPLv3) en GitHub: jocarsa | white, que consiste en una serie de iconos preparados para ser utilizados por cualquier aplicación web. Puedes encontrar más información en https://github.com/jocarsa/jocarsa-white - Aquellos usuarios que vinculen directamente a la página de GitHub, recibirán automáticamente las actualizaciones (nuevos iconos) que vayan siendo publicados. En el video se muestra la integración de los iconos en el producto jocarsa | steelblue, un gestor de documentos en la nube, especialmente diseñado para organizaciones que deseen contar con una nube propia y personalizable de documentos."
+2025-01-02 14:57:26,"Optimiza tu tiempo con jocarsa | lightSalmon
+
+¿Buscas una herramienta eficaz para gestionar tus eventos y tareas diarias? jocarsa | lightSalmon es la solución perfecta tanto para empresas como para particulares. Esta plataforma intuitiva te permite crear múltiples calendarios, programar eventos recurrentes y personalizar tus agendas según tus necesidades.
+
+Características principales:
+
+-Múltiples Calendarios: Organiza proyectos, equipos o actividades personales de manera independiente.
+-Eventos Recurrentes: Automatiza la programación de reuniones y tareas que se repiten.
+-Colaboración en Tiempo Real: Comparte calendarios con tu equipo para una coordinación eficiente.
+-Acceso Multidispositivo: Sincroniza tu calendario en todos tus dispositivos para tener siempre la información a mano.
+-Seguridad Garantizada: Protege tus datos con nuestras avanzadas medidas de seguridad.
+
+Con jocarsa | lightSalmon, ahorrarás tiempo, mejorarás la productividad y mantendrás todo bajo control. Simplifica la gestión de tu tiempo y enfócate en lo que realmente importa.
+
+¿Quieres saber más? Visita https://jocarsa.com o contacta directamente para recibir más información y descubrir cómo podemos ayudarte a optimizar tu organización diaria."
+2025-01-02 00:07:55,"Proyecto de Nochevieja y Año Nuevo - Videojuego de mundo abierto de jugabilidad similar a Minecraft - Programado para ser jugado directamente en la web, usando el framework Three.js"
+2024-12-27 23:16:51,"En los últimos días he estado trabajando sobre la adaptación del software jocarsa | darkKhaki (toma de notas e ideas de forma libre y creativa) para dispositivos táctiles, y esta mañana he tenido la oportunidad de ponerlo a prueba en un soporte de tamaño grande como es una pizarra digital, en las instalaciones de TAME Centro de Formación de Mislata, donde tengo el placer y el honor de impartir el Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma."
+2024-12-25 23:46:47,"Nuevo software publicado bajo la licencia libre GPLv3, para que lo use quien necesite: jocarsa | seashell - El objetivo de este software consiste en añadir automáticamente un buscador en todos los campos <select> de un formulario. Al final del video se muestra su integración en otro software, jocarsa | indianred. Más información en: https://github.com/jocarsa/jocarsa-seashell"
+2024-12-24 23:34:51,"¡Feliz Navidad! Acabo de publicar en GitHub, bajo licencia abierta GPL para que todo el mundo pueda usarlo, el proyecto jocarsa | snow para convertir cualquier campo <textarea> de HTML en un completo editor WYSIWYG. Puede ser descargado y usado gratuitamente, o bien enlazado directamente desde GitHub Pages (el readme inicial del repositorio contiene instrucciones y ejemplos sobre cómo realizar el enlace) - Más información en: https://github.com/jocarsa/jocarsa-snow"
+2024-12-21 00:31:16,"jocarsa | wheat es un software de microwiki en la nube, de fácil instalación, fácil uso y muy ligero, pensado para formar parte de la inteligencia empresarial de cualquier compañía que quiera usar este recurso como parte de su estrategia digital, en el cual la información (privada y/o pública a múltiples niveles) puede crearse y consultarse de forma colaborativa."
+2024-12-19 21:56:38,"jocarsa | teal es un software que permite a cualquier usuario crear por si mismo un sistema de gestión empresarial, ideal para autonomos y pequeñas empresas."
+2024-12-17 22:10:44,Un poco de Python + OpenCV + matemáticas
+2024-12-17 10:24:42,"jocarsa | maroon es un software de planificación y estadística personal, permite crear estadísticas, tomar datos, y representar los datos de forma sencilla mediante gráficas en un panel de control propio"
+2024-12-08 21:41:33,"Miniproyecto de domingo por la tarde: DarkKhaki, una aplicación web que te permite esbozar rápidamente y organizar tus ideas con una metodología similar a los mapas mentales, pero con más grado de libertad, guardando la información en el navegador local, o pudiendo descargar los archivos de forma persistente - https://jocarsa.com/go/darkkhaki/"
+2024-12-07 17:22:02,"Proyecto de fin de semana - Videojuego online (de momento en LAN) con una jugabilidad similar a Among Us, pero quitando las mecánicas violentas y sangrientas con el objetivo de hacer un juego algo más constructivo y que resulte divertido (de momento gana el que antes consiga recoger una serie de objetos)"
+2024-12-06 21:44:22,Ejercicio del curso avanzado de Blender en @escuelamastermedia - modelado de vehículos deportivos
+2024-12-05 22:18:48,"Para empezar el puente, un poco de animación con Python, OpenCV y Numpy"
+2024-12-01 21:37:18,"Uno de los ejercicios de modelado y texturización del Curso Avanzado de Blender en @escuelamastermedia - ""This is why I hate video games. It appeals to the male fantasy"""
+2024-11-25 22:17:43,"Segunda clase del curso de Blender Avanzado en @escuelamastermedia hoy continuando el modelado de humanos, con el detallado de caras."
+2024-11-21 18:28:09,"En en clase de Blender Avanzado en @escuelamastermedia modelado de la base de un cuerpo humano, para añadirle detalles en próximas clases."
+2024-11-20 16:58:27,"Seguimos con los exámenes de primera evaluación de primer curso del Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma en el Centro de Formación TAME, hoy estrenando un nuevo software de digital proctoring para capturar las pantallas de mis alumnos de forma simultánea a medida que realizan sus exámenes - que precisamente mis alumnos son los mejores del mundo y probablemente sean los que menos necesiten esta herramienta, pero hoy me están ayudando a estrenarla."
+2024-11-19 20:06:52,Comenzando exámenes de primera evaluación del Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma en TAME Centro de Formación
+2024-11-07 23:33:03,Diseño y modelado 3D de personajes de tipo cartoon en Blender y Cycles.
+2024-11-05 12:33:48,"En clase hoy, dentro del Máster en Diseño Web y Programación en @escuelamastermedia hemos hecho una aplicación de videoconferencia con websockets contra un servidor programado en node.js"
+2024-11-05 10:42:26,"En clase hoy, desarrollando una aplicación Full Stack con Angular, Node, Express y MongoDB, con tienda online frontal y panel de administración, en el Máster en Diseño Web y Programación en @escuelamastermedia"
+2024-11-04 22:57:18,Uno de los ejercicios realizados durante las clases de Programación Multimedia en el Ciclo Formativo de Desarrollo de Aplicaciones Multiplataforma que imparto en TAME - generación sintética de video y audio en sincronía
+2024-11-01 18:32:40,"Hoy mi hermana (en primer plano en la foto) me ha reclutado para ir a ayudar a los damnificados por la DANA en las poblaciones al sur de Valencia. Y allá que nos hemos ido con agua, con comida, y con ropa. Ella, yo, y muchos miles de valencianos más.
+
+En la foto, mi hermana y yo cruzando la pasarela peatonal a la altura de La Torre, que es una de las pocas formas de cruzar el nuevo cauce del río, tanto de ida, como de vuelta. En la caminata de ida, impresiona cruzarte con la gente que vuelve con calzado y pantalones cubiertos por el barro, lo cual comienza a dar una idea de lo que encontraremos al llegar. En la caminata de vuelta, todos traeremos barro, en nuestra ropa, y en nuestra mente. 
+
+Lo mejor del día: ver un enorme río de muchas, muchísimas personas que, de motu propio, y de forma desinteresada, llevaban, a los más desfavorecidos, todo aquello que buenamente podían, tan solo porque habían sentido la necesidad de ayudar. Lo peor del día: ver la devastación, que es surrealistamente real, y a las personas que están sufriendo las consecuencias de esa devastación, las cuales constantemente muestran enorme agradecimiento por toda aquella ayuda que les va llegando, por parte de las fuerzas de seguridad, servicios sanitarios y de emergencias, empresas, y por parte de la ciudadanía."
+2024-10-30 21:01:29,"Ayer en las clases del Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma en @tamecentroformacion estuvimos construyendo un sistema de compartición de pantalla a través de una red (como en Zoom) - hoy he cogido ese software de clase y lo he modificado para crear un gráfico de anillo representando los colores de lo que aparezca en pantalla, por ejemplo, una película. ¿Con qué película he hecho la prueba que publico?"
+2024-10-30 10:13:49,Reprogramación en Python del software de simulación de peces en un acuario que hice hace un par de años en Javascript
+2024-10-29 10:55:18,"Hoy en clase del Máster en Diseño Web y Programación en @escuelamastermedia, ejercicio de desarrollo de aplicaciones web Full Stack, en el que hemos programado desde cero una web con tienda online desde la que se pueden realizar compras y pedidos, y un panel de control en el que esos pedidos pueden ser gestionados."
+2024-10-27 11:20:06,"Proyecto de fin de semana: jugando con fractales en Python para hacer una versión, con un poco de aleatoriedad, del Arbol de Pitágoras."
+2024-10-25 12:00:11,"Anoche, en la Gala del Comerç de Mislata, donde se rindió homenaje a los establecimientos más emblemáticos de la ciudad, entre los que se encuentra el Centro de Formación TAME, en el que tengo el placer de impartir el Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma"
+2024-10-22 18:52:35,"En clase hoy, programando una aplicación cliente-servidor de videoconferencia, utilizando websockets (js en el cliente, python en el servidor), en la asignatura Procesos y Servicios del Ciclo Formativo en Desarrollo de Aplicaciones Multiplataforma"
+2024-10-20 18:34:14,Proyecto de modelado facial con loops en Blender
+2024-10-11 08:07:10,"Hacía tiempo que tenía ganas de programar algo como esto: espirógrafo en HTML5 canvas y Javascript - cada vez que se recarga la página, radios y velocidades se vuelven aleatorios, con lo cual cada recarga genera un dibujo completamente nuevo - este fin de semana subiré algún vídeo largo a mi canal de Youtube"
+2024-09-30 14:51:43,"Hoy, en clase de Blender Inicial en @escuelamastermedia - un poco de render de tazas de café"
+2024-09-30 11:48:20,"Flying out of the sun
+The smell of toast is in the air
+When there's a job to be done
+The Flying Toasters will be there!
+And it's flap! Flap! Flap!
+Now help is on the way
+A victory song they si-ing
+We pop up to save the day
+On flying toaster wings!
+
+In brightest day or after dark
+When times of trouble are at hand
+The flying toasters set a spark
+And hope is blazing 'cross the land!
+And it's flap! Flap! Flap!
+Salvation from above
+A precious gift they bri-ing
+Gleaming angels of love
+On flying toaster wings!
+
+Hoy, en el curso de Blender Inicial en @escuelamastermedia un tributo a un clásico de los 90"
+2024-09-26 15:01:04,"Hoy, en el curso de Blender Nivel Inicial en @escuelamastermedia - modelado de entornos y de personajes en 3D con Blender y Cycles"
+2024-09-04 22:12:11,"Próximo curso: Desarrollo web en entorno servidor
+
+Tecnologías: php,mysql,js
+
+Desarrolla aplicaciones web robustas del lado del servidor. Aprende a utilizar tecnologías como Node.js, PHP y bases de datos para construir la lógica de negocio y gestionar la interacción con el cliente.
+
+Características del curso
+
+-Curso online con clases en directo mediante videoconferencia
+-Clases grabadas a disposición de los alumnos del curso
+-Todo el código del curso disponible en GitHub para los alumnos del curso
+-Apuntes del curso en PDF
+-Soporte al alumno mediante correo electrónico/videoconferencia
+
+Desarrollo del curso: Segunda mitad de Septiembre
+
+Más información en: https://comoprogramar.es/?c=0612"
+2024-08-31 10:37:24,"Un poco de 3D para acabar el verano (no es cierto, llevo unos cuantos días haciendo bastante 3D 😂) - probando la nueva iluminación global rápida en Blender 4.2 con Eevee."
+2024-08-22 10:43:46,"Timelapse de una semana de tiempo en la simulación de la ciudad virtual que estoy programando. Al verse en cámara rápida se aprecia mejor el movimiento de los agentes (dormir, comer, descanso, WC, trabajar, ocio...) A la izquierda la vista esquemática con path finding en color naranja, y a la derecha una visualización con sprites de 8x8 pixeles."
+2024-08-20 15:14:50,"Un poco de Matrix veraniego en el escritorio - Simulación con agentes que siguen unas pautas de comportamiento - dormir de 22 a 8, desayunar de 8 a 9, comer de 13 a 14, cenar de 20 a 21, y el resto del tiempo, ocio (con pausas para ir al WC) - cada agente vive en su propia casa, y de vez en cuando visitan a sus vecinos (esto realmente es un fallo en el algoritmo de path finding implementado en el programa, pero mira, queda sociable de forma accidental) - y, ¿los agentes tienen trabajo o empleo? - pues... no, ¡estamos en agosto! - en una de las siguientes fases de desarrollo les tengo que permitir trabajar, pero la decisión no está exenta de dilema ético: ¿eso les hará más felices, o menos? no se dará el caso de que me ponga a hacer un Matrix casero para acabar amargándoles la vida a mis ciudadanos virtuales 😂"
+2024-08-17 17:16:35,"Encuentros musicales en la tercera fase - Retocando un software de aprendizaje de piano que programé hace un par de años, he acabado creando un software de creación musical automática... un poco ""espacial"" (o ""terrorífica"", según se mire)"
+2024-08-16 16:48:40,"Un poco de arte digital: pintura automática usando un efecto similar al de un torno, pero en un lienzo informático"
+2024-08-15 19:38:32,"Un poco más de Python lúdico y veraniego - Tres en raya (tic tac toe) pero en un tablero más grande - En este video, en versión de cero jugadores"
+2024-08-13 16:40:18,"De cuando en cuando, la programación tiene sus cosas (visualmente) bonitas - aprovechando el verano para experimentos y proyectos personales, en este caso con Python y OpenCV"
+2024-08-08 18:16:49,"Extensión del miniproyecto de verano (que se está convirtiendo en ""no tan mini"") - a partir del generador de mapas planetarios de la semana pasada, he creado un planeta completo en 3D en base a un mapa de 16384x8192 segmentos (12 GB al guardarlo en base de datos SQLite, terreno + nubes), y un visualizador de la posición (latitud + longitud) en la esfera del planeta, de la posición en formato isométrico, y un marcador sobre el mapa equirrectangular del planeta completo. ¡Ya hace tiempo que quería hacer algo así! Así que ahora mismo tengo un pequeño planeta completo, pero inhabitado. Próximos pasos: integrarle el sistema de vida artificial que hice hace dos meses en el último curso de inteligencia artificial que impartí, para añadirle ""habitantes"" a este planeta. Y crear un mapa de más resolución. Y mejorarlo visualmente. Y mejorar también el rendimiento (ahora va demasiado lento). Y hacerlo accesible online. Y enlazarlo en tiempo real con Blender para aprovechar la brutal calidad gráfica de Cycles. ¿Quizás un juego multijugador en línea? Y quizás abrirlo en GitHub para que otros desarrolladores puedan hacer sus forks y participar en el desarrollo. Y... demasiadas cosas quiero hacer yo, ya veremos cuánto cunden el tiempo y los recursos."
+2024-08-05 15:07:29,"Miniproyecto veraniego: creador de mapas planetarios (color difuso + desplazamiento) con proyección esférica, hecho en Python, más su aplicación al generador de planetas 3D hecho en Blender, que publiqué hace un par de meses, actualizado a la versión 4.2"
+2024-07-31 20:56:26,Alma Mater
+2024-07-23 10:45:30,"Enésima implementación de ""El Juego de la Vida"" de John Conway, pero permitiendo al usuario interactuar con la creación de las células, y con efecto de desaparición progresiva, que le da a la animación un aspecto más orgánico."
+2024-07-22 20:27:43,"La nueva normativa en cuanto a Formación Profesional Dual propone nuevos retos, entre los cuales encontramos que los alumnos realizarán Formación Dual desde primer curso y que las empresas participarán en la formación y en la evaluación de los alumnos en base a resultados de aprendizaje, entre otros.
+
+Para afrontar esos retos, he desarrollado una herramienta informática para ayudar a los centros, tutores, docentes, y empresas, a gestionar esta formación y evaluación, mediante la creación de un espacio común en el que unir a todos los actores implicados en llevar a buen puerto la formación dual.
+
+Este es un pequeño fragmento de esa aplicación."
+2024-07-18 12:05:37,"Finalizando el curso de Desarrollo con React en Escuela Mastermedia creando una aplicación de gestión empresarial con el stack MERN (MySQL, Express, React y Node.js)"
+2024-07-16 21:46:17,"Desarrollo de un software de visualización de lentes gravitatorias mediante la distorsión de la trayectoria de la luz por la fuerza de la gravedad por parte de cuerpos con gran masa, como planetas - la cantidad de distorsión está temporalmente exagerada por motivos ilustrativos."
+2024-07-09 11:49:46,"Hoy, en clase de Python en @escuelamastermedia , desarrollando aplicaciones de escritorio con Python - en el ejemplo de la imagen, una aplicación que recorre el contenido de una serie de discos duros con la librería OS, los introduce en una base de datos SQLite, y genera gráficas con matplotlib para cada disco duro, con su contenido, como parte de una herramienta más amplia de gestión de múltiples discos duros"
+2024-07-06 11:17:55,"Un año más, he tenido el placer y el privilegio, como parte del claustro del Máster en Patrimonio Virtual de la Universidad de Alicante, de participar en el Congreso de Finalización de curso - muchas gracias tanto a organizadores, como a ponentes, como a participantes, y desde luego gracias a los alumnos y felicidades por la elevada calidad de sus proyectos!"
+2024-07-03 22:32:40,"Lanzamiento de la primera versión de https://microblog.es - un servicio de blogging en la nube, pensado para permitir a los usuarios crear un blog de una forma mucho más sencilla y rápida que con otras herramientas."
+2024-07-02 18:38:13,"Desarrollo de un software de creación de imágenes de alta profundidad de color en base a la acumulación de información en una exposición prolongada - al gestionar la imagen mediante software, se puede ir bastante más allá de los 32 bit por canal de los formatos HDR y EXR, permitiendo aclarar imágenes muy oscuras. La imagen que se muestra en el video ha sido tomada casi a oscuras."
+2024-07-01 11:39:01,"Proyecto de domingo noche: construcción 3d de una nube de puntos (en Aframe.io) a partir de la detección de profundidad (zdepth en mapa de grises) de un par estereoscópico de imágenes que representan el paralaje de la visión humana - lo que vemos en el video es un timelapse, ya que el algoritmo por el momento es bastante ineficiente, en breve más novedades sobre este desarrollo"
+2024-06-11 14:10:16,"Hoy, en la última clase del curso de Inteligencia Artificial en @escuelamastermedia desarrollo de un agente de IA en una interfaz natural utilizando librerías de Python"
+2024-06-02 23:20:23,"Representación visual de un pequeño sistema de vida artificial en el cual cada individuo basa su comportamiento en el cumplimiento, por prioridades, de una serie de necesidades básicas"
+2024-05-28 17:15:57,Simulación de la atmósfera y el terreno de un pequeño planeta usando una combinación de microdesplazamiento y materiales volumétricos en Blender
+2024-05-25 21:33:15,"Variación sobre uno de los ejercicios de modelado orgánico de caras basado en loops, desarrollado en el último curso de Blender Avanzado en @escuelamastermedia"
+2024-05-22 09:08:43,Ampliación de la librería desarrollada en la última sesión del curso de Big Data en @escuelamastermedia y aplicación para la representación de datos en otro escenario en el que es necesario visualizar claramente grandes cantidades de datos de forma cronológica: Analítica web
+2024-05-20 23:01:39,"Hoy, en la última clase del curso de Big Data en @escuelamastermedia , desarrollo desde cero de una librería para visualizar fácilmente la distribución cronológica de grandes cantidades de datos, aún cuando estos se expanden a lo largo de varios años."
+2024-05-14 14:54:49,"Demostración en funcionamiento de un sistema de visión artificial que reconoce formas geométricas (y realmente muchos otros tipos de geometría) en base a un proceso de entrenamiento con feedback inmediato. En el video podemos ver como el conocimiento del sistema se va ampliando a medida que le enseñamos nuevas formas y les añadimos una etiqueta, y el sistema es capaz de recordar e identificar correctamente (aun teniendo un conjunto muy limitado de neuronas) cada uno de los objetos sobre los cuales ha recibido entrenamiento."
+2024-05-09 21:39:26,"Desarrollo de un software en Javascript que representa y visualiza, en tiempo real, el concepto de neurociencia de ""Neurons that fire together, wire together"", demostrando, a partir de un conjunto limitado de neuronas artificiales (512) que los mismos conjuntos de neuronas se activan en presencia de cada uno de los estímulos - para este ejemplo, tres formas geométricas básicas a modo ilustrativo. Esto nos permite, en un sistema de inteligencia artificial, implementar las mismas estrategias de aprendizaje que encontramos en el cerebro biológico."
+2024-05-05 21:20:36,"Jugando con mi hijo a ""Starship"", el juego multijugador en red que hice anteriormente en este curso como ejercicio para mis alumnos de los ciclos formativos de DAM y DAW - sobre una parte de cliente realizada en Javascript y HTML5 Canvas, se comunica mediante websockets con un servidor de sockets programado en Python sobre un mini-servidor dedicado. Calculo que lo daré de baja a final de curso! Pero mientras tanto se puede jugar en modo multijugador aqui: https://jocarsa.com/go/starship - flechas para moverse, barra espaciadora para disparar - Todo el código, como de costumbre, está abierto en mi cuenta de GitHub. Creo que hay pocas cosas en la vida que den más satisfacción que el hecho de que a mi hijo le guste jugar a un juego que he programado."
+2024-05-02 21:30:28,Representación visual del proceso de entrenamiento de una red neuronal correspondiente a un sistema de visión artificial.
+2024-04-26 22:45:02,"Modelado de tipo hard surface con Blender, para creación de objetos industriales - https://jocarsa.com"
+2024-04-25 20:17:27,Estudio de modelado poligonal con loops de una cabeza humana lowpoly - creación de avatares virtuales para videojuegos y entornos inmersivos - https://jocarsa.com
+2024-04-23 20:17:24,Representación gráfica de un patrón de bloques de 2x2 pixeles para las clases impartidas esta semana sobre programación de redes neuronales y machine learning para visión artificial
+2024-04-21 23:36:13,"Desarrollo de un programa de simulación de un sistema de partículas con cálculos de atracción independientes para cada una de las partículas, para un proyecto en el que estaré participando en los próximos meses"
+2024-04-20 11:49:51,"Juego de tipo ""¿Qué prefieres?"" desarrollado durante las clases de esta semana en @escuelamastermedia - puedes probarlo, en PC o en móvil/tableta, en la web: https://aobe.eu/"
+2024-04-11 15:24:55,"📚 ¡Atención a todos los apasionados de la programación en C++ y C! 🚀 ¿Quieres llevar tus habilidades al siguiente nivel? No busques más, ¡tenemos los libros perfectos para ti! 📖💡
+
+1️⃣ ""Aprende programación con C++: Desarrolla tus propias aplicaciones"" 🖥️💡 Descubre cómo dominar C++ desde cero y crear tus propias aplicaciones impresionantes. [Enlace en la biografía]
+
+2️⃣ ""C++: Aprende a programar de forma práctica"" 💻📝 Sumérgete en proyectos prácticos y ejemplos reales para mejorar tus habilidades en C++. [Enlace en la biografía]
+
+3️⃣ ""Aprende programación con C: Desarrolla tus propias aplicaciones"" 📱💻 Domina el arte de la programación en C y crea aplicaciones funcionales desde cero. [Enlace en la biografía]
+
+🔥 Estos libros están llenos de conocimientos prácticos, ejercicios desafiantes y consejos de expertos para ayudarte a convertirte en un maestro de la programación en C++ y C.
+
+🛒 ¡Consíguelos ahora en Amazon y lleva tu carrera en programación al siguiente nivel! ¡No te lo pierdas! 👆 [Enlace en la biografía]
+
+¡Etiqueta a tus amigos programadores para que no se pierdan esta oportunidad de aprender y crecer juntos en el mundo de la tecnología! 💻✨"
+2024-04-08 20:28:02,p'a l'insta
+2024-04-06 22:16:28,"Proyecto de sábado: un ""piedra papel o tijera infinito"" en Javascript. Puedes probarlo en https://jocarsa.com/go/piedrapapeltijera/ - puedes encontrar el código en mi cuenta de GitHub"
+2024-04-03 09:43:36,"Proyecto de primera fase de diseño generativo utilizando modelado paramétrico 100% Python, para generar un número prácticamente ilimitado de versiones de un producto industrial (una estantería en el ejemplo), en este caso usando una aproximación de fuerza bruta, para una posterior fase de selección/validación"
+2024-03-20 10:09:29,"Uno de los ejercicios realizados durante los talleres impartidos en este fin de semana pasado en la Universidad de Alicante, en el Máster en Patrimonio Virtual, en el@que estuvimos analizando tecnologías como Leap Motion/Ultraleap para interactuar con entornos virtuales usando nuestras propias manos."
+2024-03-19 12:54:33,"Primer prototipo de un software de composición musical operable a través de un simple navegador web - próximamente, cálculo correcto de plicas, ganchos y barras"
+2024-03-16 20:07:33,"Este fin de semana he tenido el placer y el honor de participar en los talleres prácticos del Máster en Patrimonio Virtual de la Universidad de Alicante, del cual en este curso vuelvo a ser parte del claustro - El objetivo de las sesiones en las que he participado ha sido, al igual que en mi asignatura (motores de juego), proporcionar a los alumnos herramientas digitales con las que poder presentar de forma efectiva sus proyectos. ¡Muchas gracias a todos los asistentes, participantes y organizadores por hacer la jornada productiva y entrañable!"
+2024-03-10 13:24:23,"Creación de un mando de tipo joystick con Arduino, conectado por puerto serie a un mini juego desarrollado en Python para controlar un Tie Fighter 
+😊 |-O-| 😊"
+2024-03-09 18:39:47,Tarde de Arduino (con el frío que hace)
+2024-03-08 17:14:50,D.E.P. Akira Toriyama - Muchas gracias por todo y hasta siempre.
+2024-02-25 19:27:36,Aplicación web para crear tus propios mapas mentales - úsala libremente en https://mindmap.jocarsa.com/
+2024-02-03 17:49:05,Febrero
+2024-02-01 12:26:02,Finalizando el curso de Blender nivel fundamental en @escuelamastermedia - capturas de los ejercicios realizados durante el curso
+2024-01-14 17:37:06,Enero
+2023-12-30 19:40:12,
+2023-11-02 12:33:10,Finalización del curso de Blender Avanzado en @escuelamastermedia y ejemplos de ejercicios desarrollados durante el curso
+2023-10-26 11:23:58,"En clase hoy, dentro del curso de Blender Avanzado en @escuelamastermedia , modelado y render de automóviles"
+2023-10-20 11:26:53,"En clase hoy, segunda sesión del curso de Blender Avanzado en @escuelamastermedia modelado personajes cartoon con loops"
+2023-09-29 11:33:20,Recopilación de ejercicios realizados durante el curso de Blender Nivel Fundamental en @escuelamastermedia
+2023-09-15 21:47:50,"Nuevo juego en desarrollo, siguiendo con la temática “naves espaciales”, esta vez con un enfoque hacia la jugabilidad táctil para dispositivos móviles. Por el momento prototipo jugable en JavaScript, dentro de poco lo lanzaré como aplicación Android/iOS"
+2023-09-14 11:02:42,Ya está disponible en Amazon mi libro acerca de cómo programar aplicaciones web con PHP y MySQL - Enlace directo: https://www.amazon.es/Desarrollo-aplicaciones-web-PHP-MySQL/dp/B0CDNQD7DL
+2023-09-08 15:59:55,Inicio del nuevo curso
+2023-09-01 22:08:45,"Noche de insomnio, aprovechando para adelantar el código de mi videojuego ""Gravity"", cuyo objetivo es mostrar de una forma lúdica y didáctica el efecto de la fuerza de la gravedad mientras manejas una nave espacial, destruyes rocas, e intentas no chocar contra los planetas. Un año de estos lo lanzaré en plataformas. Por el momento, se puede jugar libremente en https://jocarsa.com/go/gravity/ (flechas izquierda/derecha para girar, flecha superior para impulsar, barra espaciadora para disparar). Despegar es difícil, pero aterrizar de vuelta lo es más todavía :-)"
+2023-08-28 18:09:44,"Presentamos una innovadora herramienta en el ámbito de la educación musical: el software de apoyo a la docencia musical con parrilla de acordes y representación pentagramática en clave de sol. Diseñado para enriquecer la experiencia de aprendizaje musical, este software ofrece una integración excepcional entre la teoría y la práctica, brindando a los educadores y estudiantes una plataforma interactiva de gran utilidad.
+
+Una característica destacada de esta aplicación es su parrilla de acordes altamente funcional. Al acceder a una clase de música, los usuarios pueden visualizar los acordes representados en una parrilla intuitiva. Al interactuar con las cuerdas y los trastes, se despliega una representación gráfica de los acordes correspondientes. Esta funcionalidad no solo mejora la comprensión visual de la estructura de los acordes, sino que también fomenta la exploración y la experimentación en tiempo real.
+
+La representación en el pentagrama en clave de sol añade una dimensión adicional a la enseñanza de la música. Los estudiantes pueden no solo identificar las notas individuales, sino también entender su relación dentro del contexto armónico de los acordes. Esto ofrece una oportunidad valiosa para apreciar la interconexión entre la teoría y la interpretación práctica, lo que resulta en un avance más sólido en la competencia musical.
+
+En conclusión, el software de apoyo a la docencia musical con su innovadora parrilla de acordes y representación pentagramática en clave de sol demuestra ser una herramienta esencial para educadores y estudiantes por igual. Al fusionar de manera hábil la visualización gráfica con la notación musical, este software promueve un aprendizaje completo y duradero en el ámbito de la música. Su capacidad para enlazar teoría y práctica destaca su relevancia en la educación musical contemporánea y establece nuevos estándares en la manera en que abordamos la enseñanza de la música."
+2023-08-25 18:02:13,"Empieza el curso aprendiendo a desarrollar aplicaciones informáticas en el lenguaje C y C++
+
+Libros en formato físico y en formato Kindle ya disponibles directamente en Amazon, en los siguientes enlaces:
+
+C: https://www.amazon.es/dp/B0BW23BW1M
+
+C++: https://www.amazon.es/dp/B0BRH8Y5HK"
+2023-08-24 18:59:39,"📸 Presentamos ""jocarsa|EXIFrenamer"": Simplificando la Organización de Fotos 📂✨
+
+¿Te sientes abrumado por un mar de fotos sin nombre? ¡Di adiós al caos con ""jocarsa|EXIFrenamer""! 🌟 Este software de vanguardia te permite renombrar sin esfuerzo enormes lotes de fotos según su información EXIF. 📆🖼️
+
+¿Cansado de descifrar nombres de archivo crípticos? Con ""jocarsa|EXIFrenamer,"" puedes despedirte de la confusión. 🚫🧩 El software reemplaza ingeniosamente esas cadenas enigmáticas con fechas significativas, capturando el momento exacto en que se tomó cada foto. 📅🕰️ ¡Organizar y archivar tus recuerdos visuales nunca ha sido tan sencillo!
+
+🔹 Organización Ultrarrápida: Di adiós a horas de renombrado manual. ""jocarsa|EXIFrenamer"" recorre tus fotos, aplicando nombres precisos basados en fechas más rápido de lo que puedes decir ""¡Patata!"" 📸✨
+
+🔹 Contexto Cristalino: Cada foto renombrada se convierte en un instante en el tiempo. Di adiós a las conjeturas y revive recuerdos con una mirada. 📸🔍
+
+🔹 Eficiencia Sin Esfuerzo: Ya seas fotógrafo profesional o un entusiasta ávido, este software transforma la tarea desalentadora de gestionar colecciones grandes de fotos en algo sencillo. 🌬️💨
+
+No dejes que tu biblioteca de fotos se convierta en una jungla digital. Aprovecha el orden y la simplicidad que ""jocarsa|EXIFrenamer"" aporta a tu universo visual. 🌐📁
+
+#OrganizaciónDeFotos #ArchivadoSencillo #MagiaDelRenombradoEXIF #jocarsaEXIFrenamer
+
+https://jocarsa.com"
+2023-08-22 21:46:36,"🌐 ¡Domina el mundo del desarrollo web con nuestro curso en línea! 🖥️🌈
+
+¿Alguna vez has querido crear tus propias páginas web dinámicas y funcionales? ¡Este es el momento perfecto para sumergirte en el emocionante mundo del desarrollo web! 💻✨
+
+Presentamos nuestro completo curso en línea de Desarrollo Web con HTML, CSS, JavaScript, PHP, MySQL y MongoDB. 📚🔥 A partir de septiembre, te ofrecemos la oportunidad de aprender desde la comodidad de tu hogar, en tu propio horario y ritmo.
+
+Lo que hace que nuestro curso sea especial:
+📹 Clases Grabadas: No te preocupes si no puedes asistir en vivo. Todas las clases serán grabadas y estarán disponibles para que las veas en cualquier momento. ¡Aprende a tu propio ritmo!
+
+💻 Código de Ejercicios: Queremos que practiques y te sumerjas en la programación. Por eso, pondremos a tu disposición el código de los ejercicios para que puedas analizarlos y experimentar por tu cuenta.
+
+📜 Documentación Completa: Al final de cada clase, recibirás una documentación en PDF que incluye todos los ejercicios desarrollados durante la sesión. Así podrás repasar los conceptos y practicar con confianza.
+
+🌐 Tecnologías Modernas: Desde HTML y CSS para la estructura y el diseño, hasta JavaScript para la interactividad, PHP y MySQL para la programación del lado del servidor, y MongoDB para bases de datos NoSQL. ¡Aprenderás las herramientas esenciales para destacar en el mundo del desarrollo web!
+
+¿Estás listo para dar el salto en tu carrera como desarrollador web? ¡Inscríbete en nuestro curso y adquiere las habilidades que están en alta demanda en la industria! 🚀👨‍💻
+
+¡No pierdas la oportunidad de aprender de manera flexible y cómoda! ¡Reserva tu lugar ahora y prepárate para una emocionante jornada de aprendizaje en septiembre!
+
+#CursoDesarrolloWeb #HTML #CSS #JavaScript #PHP #MySQL #MongoDB #AprendizajeEnLínea #DesarrolloWebOnline
+
+Más información en:
+https://jocarsa.com/2023/08/22/curso-de-desarrollo-web/"
+2023-08-22 20:15:26,"🧵 Presentamos el nuevo software en la nube: jocarsa | bordados. Este programa permite generar patrones de bordado de punto de cruz a partir de imágenes seleccionadas por el usuario. Una característica destacada es la capacidad de personalizar los parámetros del patrón resultante, como el número de celdas, la cantidad de colores y el tipo de patrón.
+
+Con jocarsa | bordados, los usuarios pueden transformar sus imágenes en patrones de bordado con relativa facilidad. La opción de ajustar el número de celdas permite adaptar el nivel de detalle en el patrón final, mientras que la selección de colores y estilos brinda flexibilidad en la creación. La interfaz del software es intuitiva y accesible en línea desde cualquier dispositivo.
+
+Esta herramienta puede ser útil tanto para entusiastas del bordado como para aquellos interesados en dar un toque artístico a sus imágenes. El enfoque en la generación automática de patrones simplifica el proceso y ofrece una solución conveniente para quienes buscan explorar el mundo del bordado de punto de cruz.
+
+Descubre cómo jocarsa | bordados puede ayudarte a dar vida a tus imágenes de manera única y creativa. Personaliza tus patrones y experimenta con diferentes estilos para lograr diseños a medida. La creación de patrones de bordado nunca ha sido tan accesible
+
+https://jocarsa.com
+
+ #SoftwareenNube #BordadodePuntoDeCruz #PersonalizacióndePatrones"
+2023-08-21 16:33:00,"jocarsa | margaretta
+
+🔍 ¡Dile adiós al misterio del espacio en tu servidor web con este software increíble! 📊🌼
+
+¿Te preguntas en qué rincones de tu servidor se esconde ese espacio vital? ¡Aquí llega la solución! Este software escanea tus directorios web y muestra todo en un gráfico de margarita 🌼.
+
+💡 Destacados:
+
+Claro y Visual: Con este software, entenderás en un abrir y cerrar de ojos qué carpeta está acaparando todo el espacio.
+Estructura Detallada: Explora la jerarquía de carpetas y subcarpetas, sin complicaciones.
+Distribución Clara: El gráfico de margarita revela el tamaño relativo de cada rincón de tu servidor. ¡Sin más conjeturas!
+Decisiones Acertadas: Libera espacio de manera inteligente, basándote en datos concretos.
+🌐 ¡Optimiza tu servidor y descubre los secretos del almacenamiento con este software único! 📂🌼
+
+#OptimizaciónWeb #DatosPrecisos #SoftwareDeEscaneo #GráficoDeMargarita
+
+https://jocarsa.com"
+2023-08-19 18:01:52,"Transforma tus imágenes en obras maestras claras y nítidas con nuestro innovador software de eliminación de ruido. 📸🌟 Olvídate de las imágenes borrosas y pixeladas, ¡nuestra herramienta en línea está aquí para hacer magia! ✨🔥
+
+🔊 Di adiós al ruido no deseado: Nuestro software avanzado hace que el ruido en tus fotos sea cosa del pasado. Con unos pocos clics, podrás dar vida a tus recuerdos sin importar las condiciones en las que se capturaron. 📷🚀
+
+🌐 Acceso en línea fácil: Sin descargas ni instalaciones. Nuestra plataforma en línea te permite disfrutar de una experiencia de eliminación de ruido sin complicaciones. ¡Solo sube tu imagen y mira cómo la magia se despliega ante tus ojos! 🌈💻
+
+🎨 Personalización a tu medida: Reconocemos que cada imagen es única. Por eso, nuestro software te brinda el control total sobre el proceso. Ajusta los parámetros según tus preferencias y necesidades para obtener resultados perfectos en cada ocasión. 🎯✨
+
+¡Eleva tus imágenes al siguiente nivel con nuestro software de eliminación de ruido en línea! 📊💎 ¡Obtén la claridad que merecen tus fotos y deslumbra a todos con la calidad visual que ofrecemos! 💬📢 #EliminaciónDeRuido #ImágenesNítidas #CalidadVisual - https://jocarsa.com"
+2023-08-09 17:31:57,"En nuestra constante búsqueda de innovación para mejorar la productividad y la organización, presentamos con entusiasmo nuestro último logro: el software de notas adhesivas de escritorio altamente personalizable.
+
+🎨 Personalización sin Límites:
+Nuestro software brinda a nuestros valiosos usuarios la capacidad de diseñar sus notas adhesivas de acuerdo a sus preferencias únicas. Desde colores hasta tipografías, cada detalle puede ser adaptado para reflejar el estilo y la identidad de cada individuo.
+
+✅ Versatilidad en Formatos:
+Entendemos que la organización va más allá del simple texto. Con esta herramienta, se pueden crear notas en diversos formatos, como listas de tareas, imágenes y enlaces. Esto permite una organización más completa y efectiva de ideas y tareas.
+
+⏰ Recordatorios y Alarmas a Medida:
+La gestión del tiempo es esencial en el mundo actual. Nuestro software permite establecer recordatorios y alarmas personalizadas para cada nota adhesiva, garantizando que ningún plazo importante o tarea quede en el olvido.
+
+🔗 Conectividad y Colaboración:
+La sincronización en la nube permite el acceso desde cualquier dispositivo, otorgando una experiencia verdaderamente fluida. Además, la función de compartir y colaborar facilita la comunicación y el trabajo en equipo en torno a proyectos compartidos.
+
+💡 Innovación Continua:
+Como empresa, creemos en la mejora constante. Estamos comprometidos en seguir desarrollando y perfeccionando nuestro software en base a las necesidades y comentarios de nuestros usuarios, garantizando una experiencia de usuario excepcional.
+
+En resumen, nuestro software de notas adhesivas personalizadas es la respuesta a la búsqueda de una solución de organización inteligente y versátil. Desde la adaptación visual hasta la colaboración eficiente, cada característica está diseñada para maximizar la productividad y la eficacia en el trabajo y la vida cotidiana. Descubre un nuevo nivel de organización con nosotros. 💼📈 #OrganizaciónPersonalizada #InnovaciónProductiva #SoftwareNotaAdhesiva - https://jocarsa.com/producto.php?idproducto=jocarsa%20|%20notas"
+2023-08-08 11:16:42,"🚀 Descubre la revolución en organización y creatividad con jocarsa | mindmap 🧠✨
+
+Si estás buscando una forma de llevar tus ideas al siguiente nivel, ¡has encontrado la solución perfecta! 💡 jocarsa | mindmap es el software de mapas mentales en la nube que te permite crear, personalizar y compartir tus conceptos de manera única y adaptada a tus necesidades.
+
+🌐 Colaboración sin fronteras: Con jocarsa | mindmap, tus ideas no tienen límites geográficos. Colabora en tiempo real con colegas, amigos o compañeros de clase, sin importar dónde te encuentres. ¡La creatividad fluye sin obstáculos!
+
+🎨 Diseña a tu manera: ¡Tú eres el diseñador de tu mente! Personaliza tus mapas mentales con diseños, colores y fuentes que reflejen tu estilo único. Desde esquemas elegantes hasta llamativos, jocarsa | mindmap se adapta a ti. - https://jocarsa.com/producto.php?idproducto=jocarsa%20|%20mindmap
+
+🔗 Conexiones inteligentes: Conecta tus ideas de manera intuitiva y da vida a tus proyectos con relaciones claras. La integración con herramientas de gestión de tareas facilita convertir tus pensamientos en acción.
+
+🌈 Creatividad liberada: Si eres un emprendedor, estudiante o creador, MindMapCloud Pro es tu lienzo digital. Dale vida a tus ideas y observa cómo evolucionan en planes concretos.
+
+🔒 Seguridad de primer nivel: Tus pensamientos son valiosos y merecen protección. Con la encriptación robusta de MindMapCloud Pro, tus datos están seguros y resguardados.
+
+¡Únete a la evolución de la generación de ideas con MindMapCloud Pro! 💻📈 Transforma tus pensamientos en planes de acción y haz que la colaboración fluya como nunca. ¡Pruébalo hoy y descubre un mundo de posibilidades! ✨🗺️ #MindMapCloudPro #CreatividadSinLímites"
+2023-08-08 10:34:26,"jocarsa | kanban - 🚀 ¡Potencia tu productividad con nuestro Software de Tarjetas Kanban en la Nube! 📊 Personalizable y adaptable a las necesidades únicas de tu equipo, este software revolucionará la forma en que gestionas proyectos. 🏆 Diseña tu propio flujo de trabajo, colabora en tiempo real y obtén insights con análisis avanzados. ¡Simplifica la gestión de proyectos como nunca antes! 💼💡 #GestiónDeProyectos #Productividad #KanbanEnLaNube - https://jocarsa.com/producto.php?idproducto=jocarsa%20|%20kanban"
+2023-07-31 22:00:08,Finalizando el curso de 3dsmax y Vray en @ensenyem
+2023-07-28 17:24:55,Hoy en clase de renders fotorrealistas con 3dsmax y Vray en Ensenyem hemos hecho... Ensenyem
+2023-07-21 17:17:13,"En clase de 3dsmax y Vray, representaciones de interiores y automoción, en @ensenyem"
+2023-07-20 17:27:51,Ejercicios de hoy en el curso de 3dsmax y Vray en @ensenyem
+2023-07-19 18:06:42,"El mes pasado se celebró, en el Ateneo de Valencia, el acto de fin de curso de los alumnos de segundo curso de la modalidad online y semipresencial de @capitolformacionprofesional en la cual se graduaron mis alumnos de los ciclos de Sistemas Microinformáticos y Redes, y Desarrollo de Aplicaciones Multiplataforma - y ahora, a recargar las pilas este verano"
+2023-07-19 17:29:59,"Hoy en clase, modelado y render fotorrealista con 3dsmax y Vray en @ensenyem"
+2023-07-15 17:37:47,"Durante este curso he tenido el placer de ser parte del claustro del Master en Patrimonio Virtual de la Universidad de Alicante - @patrimonio_virtual , y he tenido el honor de ser invitado y formar parte del Congreso Final de Máster, realizando una ponencia acerca de los fundamentos de la Inteligencia Artificial aplicada al contexto del máster, y participando en la mesa redonda donde se estuvo abordando la aplicación de la IA a disciplinas tales como la arqueología"
+2023-07-05 19:00:20,En clase de Python avanzado en @escuelamastermedia reconocimiento de formas con la librería OpenCV
+2023-06-20 15:29:12,Discurso de graduación
+2023-05-29 19:02:01,"En clase hoy, desarrollando plantillas personalizadas de Wordpress con PHP en @escuelamastermedia"
+2023-05-16 12:41:08,"En clase hoy, creando sitios y aplicaciones en el curso de Lenguajes de Programación Web en @escuelamastermedia"
+2023-05-14 21:31:37,"Ejercicio de simulación de multitudes con las herramientas de Inteligencia Artificial (Path Finding) dentro de Unreal Engine, dentro de la asignatura que estoy impartiendo (Motores de Juegos) en el Master en Patrimonio Virtual de la Universidad de Alicante"
+2023-05-07 07:38:11,Aplicación práctica del ejercicio de visión artificial desarrollado desde cero en la primera sesión del curso de Inteligencia Artificial en @escuelamastermedia para desarrollar un sistema de seguimiento por movimiento
+2023-05-02 13:18:31,"En clase hoy, dentro del curso de Inteligencia Artificial en @escuelamastermedia, programación de una aplicación de mejora de resolución en las imágenes mediante algoritmos de Machine Learning y un proceso previo de entrenamiento"
+2023-04-23 11:31:50,"Tras unos años con la cejuela rota, mi proyecto de este fin de semana ha sido restaurar mi antigua guitarra acústica - bienvenida de nuevo!"
+2023-03-21 21:51:25,"En clase hoy, jugando con la API de ChatGPT para Python y creando una interfaz web para enviar consultas"
+2023-03-20 19:29:42,"Desarrollo de un software de visión artificial - percepción de la distancia/profundidad, mediante el uso de un par estereoscópico de streams de video a partir de dos webcams (p.ej. como dos ojos)"
+2023-03-13 19:30:19,"En clase hoy, dentro del curso avanzado de Blender en @escuelamastermedia, recreación de la escena de ""Lo-Fi Girl"" en 3D"
+2023-03-09 16:02:47,"Hoy en clase de Blender Avanzado en @escuelamastermedia - diseño de robots, en base a una combinación de diseño orgánico con loops, y modelado de tipo hard surface"
+2023-03-07 13:09:44,Ya van llegando las primeras copias de la serie de la serie de libros “desarrolla tus propias aplicaciones” - https://jocarsa.com/libros
+2023-03-06 20:33:02,"En clase hoy, en el curso de Blender Avanzado en @escuelamastermedia, modelado y representación de productos industriales"
+2023-03-06 20:21:59,"En clase hoy, en el curso de Blender Avanzado en @escuelamastermedia, modelado y representación de automóviles."
+2023-03-05 16:36:30,"Creación de una aplicación de construcción libre en Realidad Virtual, usando el framework Aframe.io sobre Three.js, para Oculus Quest v2 - y de regalo, pues personajillos NPC pululando por la escena"
+2023-03-02 18:14:49,"Variación sobre el ejercicio realizado hoy, sobre modelado facial 3d con loops, en el curso de Blender Avanzado en @escuelamastermedia"
+2023-03-02 12:23:20,"En clase hoy en @escuelamastermedia modelado de cabezas humanas mediante loops, dentro del curso de Blender Avanzado"
+2023-02-27 19:13:25,"En clase hoy en @escuelamastermedia , diseñando personajes cuquis en el curso de Blender Avanzado."
+2023-02-23 12:30:04,Finalización y muestras de ejercicios del módulo 1 de Blender en @escuelamastermedia
+2023-02-14 20:45:57,"En clase hoy, seguimos trabajando con HTML, CSS y Javascript, en el curso de Lenguajes de Programación Web, en @escuelamastermedia"
+2023-02-13 20:25:08,"Próximamente estaré impartiendo un curso de programación de aplicaciones de inteligencia artificial con Python en Escuela Mastermedia. 
+
+Más info aqui:
+
+https://escuelamastermedia.es/formacion/cursos/diseno-web-programacion/curso-inteligencia-artificial-con-python/"
+2023-02-13 19:25:59,"Hoy, en clase de Blender en @escuelamastermedia - creando renders foto realistas con Cycles"
+2023-02-09 12:16:13,Hoy en el curso de Blender en @escuelamastermedia ... ¡nos invaden los aliens!
+2023-01-28 20:53:51,"Uniendo el código desarrollado en varios proyectos de los últimos meses, he creado un juego de tipo ""defensa planetaria"" con atracción gravitatoria: ""Gravity"". Puedes jugarlo aqui: https://jocarsa.com/proyecto?id=63"
+2023-01-15 15:06:38,"Tengo prisa por ir, pero no tengo prisa por llegar"
+2023-01-07 17:37:40,"Ya están empezando a llegar las versiones impresas del libro ""Aprende Programación con Python"" - disponible en Amazon: https://www.amazon.es/Aprende-programaci%C3.../dp/B0BQYHNQWH - https://jocarsa.com/libros"
+2023-01-05 17:38:05,Este mes de Enero voy a estar impartiendo un curso acerca de Inteligencia Artificial. Link en la BIO.
+2022-12-18 15:54:42,Simulación de telas y render con Cycles en Blender 3D - render + animación
+2022-12-15 18:25:20,Renders 3D de simulaciones de telas hechos con Blender
+2022-12-12 19:00:15,"En clase hoy, quinta sesión del curso de modelado avanzado con Blender en @escuelamastermedia"
+2022-12-04 09:38:50,Probando los Magic Avatars de Lensa AI
+2022-12-04 00:48:20,Miniproyecto de sábado noche: TinySpaceShuttle en Blender
+2022-11-30 18:57:17,"En clase hoy, modelado de automóviles conceptuales con Blender en @escuelamastermedia"
+2022-11-30 10:32:29,"En clase ayer por la mañana, desarrollo de aplicaciones Full Stack en @escuelamastermedia"
+2022-11-28 18:50:41,"En clase hoy, modelado orgánico basado en loops con Blender, en @escuelamastermedia"
+2022-11-22 18:59:02,"En clase hoy, seguimos en el curso de modelado avanzado con Blender en @escuelamastermedia"
+2022-11-21 18:56:06,"En clase hoy, primera sesión del curso de modelado avanzado con Blender en @escuelamastermedia"
+2022-11-20 17:33:25,"Desarrollo de una aplicación de escritorio multiplataforma en Python para colocar notas flotantes de colores - Primera versión con funcionalidad en local, en próximas versiones implementaré conectividad y sincronización entre equipos en la nube."
+2022-11-17 14:10:28,Usando la librería de detección de caras de mediapipe sobre OpenCV en Python
+2022-11-16 18:52:09,"En clase hoy en @escuelamastermedia , materiales e iluminación con Blender"
+2022-11-15 15:31:49,"Probando las librerías OpenCV y mediapipe sobre Python para análisis postural, para simulador de ergonomía"
+2022-11-14 19:00:51,"En clase hoy en @escuelamastermedia, seguimos profundizando en la creación de escenas 3D con Blender"
+2022-11-14 11:23:00,Realizando pruebas de reconocimiento de manos con la librería OpenCV en Python
+2022-11-09 19:00:33,Tercera sesión del curso de Blender en @escuelamastermedia
+2022-11-08 21:03:48,Having a little bit of (VR) fun with Moon Rider on Oculus Quest
+2022-11-07 18:58:40,"En clase hoy, segunda sesión del curso de Blender en Escuela Mastermedia @escuelamastermedia"
+2022-11-07 07:55:49,Creating new worlds on Meta Horizon Worlds
+2022-10-10 22:05:17,A veces programar es divertido... proyecto de clase del ciclo de DAM (programación multimedia) convertido a proyecto de fin de semana
+2022-10-07 11:56:02,Ejercicio de esta semana en Programación Multimedia (Segundo curso de DAM) - Homenaje a Asteroids
+2022-09-10 21:15:26,God Save The Queen - in the style of Queen (A Night At The Opera - 1975) - arranged by Brian May
+2022-07-01 07:13:20,"Este verano, aprende a sacar el máximo partido al metaverso de Facebook con las gafas Oculus Quest en este imprescindible curso online en streaming - https://jocarsa.com/curso-de-realidad-virtual - Link en la BIO"
+2022-04-04 14:30:35,"Aplicación para crear mapas mentales en línea, usando únicamente el navegador web - Link en la BIO"
+2022-03-16 08:48:47,Probando Google Earth en realidad virtual con las Oculus Quest V2 a través de Air Link
+2022-02-24 19:16:14,Probando el modo de seguimiento de manos (sin controladores) en Oculus Quest 2
+2022-02-22 19:54:45,Un poco de arte abstracto 3D con Blender Cycles
+2022-02-20 12:41:00,"Desarrollo de un sistema de creación libre en un entorno de realidad virtual - primera versión, utilizando cubos como geometría primitiva, en próximas versiones se podrán crear más tipos de objetos - Desarrollado con Aframe.js sobre WebXR"
+2022-02-13 21:46:36,
+2022-02-02 17:17:25,Probando diferentes configuraciones de entornos por defecto en Oculus Quest V2 en Capitol Empresa
+2022-01-30 18:24:12,"Desarrollando contenido formativo y experiencias de realidad virtual inmersiva para Capitol Empresa 
+
+#RealidadVirtual #VR #OculusQuest2"
+2022-01-22 19:34:30,Probando Beat Saber en Oculus Quest
+2022-01-04 18:26:28,Timelapse de aplicación de pintura automática - parte de una serie de videos sobre computación visual - Video original en mi canal de Youtube: https://www.youtube.com/watch?v=2oS8QOwa_JY
+2021-12-06 09:36:35,"Proyecto de fin de semana: Script PHP para analizar el consumo de espacio de un servidor o una aplicación web, y mostrarlo en forma de gráfico de margarita/destello solar."
+2021-11-06 22:19:39,"Proyecto de fin de semana, salvapantallas con la ""lluvia de código"" de Matrix. ""¡Ya sé Kung Fu!"""
+2021-11-02 15:18:00,"Proyecto de fin de semana, Programacion de un motor 3d completamente desde cero en JavaScript"
+2021-08-17 21:57:36,Summer in the city
+2021-08-06 14:35:45,The world famous RenderMan Walking Teapot is here… in AR! #RenderMan #WalkingTeapot
+2021-06-22 11:37:12,Aprovecha el verano para formarte y ampliar tus horizontes profesionales aprendiendo a crear y desarrollar aplicaciones de big data e inteligencia artificial - Más información y matrícula en: https://jocarsa.com/curso-de-inteligencia-artificial?o=insta - link en bio
+2021-06-10 09:29:53,"Dentro de dos semanas comienza el curso de SEM, SEO y Analítica Web que estaré impartiendo en Capitol junto a Raul Peinado. Aprovecha este verano para formarte! - Más información en:  https://capitolempresa.com/masteres-y-cursos-especializados/seo-sem-y-analitica-web/"
+2021-02-27 14:12:54,Invierno en el Parque de Cabecera
+2021-02-25 12:40:24,Probando la aplicación de mapas mentales en una pantalla táctil gigante (y disfrutándolo mucho) - esta mañana en @capitolformacion
+2021-02-11 07:50:17,Crea tus propios mapas mentales online en https://mindmap.es
+2021-01-24 18:47:55,"Nueva webapp para crear mapas mentales en la nube, de forma fácil y rápida. Vídeo de demostración en este mismo post. Puedes usarlo directamente aquí: http://mindmap.es/"
+2020-09-15 20:19:32,30 años del lanzamiento de Thunderstruck!
+2020-08-30 22:42:56,Fotografía de larga exposición en los castillos de fuegos artificiales en #mislata
+2020-08-29 19:40:41,Moon
+2020-08-27 13:38:09,
+2020-08-10 20:49:05,Tormenta nocturna de verano
+2020-08-09 12:51:59,Verano
+2020-08-05 19:05:32,"En clase hoy, estructurando y estilizando los contenidos de una web con HTML y CSS dentro del curso de desarrollo de aplicaciones web 2.0 que estamos impartiendo este mes de agosto"
+2020-08-05 13:32:58,"En el curso de Arduino ayer por la tarde, desarrollo de un sistema para indicar la temperatura del agua mediante tres leds, el sensor de temperatura de un giróscopo, y una placa Arduino Nano. Cada una de las dos tazas contiene agua fría y caliente respectivamente, y los leds van encendiéndose o apagándose en base a la temperatura detectada."
+2020-08-02 21:50:44,Juguete visual desarrollado con html5 canvas - puedes probarlo en https://jocarsa.com/canvas
+2020-07-26 15:49:49,"Estos días se cumplen 40 años del lanzamiento del álbum Back In Black de AC/DC, así que aquí va un pequeño tributo"
+2020-07-11 19:24:52,Wish you were here
+2020-06-27 08:56:23,"¡Menos de una semana para que dé comienzo la siguiente edición del curso de Python! - En directo (streaming) - No dejes pasar esta oportunidad de aprender a desarrollar aplicaciones informáticas con este potente lenguaje de programación - En esta edición, con la inscripción al curso, obtén acceso a nuestros cursos online - ¡Aprovecha el verano para formarte!- Más información e inscripción en: https://jocarsa.com/curso-de-python"
+2020-06-21 18:04:01,"Curso de programación de aplicaciones multiplataforma, en directo, en streaming. Este verano, aprende a crear tus propias aplicaciones - Más información en https://jocarsa.com/curso-de-python"
+2020-06-07 21:51:16,"Desarrollo de un software como solución a medida para la creación de patrones para bordado a partir de una imagen que el usuario puede subir. Una vez subida la imagen, el usuario puede configurar parámetros como la cantidad de celdas, o la cantidad de colores del patrón. Más información en: https://jocarsa.com/stickerei"
+2020-06-07 21:19:03,"Aplicación del software que estoy desarrollando de visión tridimensional a partir de un par de fotos estereoscópico, en este caso al reconocimiento facial. Esta prueba de concepto representa la detección de la forma tridimensional de la cara, representado por una escala de grises, a partir de dos fotos con un ligero cambio de perspectiva. Más información en https://jocarsa.com/vision-artificial"
+2020-05-29 16:08:11,"Mañana por la mañana, webinar gratuito de Inteligencia Artificial y Big Data en Ensenyem - Más información e inscripción en: https://www.ensenyem.es/webinar"
+2020-05-27 10:42:08,"Este verano, fórmate en Big Data e Inteligencia Artificial aplicados al Marketing en los cursos FP Summer Experience de Capitol - https://capitolempresa.com/fp-summer-experience/?o=fbjv"
+2020-03-16 07:56:38,"Concienciado por la situación actual y en aislamiento domiciliario para frenar el avance del CoronaVirus, he desarrollado un programa de simulación del contagio de un virus por parte de una población en movimiento - Más información en: https://jocarsa.com/software-de-simulacion-expansion-de-un-virus-como-el-coronavirus"
+2020-01-19 19:08:12,"Ejercicio del curso de inteligencia artificial, en la parte correspondiente a visión artificial. El ejercicio consiste en la percepción de la profundidad a partir de un par estereoscopico de imágenes. Implementa un algoritmo iterativo en el que la imagen se va refinando progresivamente, y un orden de resolución en espiral, que simula la visión humana, en la que lo primero que se percibe es lo que está en el centro de la imagen, y más adelante se percibe el contorno exterior. Más información sobre el curso, aquí: https://jocarsa.com/curso-de-inteligencia-artificial"
+2020-01-15 23:34:06,Esta semana en el curso de Big Data en @capitolformacion hemos creado una librería de presentación en formato de mapas de calor de forma automática sobre tablas de datos - http://jocarsa.com
+2020-01-12 12:14:53,Ya está disponible la próxima edición del curso de robótica con Arduino e impresión 3D - Puedes encontrar más información aqui: https://jocarsa.com/curso-de-robotica-construye-tu-propio-robot-con-arduino-e-impresion-3d
+2020-01-11 00:03:43,Ya está matriculable la siguiente edición del curso de Inteligencia Artificial - Más información en https://jocarsa.com/curso-de-inteligencia-artificial
+2020-01-02 00:13:30,"Desarrollo de un software de simulación celular en 2D: las células se asocian entre sí formando una serie de organismos pluricelulares que viven, se relacionan con otros organismos, y evolucionan"
+2019-12-31 18:11:22,"Feliz año! He rehecho un sketch en 3d que hice originalmente en Blender hace diez años, aunque (spoiler) le he quitado sangre y vísceras y se ha quedado políticamente correcto. Que 2020 sea un año excelente para todos!"
+2019-12-24 02:55:30,"Captura del vídeo acerca de inteligencia artificial aplicada al diseño industrial, del curso de Fundamentos del Diseño Industrial, en LinkedIn Learning - puedes encontrar el curso aquí: https://www.linkedin.com/learning/fundamentos-de-diseno-industrial"
+2019-12-22 21:10:55,"Ejercicio de reconocimiento de formas del curso de inteligencia artificial - en este ejercicio, el sistema es capaz de detectar formas sencillas, tales como líneas horizontales, verticales y diagonales, para poder, más adelante, saber el tipo de objeto que hay en la imagen - https://jocarsa.com/curso-de-inteligencia-artificial"
+2019-12-15 19:41:16,"Ejercicio de Machine Learning dentro del módulo 2 del curso de inteligencia artificial - dados una serie de bots, deben encontrar por sí mismos la forma de no colisionar entre ellos, los que no lo consiguen no sobreviven, y el mejor de su generación pasa genéticamente su información a la siguiente generación para mejorar progresivamente el algoritmo - más informacion en https://jocarsa.com/curso-de-inteligencia-artificial"
+2019-12-07 23:12:24,Analítica y Big Data para WhatsApp - https://jocarsa.com/analitica-y-big-data-para-whatsapp
+2019-12-04 10:37:11,"Hoy, en el evento GoDigital en la Escuela de Negocios Luis Vives, gracias a @capitolformacion , aprendiendo de nuevas tendencias en el mundo digital"
+2019-12-02 14:41:15,Hoy ha empezado la siguiente edición del módulo 1 del curso de inteligencia artificial - https://jocarsa.com/curso-de-inteligencia-artificial - nuevas convocatorias en próximas fechas
+2019-11-18 10:34:48,"¿Cual es el mejor lenguaje de programación para inteligencia artificial? - Artículo en el blog - 
+https://jocarsa.com/cual-es-el-mejor-lenguaje-de-programacion-para-inteligencia-artificial"
+2019-09-14 10:37:44,"En clase hoy, desarrollo de videojuegos con realidad aumentada usando Unreal Engine"
+2019-08-27 16:38:13,Tarde de tormenta
+2019-08-25 08:35:11,En carretera
+2019-08-23 10:16:51,Tonos de verano
+2019-08-18 01:12:25,"Here is my submission for #youarethechampions - Piano part for Bohemian Rhapsody, splitted in three videos @officialqueenmusic"
+2019-08-05 19:56:25,Verano...
+2019-07-28 21:46:32,"He oído que se cumplen 40 años de Highway To Hell, y no he querido dejar pasar la ocasión sin rendir un pequeño tributo 😊"
+2019-07-20 19:21:52,De vuelta en casa y aprovechando para cambiar las cuerdas...
+2019-07-19 14:23:32,"Último día en #linkedinlearning , y mañana ya de vuelta a Valencia"
+2019-07-18 15:50:54,"Finalizando el trabajo en las oficinas de #linkedinlearning en #graz , #austria"
+2019-07-16 14:59:43,Segunda semana en #linkedinlearning #austria
+2019-07-09 12:21:57,Resultados de los ejercicios de los últimos cursos de diseño de producto con Rhinoceros en @ensenyem
+2019-07-07 18:39:43,Graz Flughafen
+2019-07-07 16:10:23,Día de aviones
+2019-03-20 20:17:09,
+2019-03-20 17:16:35,Going Home
+2019-03-20 13:42:46,De vuelta
+2019-03-19 14:12:50,Ultimando detalles de los proyectos con los que he estado trabajando en LinkedIn Learning estos días.
+2019-03-19 10:50:20,"Grabando los trailers de los próximos lanzamientos en las instalaciones de LinkedIn, en la ciudad de Graz, Austria"
+2019-02-03 21:01:36,"Domingo tarde, revisitando a dos guitarras un tema que compuse con 16 años."
+2019-02-03 20:23:27,"Domingo por la mañana y ensayo semanal parcial de @els_queeners , como bajista sustituto por un día"
+2019-02-02 12:57:14,En la tutoría de este mediodía correspondiente al master de arquitectura interactiva en @ua_school hemos estado trabajando con realidad aumentada en #unity3d y #vuforia
+2019-01-27 20:32:09,"Este fin de semana, alumnos y profesores de @ua_school hemos estado participando en la #globalgamejam en la sede de Valencia en @lasnaves , participando en este evento consistente en desarrollar videojuegos durante 48 horas seguidas. Muchas gracias y felicitaciones a los alumnos de los masters en desarrollo, programación y arte conceptual que han defendido sus proyectos como campeones!"
+2019-01-20 19:56:19,"Anteriormente esta semana, en clases de @ua_school, impartiendo el master de programación de videojuegos"
+2019-01-19 21:49:27,"Nuevo curso publicado en LinkedIn Learning! En esta ocasión, Novedades de Maya 2019 - puedes encontrarlo en este enlace: https://es.linkedin.com/learning/novedades-maya-2019/descubre-las-novedades-de-maya-2019?autoplay=true&trk=course_preview&upsellOrderOrigin=trk_default_learning"
+2019-01-02 19:30:02,"Proyecto de visión stereo. En este desarrollo se aplica un algoritmo de cálculo mediante el cual, a partir de un par de vistas estereoscópicas, se obtiene un cálculo de la profundidad de cada uno de los puntos de la imagen. En este proyecto se presenta el cálculo de las distancias como un mapa de profundidad, una imagen en la que los puntos más claros son los más cercanos a la cámara, y los más oscuros son los más lejanos. La visión estereoscópica es importante en el contexto de la inteligencia artificial, ya que permite a los sistemas inteligentes conocer su entorno y saber con precisión qué es lo que tienen delante, de forma previa a su procesamiento y toma de decisiones. Este proyecto forma parte de los ejercicios del curso de inteligencia artificial - https://jocarsa.com/curso-de-inteligencia-artificial"
+2018-12-24 22:12:49,
+2018-12-16 16:33:19,"Resultado de una de las clases de inteligencia artificial impartidas esta semana, donde el sistema parecía haber creado un lenguaje basado en ideogramas similar al chino o japonés, aunque curiosamente el ejercicio no era de procesamiento de lenguaje sino de visión artificial. Pero quedó curioso! De esto a skynet, solo un par de pasos... 😂"
+2018-11-17 14:04:22,"En clase hoy, creación de iconos animados con #Photoshop en @Ensenyem"
+2018-11-17 09:57:34,"La clase de ayer de #photoshop en @ensenyem se nos fue un poco de las manos, empezamos fotografiando proyecciones de caras con el cañón proyector del aula, y acabamos rediseñando mi logo en base a la silueta de mi perfil 😂"
+2018-11-10 12:32:46,"En clase de #photoshop en @ensenyem , retoque fotográfico de retratos"
+2018-11-10 10:32:13,"Hoy en clase de #Photoshop en @ensenyem , fotomontaje y maquetación de la portada de un disco (ahora solo me falta sacar el disco 😂)"
+2018-11-09 19:41:20,"Hoy aparezco en las redes sociales de @capitolempresa , donde imparto clases en ciclos formativos 😊👍 Muchas gracias a @bocartditodelimon por la foto!"
+2018-11-09 12:56:22,"En clase hoy, programación de aplicaciones de reconocimiento facial usando redes neuronales"
+2018-11-03 12:28:53,"Como no todos los días hay un biopic de Queen en los cines, aquí va mi pequeño tributo en forma de cover acustico - Love Of My Life, una canción de Freddie Mercury de 1975, en un arreglo basado en la interpretación de Nuno Bettencourt (otro grande) en el concierto homenaje de 1992 - vídeo grabado en las instalaciones de @ua_school , donde doy clase de programación de videojuegos y realidad virtual para arquitectura"
+2018-10-30 21:47:19,Microphone... @ua_school
+2018-10-26 21:46:04,"En clase hoy, trabajando con formas vectoriales en #photoshop , en @ensenyem"
+2018-10-22 11:51:07,"En clase la semana pasad, maquetacion de una newsletter con #Photoshop en @ensenyem"
+2018-10-19 21:15:59,"En clase hoy, primera sesión del curso de #Photoshop en @ensenyem"
+2018-10-16 20:11:39,"Hoy en el salón de actos de la Escuela Técnica Superior de Ingeniería del Diseño (ETSID) de la Universidad Politécnica de Valencia, mostrando a los alumnos de segundo de diseño industrial tecnologías de prototipado electrónico y técnicas de modelado para diseño de producto e impresión 3d"
+2018-10-16 19:56:59,"Calentando para la sesión que he impartido en el salón de actos de la escuela de diseño industrial en la universidad politécnica de valencia y, ¿que he encontrado al llegar? SEEEE UN PIANO!!!!!! Y como no, de cabeza que me he lanzado 😊 - Un poco triste el auditorio vacío, pero faltaba media hora para que empezara el evento (que por otra parte iba de prototipado electrónico aplicado al diseño industrial, no de oírme tocar 😂)"
+2018-10-12 08:07:37,Ya he recibido el nuevo pin de @ua_school y es sencillamente adorable! 😊
+2018-10-06 12:00:34,"En clase hoy, diseño de producto 3d con #rhinoceros3d en @ensenyem"
+2018-09-23 16:03:50,Casi otoño...
+2018-08-29 19:38:18,"Y digo yo, ¿qué mejor y más surrealista manera de volver de vacaciones que tocando una de Queen (de quien si no) en un piano de cola blanco en medio de un aeropuerto en Paris? - lastima que la calidad del audio no sea muy buena..."
+2018-08-10 21:51:43,"En el vídeo semanal del curso 3d, producto y arquitectura en LinkedIn Learning, esta semana: Aplicación de técnicas  y tecnologías de escultura digital - https://es.linkedin.com/learning/3d-producto-y-arquitectura-trucos-semanales/767460?autoplay=true&trk=course_preview&upsellOrderOrigin=course_title"
+2018-08-05 16:02:48,"Sigo de vacaciones, hoy con un ensayo parcial con @els_queeners - siempre es un buen momento para un poco de bohemian rhapsody!"
+2018-08-05 15:19:12,"En el ensayo estival de hoy con @els_queeners , Airus nos ha regalado unas maravillosas miniaturas temáticas!!! La mia es la de Slash 😘"
+2018-08-03 07:39:28,"Aunque ya estoy de vacaciones, puedes seguir las nuevas publicaciones semanales de la serie de 3d, producto y arquitectura, serie semanal en LinkedIn Learning. Esta semana, diferencias entre el modelado de superficies y el modelado de mallas poligonales - https://es.linkedin.com/learning/3d-producto-y-arquitectura-trucos-semanales/diferencias-entre-modelado-con-superficies-y-poligonal?autoplay=true&trk=course_tocItem&upsellOrderOrigin=seo_pp_d_cymbii_m015%3Aa001_learning"
+2018-07-27 16:29:10,"En clase hoy, recogiendo el resultado del ejercicio enviado a imprenta. En este curso de #photoshop , fueron unas tarjetas. @ensenyem"
+2018-07-27 09:29:13,"En clase hoy, reconocimiento y extracción de características básicas de imágenes como parte del proceso de visión artificial usando redes neuronales"
+2018-07-25 16:52:32,"En clase hoy, foto montaje con #Photoshop en @Ensenyem"
+2018-07-24 11:57:22,"En clase hoy, composición no destructiva con #Photoshop en @Ensenyem"
+2018-07-21 21:50:08,"En clase esta semana, visualización de pesos en una red neural"
+2018-07-20 19:39:24,"El vídeo de esta semana: representación de producto con hdri de estudio, del curso de 3D: Producto y arquitectura. Trucos semanales en LinkedIn Learning: https://es.linkedin.com/learning/3d-producto-y-arquitectura-trucos-semanales/representacion-de-producto-con-hdri-de-estudio?autoplay=true&trk=course_tocItem&upsellOrderOrigin=course_title"
+2018-07-11 18:51:07,"En clase hoy, arquitectura interactiva con #unrealengine4"
+2018-07-10 13:58:34,"En clase hoy, edición de imágenes no destructiva con #photoshop en @ensenyem"
+2018-07-07 20:27:10,"Por fin ya podéis disfrutar de la serie de vídeos semanales que he creado para LinkedIn Learning acerca de 3D: Producto y arquitectura. Trucos semanales. En esta serie muestro una serie de trucos y técnicas imprescindibles para cualquier profesional de la Infografía 3d. Esta semana, diferencias entre motores de Render biased y unbiased. Puedes verlo en: https://www.linkedin.com/learning/3d-producto-y-arquitectura-trucos-semanales?u=104"
+2018-07-07 17:14:20,"En clase hoy, arquitectura interactiva virtual con #unrealengine4"
+2018-07-06 16:39:46,"En clase hoy, segundo día del curso de Photoshop en @ensenyem"
+2018-07-06 10:54:05,"En clase hoy, introducción a la programación de redes neurales"
+2018-07-03 13:32:55,"En clase hoy, primera sesión del curso de Photoshop en @ensenyem"
+2018-06-20 20:34:59,"Nuevo video del espectacular proyecto de juego de simulación espacial de Salvador Lledó Barrena, alumno del master de Programación De Videojuegos de @aulatematica_vga"
+2018-06-17 22:50:51,Empezando la semana con modelado orgánico basado en loops con #blender3d y Render con #blendercycles
+2018-06-15 08:36:18,"En clase hoy, finalizando una formación empresa en @capitolempresa"
+2018-06-12 21:32:20,"Diez años ya del concierto como músico de sesión con Andor Hard Rock, en semifinal del Sonaladipu, retransmitido por Punt2 y como teloneros de Dover - siempre un placer tocar con mi amigo Airus! Vídeo completo en: https://m.youtube.com/watch?v=pnyr0gBqPHM"
+2018-06-01 23:58:12,"En clase hoy, simulación de telas en 3d con Blender y representación con Cycles"
+2018-05-31 14:22:40,"En clase hoy, desarrollo de un programa de visión artificial para detección de movimiento y reconocimiento de formas"
+2018-05-30 20:24:16,"En un descanso de clase hoy, coreografiando un duelo de sables láser más falso que un duro de cartón, en @aulatematica_vga"
+2018-05-29 20:54:18,"En clase hoy, haciendo un juego de sables láser así de repente como quien no quiere la cosa, en el Master de programación de videojuegos en @aulatematica_vga - y claro, en realidad virtual"
+2018-05-29 09:35:47,"En clase hoy, programacion de un sistema de percepción de la profundidad a partir de un par estereoscopico, con un algoritmo de barrido incremental en espiral"
+2018-05-28 12:05:31,"En clase hoy, agrupación automática de conjuntos de datos usando técnicas de clustering con redes neuronales"
+2018-05-26 21:34:21,"Esta semana pasada, en clase, renderizado con Cycles en Blender"
+2018-05-25 19:15:09,"En clase hoy, modelado con #rhinoceros3d en @ensenyem"
+2018-05-23 11:02:39,"En clase hoy, inicio del tercer ejercicio del curso de inteligencia artificial con la aplicación de técnicas de Machine Learning al campo de la visión artificial - iniciando la fase de auto entrenamiento no supervisado"
+2018-05-22 17:02:58,"En clase hoy, realidad virtual aplicada a la arquitectura con HTC Vive y #unrealengine4 en @aulatematica_vga"
+2018-05-21 16:33:44,Ejercicio 2 del curso de Machine Learning: auto-entrenando a un bot para que encuentre un objetivo evitando colisionar con las paredes
+2018-05-21 09:37:38,"En clase hoy, resultado del primer ejercicio del curso de inteligencia artificial y Machine Learning, con una búsqueda del camino más corto en base a pruebas de ensayo y error, y selección del mejor candidato"
+2018-05-18 19:11:16,"En clase hoy, modelado con Blender y representación con Cycles en @mgvcolor"
+2018-05-18 19:09:44,"Hoy en clase en @ensenyem , seguimos en el curso de modelado para arquitectura con Rhinoceros"
+2018-05-15 10:42:05,"En clase hoy, primera sesión del curso de inteligencia artificial y Machine Learning"
+2018-05-14 18:39:21,"Hoy en @aulatematica_vga , trabajando con los alumnos del master de arquitectura interactiva los de programación de videojuegos en técnicas de realidad virtual"
+2018-05-14 12:53:33,Curso online de robótica con Arduino e impresión 3D - https://jocarsa.com/curso-de-robotica-construye-tu-propio-robot-con-arduino-e-impresion-3d #arduino #robot
+2018-05-12 09:39:20,"En clase hoy, modelado arquitectónico con #rhinoceros3d en @ensenyem"
+2018-05-08 12:16:34,"En clase hoy, finalización del curso de Photoshop en @ensenyem"
+2018-05-07 13:25:07,"En clase hoy, finalización del curso a empresa de representación 3d con Vray en @ensenyem"
+2018-05-04 18:51:34,"En clase hoy, primera sesión del curso de #rhinoceros3d para arquitectura en @ensenyem"
+2018-05-04 18:38:50,"En clase de Photoshop hoy, haciendo el unboxing de las tarjetas que la semana pasada enviamos a la imprenta - Gracias a @coffeemaria_"
+2018-04-27 11:41:19,"En clase hoy, Render de espacios con Vray en @ensenyem"
+2018-04-26 11:59:01,"En clase hoy, fotografía hdr con teléfonos móviles y Photoshop en @ensenyem"
+2018-04-25 11:31:05,"En clase hoy, render foto realista con Vray en @ensenyem"
+2018-04-24 11:19:06,"En clase hoy, creando mockups web con Photoshop en @ensenyem"
+2018-04-24 10:48:51,"En clase hoy, volviendo a los 80 con filtros de Photoshop en @ensenyem"
+2018-04-19 11:30:35,"En clase hoy, 3D en Photoshop en @ensenyem"
+2018-04-13 11:38:55,"En clase hoy, Render con vray y 3dsmax en @ensenyemacademia"
+2018-04-12 12:03:27,"En clase hoy, seguimos con Photoshop en @ensenyem"
+2018-04-10 11:37:57,"En clase hoy, photoshopeando un poco... en @ensenyem"
+2018-04-06 17:04:27,Día de aeropuertos...
+2018-04-06 08:18:03,"Finalizando mi estancia en las oficinas en Austria de LinkedIn Learning, con la grabación en el estudio de las presentaciones de las nuevas acciones formativas que podréis disfrutar dentro de poco tiempo"
+2018-03-31 10:28:22,Pasando unos días en las oficinas de LinkedIn en Austria creando nuevos e interesantes proyectos formativos
+2018-03-28 07:31:08,Primera parada... Frankfurt!
+2018-03-27 19:36:27,Foto en un momento de la Masterclass de hoy en @aulatematica_vga acerca de realidad virtual para arquitectura
+2018-03-23 12:31:56,Finalizando el curso de diseño 3d de mobiliario con #rhinoceros3d en @ensenyemacademia
+2018-03-20 12:46:41,"En clase hoy, tercera sesión del curso de modelado de mobiliario con #rhinoceros3d en @ensenyemacademia"
+2018-03-16 12:47:41,Segunda sesión del curso de modelado de mobiliario con #rhinoceros3d en @ensenyemacademia
+2018-02-24 21:27:39,Una foto de la conferencia en @heroes_comiccon en @feriavalencia sobre como se programan los videojuegos con @aulatematica_vga - Gracias a todos los que habéis asistido!
+2018-02-22 21:11:53,Este sábado de 20 a 21 estaré ofreciendo una conferencia en Heroes Comic Con en @feriavalencia con @aulatematica_vga acerca de cómo se programan los videojuegos
+2018-02-14 13:15:39,Meta-Foto!
+2018-02-12 18:38:28,"En clase hoy, fotografía de producto y tratamiento digital de la imagen en el Master de marketing y logística en @capitolempresa"
+2018-02-10 22:15:24,Primera foto del concierto de esta noche como guitarrista invitado del grupo @silenciodecorchea
+2018-02-10 07:42:04,Todo preparado para esta noche...
+2018-02-07 13:50:52,"En clase hoy, seguimos con aplicación de la realidad virtual a videojuegos, disfrutando un poco del tiro con arco :-) en @aulatematica_vga"
+2018-02-06 23:34:07,"Resultado del ejercicio de los cursos de modelado, rigging, animación y pelo para personajes con 3dsmax 2018 generados para LinkedIn Learning"
+2018-02-06 09:53:55,"En clase ayer por la mañana, aplicación de la realidad virtual al sector de los videojuegos en @aulatematica_vga"
+2018-01-30 15:50:41,Creación de un software de mapa de calor en base a la información del tráfico recogido por una cámara estándar
+2018-01-28 18:44:09,"Grabación en vídeo del juego que he desarrollado en la Global Game Jam 2018, probado con cuatro jugadores (cuatro alumnos que me han ayudado con la prueba de carga y la grabación) en los momentos previos a la presentación oficial. Básicamente, juego multijugador isometrico a través de un navegador web. Eliges un equipo: infectado o superviviente. Los infectados tienen que transmitir su virus a los supervivientes, y estos a su vez tienen que intentar curar a los infectados. En los próximos días publicaré una versión accesible y abierta para que cualquier persona lo pueda probar."
+2018-01-27 18:06:35,Seguimos en la global Game Jam 2018 - ya sólo quedan 24 horas!
+2018-01-26 18:42:48,"Empezando participación, mentoría y siempre echando un cable a mis alumnos de @aulatematica_vga en la Global Game Jam 2018 - este año llenazo absoluto!!"
+2018-01-25 17:51:00,Disfrutando infinitamente dibujando algo kawaii con las nuevas Wacom Cintiq de chorrocientas pulgadas en @aulatematica_vga
+2018-01-08 20:18:21,Ya está publicado mi curso de rigging con 3dsmax 2018 en LinkedIn Learning! Imprescindible para aprender a riggear personajes en 3d - disponible aquí: https://www.linkedin.com/learning/3ds-max-2018-rigging-de-personajes-cartoon/presentacion-del-curso-3ds-max-2018-rigging-de-personajes-cartoon
+2017-12-21 13:11:55,"Mucho orgullo de profesor esta mañana en la exposición de proyectos finales de los masters de videojuegos (programación, grafismo, Concept art, arquitectura) de @aulatematica_vga y recogida de diplomas por parte de los alumnos en la filmoteca de Valencia - en la foto junto a @juanbasfores profesor de grafismo y @jorgemomparler profesor de Concept art"
+2017-12-11 15:15:22,Recibiendo el libro Fundamentos de Branding de manos del propio autor @javiercasanoves - www.fundamentosdebranding.com
+2017-11-25 11:46:22,"En clase hoy, lectura y escritura de archivos con C++"
+2017-11-25 11:42:58,"En clase hoy, diseño de mobiliario con #rhino3d en @ensenyemacademia"
+2017-11-20 21:17:37,"En clase hoy, fundamentos de programación en C en @ensenyemacademia"
+2017-11-15 16:16:06,Proyecto de clase realizado por los alumnos en la segunda semana del master de programación de videojuegos @aulatematica_vga
+2017-11-13 20:44:25,"En clase hoy, programación de videojuegos en @aulatematica_vga"
+2017-11-13 19:28:43,"En clase hoy, fundamentos de programación en C++ en @ensenyemacademia"
+2017-11-12 19:11:46,"Esta mañana, concierto en la calle con @els_queeners en #benimarket - muchas gracias a todos los que habéis venido"
+2017-11-11 12:39:02,"En clase hoy, modelado de mobiliario con #rhinoceros3d en @ensenyemacademia"
+2017-11-04 12:47:26,"En clase hoy, diseño de mobiliario con #rhinoceros3d en @ensenyemacademia"
+2017-11-04 10:47:08,"En clase hoy, diseño de mobiliario con #rhinoceros3d en @ensenyemacademia"
+2017-10-29 17:03:11,Preparando el siguiente concierto de @els_queeners
+2017-10-25 19:04:09,"En clase hoy, diseño 3D generativo de luminarias colgantes con #rhinoceros3d y #grasshopper3d en @ensenyemacademia"
+2017-10-24 15:48:26,"En clase hoy, diseño 3D generativo de proyectos de iluminación con #rhinoceros3d y #grasshopper3d en @ensenyemacademia"
+2017-10-23 18:01:29,"En clase hoy, diseño 3D generativo de proyectos de iluminación con #rhinoceros3d y #grasshopper3d en @ensenyemacademia"
+2017-10-16 18:49:17,Finalización del curso de #rhinoceros3d y #maxwellrender para joyería en @ensenyemacademia
+2017-10-16 18:31:23,Modelado y render conceptual de automocion con #blender3d y #blendercycles
+2017-10-16 18:23:55,"En clase hoy, modelado orgánico con #rhinoceros3d y render con #maxwellrender en @ensenyemacademia"
+2017-10-14 18:09:32,Más fotos del concierto del fin de semana pasado con @silenciodecorchea y @els_queeners en @fusionartespacio foto de @Maria_tornero_photographe
+2017-10-14 11:32:12,"En mi clase de hoy, diseño 3D y rénder de joyería con #rhinoceros3d y #maxwellrender en @ensenyemacademia"
+2017-10-14 09:20:01,"En clase hoy, diseño 3d de joyería con #rhinoceros3d, #grasshopper3d y #maxwellrender en @ensenyemacademia"
+2017-10-11 18:55:53,"En clase hoy, diseño generativo de luminarias con #rhinoceros3d y #grasshopper3d en @ensenyemacademia"
+2017-10-10 20:57:50,"En clase hoy, diseño de productos de iluminación con técnicas de modelado generativo con #rhinoceros3d y #grasshopper3d en @ensenyemacademia"
+2017-10-10 12:05:41,"En clase hoy, render por canales con Maxwell en @ensenyemacademia"
+2017-10-10 10:01:13,"En clase hoy, revisión de los ejercicios realizados hasta el momento en el curso de modelado y render de joyería con Rhinoceros y maxwell en @ensenyemacademia"
+2017-10-08 15:33:10,Más fotos del concierto acústico de ayer con @silenciodecorchea y @els_queeners en @fusionartespacio
+2017-10-07 23:51:54,Probando sonido en @fusionartespacio para el concierto doble acústico con @silenciodecorchea y @els_queeners
+2017-10-07 23:40:53,Concierto acústico en @fusionartespacio con @els_queeners
+2017-10-06 15:15:46,"En clase hoy, Render fotorrealista con Maxwell, con @ignotadesign en @ensenyemacademia"
+2017-10-03 12:15:10,"En clase hoy, render con Maxwell sobre Rhinoceros en @ensenyemacademia"
+2017-09-30 20:32:43,Probando Moment Of Inspiration 3.x con proyectos previamente modelados en Rhinoceros. De momento... peazo de programa :-)
+2017-09-30 10:57:26,"En clase hoy, diseño 3d generativo de joyería con Rhinoceros y Grasshopper, y tender en Maxwell en @ensenyemacademia"
+2017-09-29 19:09:28,"En clase hoy, diseño 3d y render de joyería orgánica con Rhinoceros y Maxwell en @ensenyemacademia"
+2017-09-29 13:04:21,"Ya no queda casi nada para el siguiente concierto de @els_queeners , en esta ocasión acústico, y presentando el disco de @silenciodecorchea"
+2017-09-23 11:57:13,"En clase de hoy, materiales para joyería en 3d con Rhinoceros y Maxwell Render en @ensenyemacademia"
+2017-09-22 19:00:21,"En clase hoy, modelando joyeros en 3d con Rhinoceros en @ensenyemacademia"
+2017-09-22 17:09:46,Ummmm cuerdas nuevas!
+2017-09-19 17:49:50,Nuevo curso en LinkedIn Lerning: 3dsmax 2018: modelado de personajes cartoon - https://www.linkedin.com/learning/3ds-max-2018-modelado-de-personajes-cartoon
+2017-09-15 18:49:00,"En clase hoy, modelado y representación de proyectos de joyería con Rhinoceros y Maxwell Render en @ensenyemacademia"
+2017-09-12 20:01:07,"Hoy, taller de Arduino para los alumnos de Diseño Industrial en la UPV con @victorcloquell"
+2017-09-08 12:15:04,Ya podéis visitar mi perfil actualizado como formador en video2brain - Linkedin Learning - https://www.video2brain.com/es/formadores/jose-vicente-carratala
+2017-09-04 15:49:18,Preparando los siguientes cursos sobre #Arduino e #impresion3d en la UPV
+2017-09-04 08:43:27,"Empezando el curso con buen pie, grabando nuevos e interesantes proyectos formativos para #linkedinlearning #video2brain"
+2017-09-02 19:00:10,Up in the air...
+2017-08-27 13:33:09,De paseo por el Volksgarten en #graz
+2017-07-21 09:45:59,"En clase hoy, segunda sesión del curso de creación de sitios web en @ensenyemacademia"
+2017-07-19 20:25:28,"En clase hoy, Desarrollo de proyectos arquitectónicos en tiempo real con #unrealengine"
+2017-07-19 12:21:22,Pantallazos de la primera clase del curso de Wordpress en ensenyem
+2017-07-15 15:36:42,"En la #dreamhack con @aulatematica, con #realidadvirtual y hasta con #darthvader"
+2017-07-15 09:12:58,"Un año más, en #dreamhack valencia"
+2017-07-14 18:54:19,"En clase hoy, bakeo de luces en #unrealengine"
+2017-07-13 10:17:40,"En clase hoy, creación de ciudades procedurales con #unrealengine en @aulatematica"
+2017-07-10 09:50:25,... where the grass is green... 🎶
+2017-07-08 17:41:42,Spiderweb!
+2017-07-06 17:00:23,"Curso presencial de Wordpress en @ensenyemacademia - aprende a crear blogs, páginas web, y tiendas online- http://www.ensenyem.es/wordpress"
+2017-06-30 17:11:46,"En clase hoy, última sesión del Master de programación de videojuegos en @aulatematica y como no, con ejercicios de realidad virtual en #unrealengine4 y #unity3d"
+2017-06-26 19:09:36,"En clase hoy, creando Serious Games con #unity3d en @aulatematica"
+2017-06-25 16:25:10,Días de verano…
+2017-06-22 19:41:00,"En clase hoy, creando dinámicamente mundos tridimensionales con #unity3d en @aulatematica"
+2017-06-20 19:48:51,"En clase hoy, huyendo de hordas zombie en #unity3d en @aulatematica"
+2017-06-15 22:02:51,"Fresnel! Curiosa perspectiva de las gafas de realidad virtual htc vive, pero vistas desde dentro"
+2017-06-14 18:39:27,"En clase hoy, creación de interfaces manuales para realidad virtual con #unrealengine4 en @aulatematica"
+2017-06-14 18:35:38,"En clase hoy, realidad aumentada con #unrealengine4 en @aulatematica"
+2017-06-13 08:47:24,"En clase hoy, luchando contra zombies espaciales en realidad virtual, nada menos! :-) en @aulatematica"
+2017-06-12 09:38:12,"Frase de un alumno esta mañana: ""esto es lo que hace José Vicente en las horas de trabajo"" :-D"
+2017-06-04 18:47:08,Como algodón
+2017-05-29 10:01:49,"En clase hoy, aplicación del dispositivo de captura de movimiento de manos Leap Motion al sector de los videojuegos en @aulatematica"
+2017-05-22 19:01:25,Libro épico el que ha traído un alumno esta mañana a clase...
+2017-05-22 18:59:23,Webinar gratuito programando videojuegos multiplataforma 2D. Jueves 25 19:00h  http://aulatematica.com/masterclass/?lan=masterclass_prog_vj_may17&from=jocarsa
+2017-05-14 17:07:57,Presentación de proyectos de la #studentgamejamvlc entra en los que se encuentran los de los alumnos y exalumnos de @aulatematica
+2017-05-13 11:26:08,En la #studentgamejamvlc @asociacionaev con los alumnos y exalumnos de @aulatematica
+2017-05-12 18:08:24,"En clase hoy, realidad virtual para arquitectura con @_eavirtual"
+2017-05-11 20:53:21,"En clase hoy, diseño de calzado en #autodesk3dsmax con @isafu en @ensenyem"
+2017-05-09 19:02:31,"En clase hoy, diseño de calzado con #autodesk3dsmax en @ensenyem con @isafu"
+2017-05-03 17:00:42,En clase hoy: desarrollo de juegos y de aplicaciones usando realidad virtual en @aulatematica
+2017-04-29 11:24:34,"En clase hoy, iluminación fotorrealista con #unreal en @aulatematica"
+2017-04-28 15:18:13,"En clase hoy, trabajando con arquitectura virtual @_eavirtual"
+2017-04-22 14:24:50,Primavera
+2017-04-11 19:36:40,"Masterclass de programación de videojuegos 2d y 3d, presencial en @aulatematica http://www.aulatematica.com/masterclass/?lan=masterclass_prog_vj_abr2017&from=jocarsa"
+2017-04-06 17:02:19,Collage resumen del curso de Rhinoceros para producto industrial en @ensenyem
+2017-04-06 16:55:05,"En clase hoy, modelado automotivo en Rhinoceros en @ensenyem"
+2017-04-06 12:05:18,Introducción al diseño generativo en el curso de rhinoceros en @ensenyem
+2017-04-04 11:21:49,"En clase hoy, diseño para impresión 3D con rhinoceros y cura3d en @ensenyem"
+2017-04-04 11:19:36,"En clase hoy, modelado de joyería en Rhinoceros en @ensenyem"
+2017-03-30 19:10:25,Good old classic...
+2017-03-30 11:57:53,"En clase hoy, desarrollo de ensamblajes de producto con Rhinoceros en @ensenyem"
+2017-03-28 11:31:53,"En clase hoy, modelado de un ratón con Rhinoceros en @ensenyem"
+2017-03-28 09:43:17,"En clase hoy, modelado de una llanta con Rhinoceros en @ensenyem"
+2017-03-25 10:35:13,"En clase hoy, creación de un sistema de chat entre cliente y servidor con unreal Engine en @aulatematica"
+2017-03-23 15:00:45,Desarrollo de un robot autónomo con Arduino e impresión 3D
+2017-03-23 12:40:13,"En clase hoy, diseño con Rhinoceros en @ensenyem"
+2017-03-23 11:48:51,"En clase hoy, diseño de producto en Rhinoceros, en @ensenyem"
+2017-03-22 20:55:22,"En clase hoy, exportación de juegos para iPad con unreal engine en @aulatematica"
+2017-03-21 12:53:19,"En clase hoy, primera sesión del curso de Rhinoceros en @ensenyem"
+2017-03-04 21:05:17,Jugando con el kit Arduino Bq Zum Box
+2017-03-03 14:43:53,"En clase hoy, desarrollo e implementación de aplicaciones y juegos para iOS con unreal Engine"
+2017-02-21 20:39:30,"En clase hoy, recreando la película Hypercube en realidad virtual con Unreal Engine en @aulatematica"
+2017-02-20 17:44:22,"En clase hoy, programación de juegos 2d en C++ en @aulatematica"
+2017-02-10 12:39:45,"En clase hoy, desarrollo de juegos 3d en android con unreal engine, en el Master de grafismo de videojuegos en @aulatematica"
+2017-02-09 20:34:21,"En clase hoy, en el master de Programacion de Videojuegos de @aulatematica , comparación del rendimiento de los lenguajes de programación Java, JavaScript, Python, C y C++. Y el ganador de esta prueba de hoy es…"
+2017-02-08 18:04:00,"En clase hoy, programando El Juego de la Vida en el master de Programacion de Videojuegos, en @aulatematica"
+2017-02-01 16:47:22,En clase hoy:Modelado 3D de joyería con rhinoceros en @ensenyem
+2017-01-25 16:48:22,"En clase hoy, programación multi hilo en el master de Programacion de Videojuegos de @aulatematica : creando un mundo isométrico lleno de mini-yo's"
+2017-01-22 17:56:15,Los alumnos de @aulatematica exponiendo su juego al final de la student game jam
+2017-01-21 18:57:31,Primeras 24 horas de la participación de los alumnos y exalumnos de @aulatematica en la global game jam @AEVValencia
+2017-01-20 20:44:53,"Los alumnos de @aulatematica , comenzando su participación en la global game jam"
+2017-01-19 20:19:59,"Hoy, webinar de programación de videojuegos 2d en @aulatematica"
+2017-01-13 15:07:54,Presentaciones aula temática  https://youtu.be/WqRtSgBRj6A
+2017-01-12 10:45:25,Próximo webinar gratuito de Programacion de Videojuegos 2D. Más información: https://youtu.be/6_9w1vch26k
+2017-01-10 18:04:31,"En clase hoy, programación de aplicaciones de visión artificial aplicadas a los videojuegos, en aula temática de Valencia"
+2016-12-09 19:02:30,WEBINAR GRATUITO ARQUITECTURA INTERACTIVA EN TIEMPO REAL - http://www.aulatematica.com/landing/?lan=workshop_arquitectura_rt&from=www - https://www.youtube.com/watch?v=w8t8wOritc0 @aulatematica
+2016-12-03 20:35:09,Proyecto de exalumnos del master de arquitectura interactiva @aulatematica https://www.youtube.com/watch?v=gJXQb4V_vYY
+2016-11-24 12:48:20,"En clase hoy, realidad virtual con HTC Vive @aulatematica"
+2016-11-23 14:25:11,"En clase hoy, finalización del curso en Ensenyem  con Oculus Rift"
+2016-11-18 16:22:50,"En clase hoy, último día del master de arquitectura Interactiva en temática de Valencia - y así es como empieza la clase ;-P"
+2016-11-18 12:42:23,Pack de gafas de realidad virtual
+2016-11-18 12:38:04,En clase hoy
+2016-11-18 10:53:00,"En clase hoy, gestión de medios sociales en @ensenyem"
+2016-11-17 12:22:35,"En clase hoy, programación de configuradores para aplicaciones móviles usando Phonegap @ensenyem"
+2016-11-14 17:47:48,Entrevista para video2brain - LinkedIn - https://www.youtube.com/watch?v=lDjDEEdBpX8
+2016-11-09 12:47:09,"En clase de hoy, arquitectura con Unreal @ensenyem"
+2016-10-29 14:27:34,Otoño
+2016-10-26 11:52:55,"En clase hoy, presentaciones interactivas para arquitectura @ensenyem"
+2016-10-24 12:12:35,"Clase de hoy, creación de presentaciones interactivas para arquitectura @ensenyem"
+2016-10-22 13:55:26,"En clase hoy, control remoto de aplicaciones de realidad virtual usando dispositivos móviles Android, con unreal engine @aulatematica"
+2016-10-16 20:26:50,Grabación del concierto del 11 de septiembre en Black Note con Els Queeners https://www.youtube.com/watch?v=s7g0eNIr_nE
+2016-10-16 20:05:00,Proyecto work in progress de ex alumno- Joan Borja - The Black Fabric - @aulatematica
+2016-10-16 18:41:15,Proyecto de alumnos: interactivo de realidad virtual aplicada a la arquitectura https://www.youtube.com/watch?v=Hh7im9aOA3I @aulatematica
+2016-10-13 11:28:21,Proyecto de alumna en el curso de creación de sitios web con WordPress - @ensenyem
+2016-10-11 19:29:56,Impresionante proyecto de alumnos del master de arquitectura interactiva con unreal @aulatematica https://www.youtube.com/watch?v=fktv7oTJaiw
+2016-10-10 13:20:31,https://youtu.be/cBoTaceq330 proyecto de alumnos del master de arquitectura en Interactiva en aula temática de Valencia @aulatematica
+2016-10-09 10:26:59,Ensayo dominguero @els_queeners
+2016-10-08 15:17:26,Parque de Cabecera
+2016-10-08 12:08:24,"En clase hoy, realidad virtual con HTC VIVE @aulatematica"
+2016-10-06 09:15:09,"En clase hoy, creación de sitios web con WordPress @ensenyem"
+2016-10-02 22:36:22,Fotos del concierto del pasado día 11 en Black Note Valencia con Els Queeners
+2016-09-28 16:06:20,Representación arquitectónica con UNREAL engine
+2016-09-28 09:20:29,"En clase hoy, representación foto realista"
+2016-09-26 19:20:35,En clase hoy: creación de representaciones arquitectónicas en 3D para Android usando UNREAL engine
+2016-09-24 16:10:07,
+2016-09-24 08:58:16,"En clase hoy, realidad virtual para arquitectura con Google Cardboard"
+2016-09-24 08:55:16,Descanso de clase
+2016-09-21 18:08:57,En clase hoy
+2016-09-20 10:38:27,Hoy: sesión de demostración de Wordpress en Academia ensenyem
+2016-09-18 10:43:56,Ensayo de domingo por la mañana
+2016-09-17 05:50:02,Proyecto de alumno - Joan Borja - The Black Fabric
+2016-09-15 16:44:08,Masterclass programación de videojuegos aula temática de Valencia
+2016-09-15 09:10:41,Presentación de proyectos Master grafismo videojuegos Aula Tematica de Valencia
+2016-09-14 09:16:58,Presentación de proyectos Master grafismo de videojuegos - aula tematica de valencia
+2016-09-11 21:17:50,Concierto en Black Note Valencia con Els Queeners
+2016-09-10 07:21:10,Proyecto work-in-progress de ex-alumno - Joan Borja - The Black Fabric - Aula Temática de Valencia
+2016-09-06 19:53:52,Señales de que se acerca un concierto - el domingo con Els Queeners en Black Note Valencia
+2016-09-06 15:52:53,Presentación de proyectos finales Master grafismo de videojuegos con Maya y Unreal - @aulatematica
+2016-09-03 09:02:41,Proyecto de alumno - arquitectura interactiva - Ferdy Esparza @aulatematica
+2016-09-02 17:10:09,"Proyecto de alumno, realidad virtual en Android con Unreal Engine - Marco Fernández @aulatematica"
+2016-09-02 16:11:47,Nuevas instalaciones de Aula Temática en Valencia
+2016-09-02 11:53:05,Encuentro inesperado :-)
+2016-09-01 11:05:07,l'Albufera de Valencia
+2016-09-01 05:34:15,Flughafen Frankfurt
+2016-08-31 12:35:15,"Y el próximo 11 de septiembre, concierto en Black Note Valencia con Els Queeners!"
+2016-08-26 15:42:33,En el estudio...
+2016-08-26 10:50:33,Probando IFTTT...
+2016-08-25 17:12:55,@LinkedIn Austria - video2brain
+2016-08-24 20:36:38,Próximo curso de creación de tiendas online con WordPress y Woocommerce
+2016-08-16 21:01:56,Creando apps multiplataforma con PhoneGap - forzando la orientación de pantalla
+2016-08-10 17:37:55,Probando la aplicación PRISMA...
+2016-06-02 10:50:45,"En clase hoy, HDRI en Vray para Rhinoceros @ensenyem"
+2016-06-02 10:48:33,En el DigitALL
+2016-05-31 18:38:31,"En clase hoy, render con Rhino y Vray en @ensenyem"
+2016-05-20 19:19:20,Proyecto final Master arquitectura interactiva - Pepe Estévez - Dos Deu Arquitectura - www.aulatematica.com @aulatematica
+2016-05-20 19:09:38,Atocha
+2016-05-13 18:47:56,Atocha
+2016-05-10 08:40:03,Puerta de Toledo - Madrid
+2016-04-29 16:15:21,Concierto de Els Queeners en Black Note Valencia
+2016-04-28 21:13:50,"En clase hoy, Vray para 3dsmax @ensenyem"
+2016-04-28 17:49:01,"En clase hoy, vray para 3dsmax @ensenyem"
+2016-04-27 19:32:21,Y mañana... concierto de Els Queeners en Black Note!
+2016-04-20 17:59:57,Finalización del curso presencial de Prestashop en @IEM_BS
+2016-04-19 15:51:55,"En clase hoy, materiales avanzados con Vray @ensenyem"
+2016-04-14 18:53:53,"En clase hoy, render con Vray"
+2016-04-14 18:53:19,"En clase hoy, render con vray"
+2016-04-09 16:58:40,
+2016-04-01 19:31:30,"En clase hoy, unreal engine para arquitectura en @aulatematica"
+2016-04-01 11:34:40,"En clase hoy, programación orientada a objetos en PHP"
+2016-03-31 18:45:58,En clase hoy: infoarquitectura con 3dsmax @ensenyem
+2016-03-30 17:51:58,Masterclass @aulatematica - creación de videojuegos
+2016-03-30 17:20:39,Masterclass en @aulatematica - creación de videojuegos - edición de tarde
+2016-03-30 12:44:53,Blender3d + 3d printing + arduino
+2016-03-30 10:51:37,Llegando a la masterclass...
+2016-03-27 15:54:08,Pascua
+2016-03-24 16:13:08,Robot: arduino + blender + witbox ... work in progress
+2016-03-20 12:43:51,Domingo
+2016-01-01 16:53:15,Aeropuerto de Manises
+2015-12-27 00:21:20,Robot andante en Arduino con 2 servos
+2015-12-22 14:53:50,Un poco de diversión con Arduino y ultrasonidos
+2015-10-06 19:26:17,Realidad Virtual
+2015-10-06 19:24:48,Tiempo raruno
+2015-09-12 17:31:00,Nubes sobre Valencia
+2015-09-12 10:56:23,Flughafen Zürich
+2015-09-12 08:03:00,Flughafen Graz
+2015-09-11 19:43:36,Lectura para el tiempo de espera en el aeropuerto - Die Unendliche Geschichte
+2015-09-10 20:11:06,Linz Hauptplatz
+2015-09-06 07:58:30,Linz Donau
+2015-09-05 14:28:27,#Linz #hauptplatz
+2015-09-05 14:26:44,#Linz #danube
+2015-09-04 23:24:42,#graz
+2015-09-04 23:20:55,#graz
+2015-08-31 18:25:53,#graz
+2015-08-30 16:27:43,#graz Annenstrasse
+2015-08-30 14:23:54,Flughafen Zürich
+2015-08-21 17:26:19,Lloviendo!

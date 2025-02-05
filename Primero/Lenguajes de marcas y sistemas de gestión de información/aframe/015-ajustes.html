@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A-Frame Interactive GLB Model (SSAO + Centered Modal)</title>
+    <!-- A-Frame 1.6.0 -->
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <!-- A-Frame Post Processing for SSAO -->
+    <script src="https://unpkg.com/aframe-post-processing-component@1.0.0/dist/aframe-post-processing-component.min.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+
+      /* Styles for the Information Panel */
+      #infoPanel {
+        position: fixed;
+        /* Center the panel */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        background: rgba(255, 255, 255, 0.95);
+        padding: 10px;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+        display: none;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+        /* Responsive sizing */
+        width: 80%;
+        max-width: 800px;
+        height: 60%;
+        max-height: 600px;
+        overflow: auto; /* scroll if content gets bigger */
+        z-index: 9999;  /* make sure it's on top */
+      }
+
+      /* Styles for the Close Button */
+      #closeBtn {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        background: #ff5c5c;
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 3px;
+        font-size: 14px;
+      }
+
+      /* Styles for the Iframe */
+      #infoIframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      A-Frame Scene 
+      post-processing with SSAO:
+      - ssao: enable the SSAO
+      - ssaoOnly: toggling this to true will show only the AO pass as grayscale (useful to confirm it works)
+      - radius, aoClamp, lumInfluence: parameters that affect AO strength
+      - debug: set to true if you want a quick grayscale debug pass
+    -->
+    <a-scene
+      post-processing="
+        ssao: true;
+        ssaoOnly: false;
+        radius: 16; 
+        aoClamp: 0.3; 
+        lumInfluence: 0.6;
+        debug: false
+      "
+    >
+      <!-- Add lights to ensure there's enough contrast and geometry detail -->
+      <a-entity light="type: ambient; intensity: 0.5"></a-entity>
+      <a-entity
+        light="type: directional; intensity: 0.8; castShadow: true"
+        position="1 3 2"
+      ></a-entity>
+
+      <!-- GLB Model -->
+      <a-entity
+        id="museoModel"
+        gltf-model="url(museo2.glb)"
+        position="0 0 0"
+        scale="1 1 1"
+        animation-mixer
+        class="clickable"
+      ></a-entity>
+
+      <!-- Sky (light gray, so we can see the contrast) -->
+      <a-sky color="#DDDDDD"></a-sky>
+
+      <!-- Camera with Cursor for Interaction -->
+      <a-entity
+        camera
+        position="0 1.6 3"
+        wasd-controls
+        look-controls
+      >
+        <a-cursor
+          fuse="false"
+          raycaster="objects: .clickable"
+          material="color: black; shader: flat"
+          geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.02"
+        ></a-cursor>
+      </a-entity>
+    </a-scene>
+
+    <!-- Information Panel -->
+    <div id="infoPanel">
+      <button id="closeBtn">Close</button>
+      <iframe id="infoIframe" src=""></iframe>
+    </div>
+
+    <script>
+      // Global variables to handle less-sensitive click logic
+      let isMouseDown = false;
+      let mousedownObject = null;
+
+      // Function to close the infoPanel
+      function closeInfoPanel() {
+        const infoPanel = document.getElementById('infoPanel');
+        const infoIframe = document.getElementById('infoIframe');
+        infoIframe.src = '';
+        infoPanel.style.display = 'none';
+      }
+
+      // Actual logic when we confirm it's a "true click"
+      function handleModelClick(event) {
+        event.preventDefault();
+
+        // Intersected mesh from the 'mouseup' event
+        const intersectedMesh = event.detail.intersection.object;
+        console.log('Intersected Mesh:', intersectedMesh);
+
+        const partName = intersectedMesh.name || 'Unknown Part';
+        console.log('Part Name:', partName);
+
+        // Access custom 'url' from userData if available
+        let customURL = null;
+        if (intersectedMesh.userData && intersectedMesh.userData.url) {
+          customURL = intersectedMesh.userData.url;
+        }
+
+        console.log(`Clicked on part: ${partName}`);
+        if (customURL) {
+          console.log(`Custom URL found: ${customURL}`);
+        } else {
+          console.log(`No custom URL found for part: ${partName}`);
+        }
+
+        // If a custom URL is found, display it in the infoPanel
+        const infoPanel = document.getElementById('infoPanel');
+        const infoIframe = document.getElementById('infoIframe');
+        if (customURL) {
+          infoIframe.src = customURL;
+          infoPanel.style.display = 'block';
+        } else {
+          // Hide the panel if no URL is found
+          infoIframe.src = '';
+          infoPanel.style.display = 'none';
+          console.warn('No hay url asociada');
+        }
+
+        // Optional: Visual feedback by changing color momentarily
+        if (intersectedMesh.material) {
+          const originalColor = intersectedMesh.material.color.getHex();
+          //intersectedMesh.material.color.setHex(0xff0000); // temporary red
+          setTimeout(() => {
+            intersectedMesh.material.color.setHex(originalColor);
+          }, 1000);
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const modelEl = document.getElementById('museoModel');
+        const closeBtn = document.getElementById('closeBtn');
+        closeBtn.addEventListener('click', closeInfoPanel);
+
+        // Listen for the model-loaded event to ensure the model is fully loaded
+        modelEl.addEventListener('model-loaded', () => {
+          console.log('Model loaded successfully.');
+        });
+
+        // Handle model loading errors
+        modelEl.addEventListener('model-error', (error) => {
+          console.error('Error loading model:', error);
+        });
+
+        // ---------------------------
+        // Less-Sensitive Click Logic
+        // ---------------------------
+        // We record which object was intersected on mousedown,
+        // and only if it's the same object on mouseup do we count it as a click.
+        modelEl.addEventListener('mousedown', (e) => {
+          isMouseDown = true;
+          mousedownObject = e.detail.intersection
+            ? e.detail.intersection.object
+            : null;
+        });
+
+        modelEl.addEventListener('mouseup', (e) => {
+          if (!isMouseDown) return; // Must have pressed down first
+          isMouseDown = false;
+
+          const mouseupObject = e.detail.intersection
+            ? e.detail.intersection.object
+            : null;
+
+          // If the same object was intersected on mousedown and mouseup, handle click
+          if (mouseupObject && mousedownObject === mouseupObject) {
+            handleModelClick(e);
+          }
+
+          // Reset
+          mousedownObject = null;
+        });
+      });
+    </script>
+  </body>
+</html>
+

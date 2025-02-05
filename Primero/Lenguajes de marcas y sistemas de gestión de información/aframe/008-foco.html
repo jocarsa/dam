@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene shadow>
+      <!-- Spotlight with shadow enabled -->
+      <a-light 
+        type="spot" 
+        position="0 4 4" 
+        intensity="1" 
+        color="#FFFFFF"
+        angle="30"
+        penumbra="1"
+        cast-shadow="true"
+        shadow-bias="0.001"
+        shadow-mapWidth="2048" 
+        shadow-mapHeight="2048"
+        target="#mono">
+      </a-light>
+
+      <!-- 3D model -->
+      <a-entity 
+        gltf-model="mono.glb" 
+        position="0 1 -4" 
+        id="mono"
+        shadow="receive: true; cast: true">
+      </a-entity>
+
+      <!-- Ground plane -->
+      <a-plane 
+        position="0 0 -4" 
+        rotation="-90 0 0" 
+        width="14" 
+        height="14" 
+        color="blue"
+        shadow="receive: true">
+      </a-plane>
+
+      <!-- Sky -->
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
+

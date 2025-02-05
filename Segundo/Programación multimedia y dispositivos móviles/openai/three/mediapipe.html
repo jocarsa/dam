@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Head Orientation Recognition with MediaPipe</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    video, canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Video element to capture the webcam stream -->
+  <video id="video" autoplay playsinline style="display: none;"></video>
+  <!-- Canvas to display video + overlays -->
+  <canvas id="output_canvas"></canvas>
+
+  <!-- MediaPipe Face Mesh library -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+  <!-- MediaPipe Camera Utils -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  
+  <script>
+    // Get references to the video and canvas elements
+    const videoElement = document.getElementById('video');
+    const canvasElement = document.getElementById('output_canvas');
+    const canvasCtx = canvasElement.getContext('2d');
+
+    // Initialize MediaPipe Face Mesh
+    const faceMesh = new FaceMesh({
+      locateFile: (file) => {
+        return `https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/${file}`;
+      }
+    });
+
+    // Configure Face Mesh options
+    faceMesh.setOptions({
+      maxNumFaces: 1,
+      refineLandmarks: true,
+      minDetectionConfidence: 0.5,
+      minTrackingConfidence: 0.5
+    });
+
+    // Callback to process the results
+    faceMesh.onResults(onResults);
+
+    // Set up the camera using MediaPipe's Camera Utils
+    const camera = new Camera(videoElement, {
+      onFrame: async () => {
+        await faceMesh.send({ image: videoElement });
+      },
+      width: 640,
+      height: 480
+    });
+    camera.start();
+
+    // This function is called each time Face Mesh produces results
+    function onResults(results) {
+      // Set canvas dimensions to match the video feed
+      canvasElement.width = videoElement.videoWidth;
+      canvasElement.height = videoElement.videoHeight;
+      canvasCtx.save();
+      // Clear previous frame and draw the current video frame
+      canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
+      canvasCtx.drawImage(results.image, 0, 0, canvasElement.width, canvasElement.height);
+
+      // Check if any face landmarks were detected
+      if (results.multiFaceLandmarks && results.multiFaceLandmarks.length > 0) {
+        const landmarks = results.multiFaceLandmarks[0];
+
+        // Draw landmarks for visualization (optional)
+        for (let i = 0; i < landmarks.length; i++) {
+          const x = landmarks[i].x * canvasElement.width;
+          const y = landmarks[i].y * canvasElement.height;
+          canvasCtx.beginPath();
+          canvasCtx.arc(x, y, 1, 0, 2 * Math.PI);
+          canvasCtx.fillStyle = 'red';
+          canvasCtx.fill();
+        }
+
+        // --- Estimate head orientation ---
+        // For a rough estimation, select a few key points:
+        // - Nose tip: landmark index 1
+        // - Left eye outer corner: landmark index 33
+        // - Right eye outer corner: landmark index 263
+        //
+        // These indices are based on MediaPipe Face Mesh's landmark numbering.
+        const noseTip = landmarks[1];
+        const leftEye = landmarks[33];
+        const rightEye = landmarks[263];
+
+        // Convert normalized coordinates to pixel values
+        const noseX = noseTip.x * canvasElement.width;
+        const noseY = noseTip.y * canvasElement.height;
+        const leftEyeX = leftEye.x * canvasElement.width;
+        const leftEyeY = leftEye.y * canvasElement.height;
+        const rightEyeX = rightEye.x * canvasElement.width;
+        const rightEyeY = rightEye.y * canvasElement.height;
+
+        // **Yaw (left/right turn)**
+        // A simple heuristic: the horizontal difference between the eyes.
+        const eyeDiff = leftEye.x - rightEye.x;
+        const yaw = eyeDiff * 100; // Scale factor (tweak as needed)
+
+        // **Pitch (up/down tilt)**
+        // For a basic estimate, measure the vertical deviation of the nose tip from the center.
+        const pitch = (noseTip.y - 0.5) * 100; // Scale factor (tweak as needed)
+
+        // **Roll (head tilt)**
+        // Compute the angle of the line between the eyes.
+        const deltaX = rightEyeX - leftEyeX;
+        const deltaY = rightEyeY - leftEyeY;
+        const roll = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
+
+        // Display the estimated head orientation values on the canvas
+        canvasCtx.font = "18px Arial";
+        canvasCtx.fillStyle = "lime";
+        canvasCtx.fillText(`Yaw: ${yaw.toFixed(2)}`, 10, 20);
+        canvasCtx.fillText(`Pitch: ${pitch.toFixed(2)}`, 10, 40);
+        canvasCtx.fillText(`Roll: ${roll.toFixed(2)}`, 10, 60);
+      }
+      canvasCtx.restore();
+    }
+  </script>
+</body>
+</html>
+

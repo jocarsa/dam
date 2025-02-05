@@ -1,0 +1,22 @@
+#login{
+      	position:absolute;
+      	width:300px;
+      	height:550px;
+      	top:50%;
+      	left:50%;
+      	margin-top:-275px;
+      	margin-left:-150px;
+      	background:white;
+      	padding:20px;
+      	z-index:1000;
+      	text-align:center;
+      }
+      #login img{
+      	width:100%;
+      }
+      #login input,#login button{
+      	width:100%;
+      	box-sizing:border-box;
+      	padding:10px;
+      	margin-bottom:10px;
+      }

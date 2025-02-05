@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <style>
+      body, html {
+        background: lightgrey;
+        font-family: sans-serif;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+      }
+      main {
+        width: 100%;
+        background: white;
+        padding: 20px;
+        margin: auto;
+        text-align: center;
+        box-sizing: border-box;
+        height: 100%;
+        position: relative;
+      }
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+      }
+      #resultado {
+        min-height: 400px;
+        height: 400px;
+        border: 1px solid lightgrey;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: justify;
+        overflow-y: scroll;
+        display: none;
+      }
+      #pensando img {
+        margin: auto;
+        width: 40px;
+      }
+      #elementosenviar {
+        position: absolute;
+        bottom: 10px;
+      }
+      #personaje {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(avatar.png);
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>jocarsa | magenta</h1>
+      <div id="resultado"></div>
+      <div id="personaje"></div>
+      <div id="elementosenviar">
+        <div id="pensando"></div>
+        <input speech x-webkit-speech id="entrada">
+        <button onclick="startDictation()">🎤 Start Dictation</button>
+      </div>
+    </main>
+    <script>
+      // Get references to DOM elements
+      let inputField = document.querySelector("input");
+      let respuesta = document.querySelector("#resultado");
+      let pensando = document.querySelector("#pensando");
+
+      // Send the user's input to your chat backend.
+      function envia() {
+        console.log("Processing...");
+        pensando.innerHTML = "<img src='loading.gif'>";
+        let peticion = inputField.value;
+        inputField.value = "";
+        
+        fetch("http://127.0.0.1:5000/chat?query=" + encodeURI(peticion))
+          .then(response => response.json())
+          .then(datos => {
+            pensando.innerHTML = "";
+            respuesta.innerHTML += datos.response + "<hr>";
+            respuesta.scrollTop = respuesta.scrollHeight;
+
+            let synth = window.speechSynthesis;
+            synth.cancel(); // Cancel any ongoing speech
+
+            let speech = new SpeechSynthesisUtterance(datos.response);
+            speech.lang = "es-ES";
+            speech.rate = 1;
+            speech.pitch = 1;
+            speech.volume = 1;
+
+            speech.onstart = function() {
+              console.log("🔊 Speech started...");
+            };
+
+            speech.onend = function() {
+              console.log("🔇 Speech ended.");
+            };
+
+            synth.speak(speech);
+          });
+      }
+
+      // Start dictation using webkitSpeechRecognition.
+      function startDictation() {
+        if ('webkitSpeechRecognition' in window) {
+          console.log("Starting dictation...");
+          let recognition = new webkitSpeechRecognition();
+          recognition.lang = 'es-ES';
+          recognition.interimResults = false;
+          recognition.maxAlternatives = 1;
+
+          recognition.onresult = function(event) {
+            console.log("Dictation result received.");
+            document.getElementById('entrada').value = event.results[0][0].transcript;
+            setTimeout(envia, 1000);
+          };
+
+          recognition.start();
+        } else {
+          alert("Speech recognition is not supported in this browser.");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A-Frame Interactive Box Grid</title>
+    <!-- A-Frame 1.6.0 -->
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        /* Prevent text selection to ensure right-click works smoothly */
+        -webkit-user-select: none; /* Chrome/Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+ */
+        user-select: none; /* Standard */
+      }
+    </style>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <!-- Define a mixin for box materials (update path or filename as needed) -->
+        <a-mixin
+          id="materialcaja"
+          material="src: bloque1.jpg; color: #ffffff;"
+        ></a-mixin>
+      </a-assets>
+
+      <!-- Ground Plane -->
+      <a-plane
+        position="0 0 -4"
+        rotation="-90 0 0"
+        width="20"
+        height="20"
+        color="blue"
+      ></a-plane>
+
+      <!-- Sky -->
+      <a-sky color="#ECECEC"></a-sky>
+
+      <!-- Camera with Cursor -->
+      <a-entity camera position="0 2 10" look-controls wasd-controls>
+        <a-cursor
+          id="cursor"
+          fuse="false"
+          raycaster="objects: .clickable"
+          material="color: black; shader: flat"
+          geometry="primitive: ring; radiusInner: 0.005; radiusOuter: 0.01"
+        ></a-cursor>
+      </a-entity>
+    </a-scene>
+
+    <script>
+      // Prevent the default context menu from appearing on right-click
+      window.addEventListener(
+        "contextmenu",
+        function (e) {
+          e.preventDefault();
+        },
+        false
+      );
+
+      // Reference to the A-Frame scene
+      const sceneEl = document.querySelector("a-scene");
+
+      /**
+       * Function to create a new box at a given position
+       * @param {string} position - The position of the box in the format "x y z"
+       */
+      function createBox(position) {
+        const caja = document.createElement("a-box");
+        caja.setAttribute("position", position);
+        caja.setAttribute("rotation", "0 0 0");
+        caja.setAttribute("mixin", "materialcaja");
+        caja.setAttribute("class", "clickable"); // Make it interactable
+        caja.setAttribute("depth", "1");
+        caja.setAttribute("height", "1");
+        caja.setAttribute("width", "1");
+
+        // Use 'mousedown' so we can access event.button (left vs. right)
+        caja.addEventListener("click", function (event) {
+        console.log(event)
+          
+          //if (event.button === 0) {
+            // Left-click: Remove the box
+            console.log("Left-clicked on:", caja);
+            caja.parentNode.removeChild(caja);
+          //}
+        });
+
+        // Use 'contextmenu' for right-click
+        caja.addEventListener("contextmenu", function (event) {
+          event.preventDefault(); // Prevent default browser context menu
+          console.log("Right-clicked on:", caja);
+
+          // Create a new box directly above this one
+          const currentPosition = caja.getAttribute("position");
+          const newPosition = {
+            x: currentPosition.x,
+            y: currentPosition.y + 1,
+            z: currentPosition.z
+          };
+          createBox(`${newPosition.x} ${newPosition.y} ${newPosition.z}`);
+        });
+
+        // Optional: Visual Feedback on Hover
+        caja.addEventListener("mouseenter", function () {
+          caja.setAttribute("color", "#cccccc"); // Change color to red on hover
+        });
+
+        caja.addEventListener("mouseleave", function () {
+          caja.setAttribute("color", "#ffffff"); // Revert to original color
+        });
+
+        sceneEl.appendChild(caja);
+      }
+
+      /**
+       * Initialize the Grid of Boxes
+       * Adjust the grid size as needed
+       */
+      const gridSize = 5;
+      for (let x = -gridSize; x <= gridSize; x++) {
+        for (let z = -gridSize; z <= gridSize; z++) {
+          const position = `${x} 0.5 ${z}`;
+          createBox(position);
+        }
+      }
+    </script>
+  </body>
+</html>
+

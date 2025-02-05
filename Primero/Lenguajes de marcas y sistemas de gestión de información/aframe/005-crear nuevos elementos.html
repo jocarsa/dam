@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <style>
+    	button{
+    		position:absolute;
+    		top:10px;
+    		left:10px;
+    	}
+    </style>
+  </head>
+  <body>
+    <a-scene>
+      <a-box position="0 0.5 -3" rotation="0 0 0" color="red"></a-box>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="blue"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+    <button>Pulsame</button>
+    <script>
+    	document.querySelector("button").onclick = function(){
+    		let contenedor = document.querySelector("a-scene")
+    		let xrandom = (Math.random()-0.5)*5
+    		let yrandom = (Math.random()-0.5)*5
+    		let zrandom = (Math.random()-0.5)*5-5
+    		let nuevacaja = document.createElement("a-box")
+    		nuevacaja.setAttribute("position",xrandom+" "+yrandom+" "+zrandom)
+    		nuevacaja.setAttribute("color","green")
+    		contenedor.appendChild(nuevacaja)
+    		
+    	}
+    </script>
+  </body>
+</html>

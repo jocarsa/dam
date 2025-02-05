@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A-Frame Interactive GLB Model</title>
+    <!-- Updated to use A-Frame version 1.6.0 as in your original code -->
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+
+      /* Styles for the Information Panel */
+      #infoPanel {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(255, 255, 255, 0.9);
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+        display: none;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- A-Frame Scene -->
+    <a-scene>
+      <!-- GLB Model -->
+      <a-entity
+        id="museoModel"
+        gltf-model="url(museo.glb)"
+        position="0 0 0"
+        scale="1 1 1"
+        animation-mixer
+      ></a-entity>
+
+      <!-- Sky -->
+      <a-sky color="#ECECEC"></a-sky>
+
+      <!-- Camera with Cursor for Interaction -->
+      <a-entity
+        camera
+        position="0 1.6 0"
+        wasd-controls
+        look-controls
+      >
+        <a-cursor
+          fuse="false"
+          material="color: black; shader: flat"
+          geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.02"
+        ></a-cursor>
+      </a-entity>
+    </a-scene>
+
+    <!-- Information Panel -->
+    <div id="infoPanel">
+      <p id="infoText">Click on a part of the model.</p>
+    </div>
+
+    <script>
+      function handleModelClick(event) {
+        event.preventDefault();
+        const intersectedMesh = event.detail.intersection.object;
+        const partName = intersectedMesh.name || 'Unknown Part';
+        console.log(`Part ${partName} was clicked!`);
+        const infoPanel = document.getElementById('infoPanel');
+        const infoText = document.getElementById('infoText');
+        infoText.textContent = `You clicked on: ${partName}`;
+        infoPanel.style.display = 'block';
+        clearTimeout(infoPanel.hideTimeout);
+        infoPanel.hideTimeout = setTimeout(() => {
+          infoPanel.style.display = 'none';
+        }, 3000);
+
+        if (intersectedMesh.material) {
+          const originalColor = intersectedMesh.material.color.getHex();
+          intersectedMesh.material.color.setHex(0xff0000); // Change to red
+          setTimeout(() => {
+            intersectedMesh.material.color.setHex(originalColor);
+          }, 1000);
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const modelEl = document.getElementById('museoModel');
+        modelEl.addEventListener('model-loaded', () => {
+          console.log('Model loaded successfully.');
+          modelEl.addEventListener('click', handleModelClick);
+        });
+        modelEl.addEventListener('model-error', (error) => {
+          console.error('Error loading model:', error);
+        });
+      });
+    </script>
+  </body>
+</html>
+

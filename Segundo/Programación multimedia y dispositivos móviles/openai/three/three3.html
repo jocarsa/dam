@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Avatar with Microphone Morph & Head Orientation (MediaPipe)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Make sure the three.js canvas covers the whole window */
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #ccc;
+    }
+    /* Style for the MediaPipe output canvas (for debugging / visualization) */
+    #output_canvas {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 320px;
+      height: 240px;
+      z-index: 10;
+      border: 2px solid #fff;
+    }
+    /* Hide the video element */
+    #video {
+      display: none;
+    }
+  </style>
+  
+  <!-- Import map for three.js modules -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./three.module.js",
+        "three/addons/": "./jsm/"
+      }
+    }
+  </script>
+  
+  <!-- MediaPipe Face Mesh library -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+  <!-- MediaPipe Camera Utils -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+</head>
+<body>
+  <!-- Video element for webcam capture (hidden) -->
+  <video id="video" autoplay playsinline></video>
+  <!-- Canvas for MediaPipe output and overlays -->
+  <canvas id="output_canvas"></canvas>
+  
+  <!-- Main Script: Three.js Scene, Microphone & MediaPipe integration -->
+  <script type="module">
+    import * as THREE from 'three';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+    // Global variables for three.js and the avatar
+    let scene, camera, renderer, controls;
+    let avatarModel = null;   // Loaded avatar
+    let headBone = null;      // Will reference the bone named "huesocabeza"
+
+    // Initialize three.js, microphone input, and MediaPipe Face Mesh
+    init();
+    animate();
+    initMicrophone();
+    initFaceMesh();
+
+    function init() {
+      // Create the scene
+      scene = new THREE.Scene();
+      scene.background = new THREE.Color(0xcccccc);
+
+      // Set up the camera
+      camera = new THREE.PerspectiveCamera(
+        60,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        1000
+      );
+      camera.position.set(5, 5, 5);
+
+      // Set up the renderer
+      renderer = new THREE.WebGLRenderer({ antialias: true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setPixelRatio(window.devicePixelRatio);
+      // Position the renderer’s canvas in the document
+      renderer.domElement.style.position = 'absolute';
+      renderer.domElement.style.top = '0';
+      renderer.domElement.style.left = '0';
+      renderer.domElement.style.zIndex = '1'; // behind the MediaPipe overlay
+      document.body.appendChild(renderer.domElement);
+
+      // Add orbit controls
+      controls = new OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true;
+
+      // Lights
+      const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
+      scene.add(ambientLight);
+      const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+      directionalLight.position.set(10, 10, 10);
+      scene.add(directionalLight);
+
+      // Load the GLB avatar model
+      const loader = new GLTFLoader();
+      loader.load(
+        'avatar.glb', // Adjust the path as needed
+        (gltf) => {
+          avatarModel = gltf.scene;
+          scene.add(avatarModel);
+          // Try to find the head bone named "huesocabeza"
+          headBone = avatarModel.getObjectByName("huesocabeza");
+          if (!headBone) {
+            console.warn('Bone "huesocabeza" not found in the avatar model.');
+          } else {
+            console.log('Bone "huesocabeza" found:', headBone);
+          }
+        },
+        undefined,
+        (error) => {
+          console.error('Error loading the GLB model:', error);
+        }
+      );
+
+      // Handle window resize events
+      window.addEventListener('resize', onWindowResize, false);
+    }
+
+    function onWindowResize() {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+
+    /**
+     * Initialize the microphone input.
+     * The microphone’s RMS volume drives the morph target “A” on meshes.
+     */
+    function initMicrophone() {
+      if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+        console.error('getUserMedia is not supported in your browser.');
+        return;
+      }
+      navigator.mediaDevices.getUserMedia({ audio: true, video: false })
+        .then((stream) => {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          const audioContext = new AudioContext();
+          const analyser = audioContext.createAnalyser();
+          const scriptProcessor = audioContext.createScriptProcessor(2048, 1, 1);
+
+          analyser.smoothingTimeConstant = 0.8;
+          analyser.fftSize = 2048;
+
+          const microphone = audioContext.createMediaStreamSource(stream);
+          microphone.connect(analyser);
+          analyser.connect(scriptProcessor);
+          scriptProcessor.connect(audioContext.destination);
+
+          scriptProcessor.onaudioprocess = function(event) {
+            const inputData = event.inputBuffer.getChannelData(0);
+            let total = 0;
+            for (let i = 0; i < inputData.length; i++) {
+              total += inputData[i] * inputData[i];
+            }
+            const rms = Math.sqrt(total / inputData.length);
+            let morphValue = Math.min(rms * 10, 1);
+
+            if (avatarModel) {
+              avatarModel.traverse((child) => {
+                if (child.isMesh && child.morphTargetDictionary && child.morphTargetInfluences) {
+                  const index = child.morphTargetDictionary["A"];
+                  if (index !== undefined) {
+                    child.morphTargetInfluences[index] = morphValue;
+                  }
+                }
+              });
+            }
+          };
+        })
+        .catch((error) => {
+          console.error('Error accessing the microphone:', error);
+        });
+    }
+
+    /**
+     * Initialize MediaPipe Face Mesh to detect head orientation.
+     * The computed yaw, pitch, and roll (in degrees) are converted to radians
+     * and then applied to the head bone ("huesocabeza") of the avatar.
+     */
+    function initFaceMesh() {
+      const videoElement = document.getElementById('video');
+      const canvasElement = document.getElementById('output_canvas');
+      const canvasCtx = canvasElement.getContext('2d');
+
+      // Configure MediaPipe Face Mesh
+      const faceMesh = new FaceMesh({
+        locateFile: (file) => {
+          return `https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/${file}`;
+        }
+      });
+      faceMesh.setOptions({
+        maxNumFaces: 1,
+        refineLandmarks: true,
+        minDetectionConfidence: 0.5,
+        minTrackingConfidence: 0.5
+      });
+      faceMesh.onResults(onResults);
+
+      // Set up the camera using MediaPipe's Camera Utils
+      const cameraMP = new Camera(videoElement, {
+        onFrame: async () => {
+          await faceMesh.send({ image: videoElement });
+        },
+        width: 640,
+        height: 480
+      });
+      cameraMP.start();
+
+      function onResults(results) {
+        // Resize the canvas to match the video dimensions
+        canvasElement.width = videoElement.videoWidth;
+        canvasElement.height = videoElement.videoHeight;
+        canvasCtx.save();
+        canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
+        canvasCtx.drawImage(results.image, 0, 0, canvasElement.width, canvasElement.height);
+
+        if (results.multiFaceLandmarks && results.multiFaceLandmarks.length > 0) {
+          const landmarks = results.multiFaceLandmarks[0];
+
+          // (Optional) Draw landmarks for visualization
+          for (let i = 0; i < landmarks.length; i++) {
+            const x = landmarks[i].x * canvasElement.width;
+            const y = landmarks[i].y * canvasElement.height;
+            canvasCtx.beginPath();
+            canvasCtx.arc(x, y, 1, 0, 2 * Math.PI);
+            canvasCtx.fillStyle = 'red';
+            canvasCtx.fill();
+          }
+
+          // Select key landmarks (indices based on MediaPipe Face Mesh):
+          const noseTip = landmarks[1];
+          const leftEye = landmarks[33];
+          const rightEye = landmarks[263];
+
+          // Compute head orientation (angles in degrees)
+          // Yaw (turning left/right) using horizontal eye difference:
+          const eyeDiff = leftEye.x - rightEye.x;
+          const yaw = eyeDiff * 100; // scale factor (adjust if needed)
+          // Pitch (nodding up/down) using vertical nose position relative to center:
+          const pitch = (noseTip.y - 0.5) * 100; // scale factor (adjust if needed)
+          // Roll (tilting head sideways) by computing the angle between the eyes:
+          const deltaX = (rightEye.x - leftEye.x) * canvasElement.width;
+          const deltaY = (rightEye.y - leftEye.y) * canvasElement.height;
+          const roll = Math.atan2(deltaY, deltaX) * (180 / Math.PI); // degrees
+
+          // (Optional) Display the orientation values on the canvas
+          canvasCtx.font = "18px Arial";
+          canvasCtx.fillStyle = "lime";
+          canvasCtx.fillText(`Yaw: ${yaw.toFixed(2)}`, 10, 20);
+          canvasCtx.fillText(`Pitch: ${pitch.toFixed(2)}`, 10, 40);
+          canvasCtx.fillText(`Roll: ${roll.toFixed(2)}`, 10, 60);
+
+          // Apply these rotations to the head bone (if found)
+          if (headBone) {
+            // Convert degrees to radians
+            headBone.rotation.y = THREE.MathUtils.degToRad(yaw);
+            headBone.rotation.z = THREE.MathUtils.degToRad(pitch)-0.4;
+            headBone.rotation.x = THREE.MathUtils.degToRad(roll);
+          }
+        }
+        canvasCtx.restore();
+      }
+    }
+  </script>
+</body>
+</html>
+

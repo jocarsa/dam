@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+	<body>
+		<script>
+			
+			let cliente = JSON.parse(localStorage.getItem("cliente"))
+			
+			console.log(cliente)
+		</script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<body>
+		<script>
+			function leerCookie(miclave){
+				let galletas = document.cookie.split(";")
+				resultado = 0
+				galletas.forEach(function(galleta){
+					let partes = galleta.split("=")
+					let clave = partes[0].trim()
+					if(miclave == clave){
+						resultado = partes[1].trim()
+					}
+				})
+				return resultado
+			}
+			console.log(leerCookie("apellidos"))
+		</script>
+	</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>three.js - Avatar con Shape Key activado por micrófono</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <!-- Import Map for Module Resolution -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./three.module.js",
+        "three/addons/": "./jsm/"
+      }
+    }
+  </script>
+
+  <!-- Main Script -->
+  <script type="module">
+    import * as THREE from 'three';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+    let scene, camera, renderer, controls;
+    let avatarModel = null; // Will hold the loaded avatar
+
+    // Initialize Three.js scene and microphone input
+    init();
+    animate();
+    initMicrophone();
+
+    function init() {
+      // Create the Scene
+      scene = new THREE.Scene();
+      scene.background = new THREE.Color(0xcccccc);
+
+      // Set up the Camera
+      camera = new THREE.PerspectiveCamera(
+        60,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        1000
+      );
+      camera.position.set(5, 5, 5);
+
+      // Set up the Renderer
+      renderer = new THREE.WebGLRenderer({ antialias: true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setPixelRatio(window.devicePixelRatio);
+      document.body.appendChild(renderer.domElement);
+
+      // Set up OrbitControls
+      controls = new OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true;
+
+      // Add some Lights
+      const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
+      scene.add(ambientLight);
+
+      const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+      directionalLight.position.set(10, 10, 10);
+      scene.add(directionalLight);
+
+      // Load the GLB Avatar Model
+      const loader = new GLTFLoader();
+      loader.load(
+        'avatar.glb', // Replace with the correct path to your GLB model
+        (gltf) => {
+          avatarModel = gltf.scene;
+          scene.add(avatarModel);
+        },
+        undefined,
+        (error) => {
+          console.error('Error loading the GLB model:', error);
+        }
+      );
+
+      // Handle window resize events
+      window.addEventListener('resize', onWindowResize, false);
+    }
+
+    function onWindowResize() {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+
+    /**
+     * Initialize the microphone input using the Web Audio API.
+     * The audio stream is analyzed to compute a volume (RMS) value,
+     * which is then used to set the morph target influence "A".
+     */
+    function initMicrophone() {
+      if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+        console.error('getUserMedia is not supported in your browser.');
+        return;
+      }
+
+      navigator.mediaDevices.getUserMedia({ audio: true, video: false })
+        .then((stream) => {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          const audioContext = new AudioContext();
+          const analyser = audioContext.createAnalyser();
+          // Use a script processor to handle audio processing
+          const scriptProcessor = audioContext.createScriptProcessor(2048, 1, 1);
+
+          // Optional: Adjust smoothing and FFT size to suit your application
+          analyser.smoothingTimeConstant = 0.8;
+          analyser.fftSize = 2048;
+
+          // Create a MediaStreamAudioSourceNode from the microphone stream
+          const microphone = audioContext.createMediaStreamSource(stream);
+          microphone.connect(analyser);
+          analyser.connect(scriptProcessor);
+          scriptProcessor.connect(audioContext.destination);
+
+          // Process audio data periodically
+          scriptProcessor.onaudioprocess = function(event) {
+            // Get audio data from the input buffer (mono channel)
+            const inputData = event.inputBuffer.getChannelData(0);
+            let total = 0;
+            for (let i = 0; i < inputData.length; i++) {
+              total += inputData[i] * inputData[i];
+            }
+            // Calculate the root-mean-square (RMS) volume
+            let rms = Math.sqrt(total / inputData.length);
+
+            // Define a threshold and scaling factor
+            const threshold = 0.05; // Minimum volume to trigger the morph (adjust as needed)
+            // Multiply the RMS by a factor to scale the value to [0,1]
+            let morphValue = Math.min(rms * 10, 1);
+
+            // Optionally, you can require the rms to exceed a threshold
+            // if (rms < threshold) { morphValue = 0; }
+
+            // Apply the morph target influence "A" on all applicable meshes in the avatar model
+            if (avatarModel) {
+              avatarModel.traverse((child) => {
+                if (child.isMesh && child.morphTargetDictionary && child.morphTargetInfluences) {
+                  const index = child.morphTargetDictionary["A"];
+                  if (index !== undefined) {
+                    child.morphTargetInfluences[index] = morphValue;
+                  }
+                }
+              });
+            }
+          };
+        })
+        .catch((error) => {
+          console.error('Error accessing the microphone:', error);
+        });
+    }
+  </script>
+</body>
+</html>
+

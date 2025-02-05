@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A-Frame Interactive Box Grid with Pointer Lock</title>
+    <!-- A-Frame 1.6.0 -->
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        /* Prevent text selection to ensure right-click works smoothly */
+        -webkit-user-select: none; /* Chrome/Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+ */
+        user-select: none; /* Standard */
+      }
+
+      /* Instruction Overlay */
+      #instruction {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        text-align: center;
+        z-index: 1;
+        cursor: pointer;
+      }
+
+      /* Hide the instruction when not needed */
+      #instruction.hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Instruction Overlay -->
+    <div id="instruction">Click to enter VR / Engage Pointer Lock</div>
+
+    <a-scene>
+      <a-assets>
+        <!-- Define a mixin for box materials (update path or filename as needed) -->
+        <a-mixin
+          id="material1"
+          material="src: bloque.jpg; color: #ffcccc;"
+        ></a-mixin>
+        <a-mixin
+          id="material2"
+          material="src: bloque.jpg; color: #ccffcc;"
+        ></a-mixin>
+        <a-mixin
+          id="material3"
+          material="src: bloque.jpg; color: #ccccff;"
+        ></a-mixin>
+      </a-assets>
+
+      <!-- Sky -->
+      <a-sky color="#ECECEC"></a-sky>
+
+      <!-- Camera with Cursor -->
+      <a-entity
+        id="camera"
+        camera
+        position="0 2 10"
+        look-controls
+        wasd-controls
+      >
+        <a-cursor
+          id="cursor"
+          fuse="false"
+          raycaster="objects: .clickable"
+          material="color: black; shader: flat"
+          geometry="primitive: ring; radiusInner: 0.005; radiusOuter: 0.01"
+        ></a-cursor>
+      </a-entity>
+    </a-scene>
+
+    <script>
+    	let memoria = []
+      // Prevent the default context menu from appearing on right-click
+      window.addEventListener(
+        "contextmenu",
+        function (e) {
+          e.preventDefault();
+        },
+        false
+      );
+
+      // Reference to the A-Frame scene and camera
+      const sceneEl = document.querySelector("a-scene");
+      const cameraEl = document.querySelector("#camera");
+      const instructionEl = document.getElementById("instruction");
+
+     
+      function createBox(position,id,material) {							// La funcion de creacion acepta posicion e identificador de la caja
+        const caja = document.createElement("a-box");
+        caja.setAttribute("position", position);
+        caja.setAttribute("rotation", "0 0 0");
+        caja.setAttribute("mixin", "material"+material);
+        caja.setAttribute("class", "clickable"); 
+        caja.setAttribute("depth", "1");
+        caja.setAttribute("height", "1");
+        caja.setAttribute("width", "1");
+        caja.setAttribute("identificador",id);								// El identificador es un parámetro que yo creo y me lo invento
+
+        
+        caja.addEventListener("click", function (event) {
+          console.log("Left-clicked on:", caja);
+          caja.parentNode.removeChild(caja);									// Del espacio 3D quito la caja
+          memoria.splice(id,1)													// De la memoria quito el elemento correspondiente
+          localStorage.setItem("memoria",JSON.stringify(memoria))		// Actualizo localstorage para quitar el elemento correspondiente
+        });
+
+        // Use 'contextmenu' for right-click
+        caja.addEventListener("contextmenu", function (event) {
+          event.preventDefault(); // Prevent default browser context menu
+          console.log("Right-clicked on:", caja);
+
+          // Create a new box directly above this one
+          const currentPosition = caja.getAttribute("position");
+          const newPosition = {
+            x: currentPosition.x,
+            y: currentPosition.y + 1,
+            z: currentPosition.z,
+          };
+          createBox(`${newPosition.x} ${newPosition.y} ${newPosition.z}`);
+        });
+
+        
+
+        sceneEl.appendChild(caja);
+      }
+
+      // Primero construyo la memoria
+      if(localStorage.getItem("memoria") == null){
+      console.log("No hay memoria previa, cargo una nueva")
+		   const gridSize = 5;
+		   for (let x = -gridSize; x <= gridSize; x++) {
+		     for (let z = -gridSize; z <= gridSize; z++) {
+		       for (let y = -2; y <= 0; y++) {
+		         memoria.push({"x":x,"y":y,"z":z,"mat":Math.ceil(Math.random()*3)})
+		       }
+		     }
+		   }
+      }else{
+      	console.log("Si que hay memoria previa, cargo la memoria existente")
+      	memoria = JSON.parse(localStorage.getItem("memoria"))
+      }
+      // Ahora guardo la memoria en localstorage
+      localStorage.setItem("memoria",JSON.stringify(memoria))
+      // Ahora repaso la memoria
+      memoria.forEach(function(celda,index){
+      	// Y creo cajas
+      	createBox(`${celda.x} ${celda.y} ${celda.z}`,index,celda.mat);
+      })
+
+      /**
+       * Pointer Lock Functionality via A-Frame's look-controls
+       */
+      // Hide the instruction overlay once the user interacts with the scene
+      cameraEl.addEventListener("click", function () {
+        instructionEl.classList.add("hidden");
+      });
+
+      // Optionally, handle pointer lock change events if you need additional feedback
+      document.addEventListener("pointerlockchange", function () {
+        if (
+          document.pointerLockElement === sceneEl.canvas ||
+          document.mozPointerLockElement === sceneEl.canvas ||
+          document.webkitPointerLockElement === sceneEl.canvas
+        ) {
+          // Pointer lock is active
+          console.log("Pointer Lock Engaged");
+          instructionEl.classList.add("hidden");
+        } else {
+          // Pointer lock is inactive
+          console.log("Pointer Lock Disengaged");
+          instructionEl.classList.remove("hidden");
+        }
+      });
+
+      document.addEventListener("pointerlockerror", function () {
+        alert("Error attempting to enable pointer lock.");
+        instructionEl.classList.remove("hidden");
+      });
+
+      // Ensure the instruction overlay prompts the user to click to engage pointer lock
+      instructionEl.addEventListener("click", function () {
+        // Trigger a click on the camera to engage pointer lock via look-controls
+        cameraEl.emit("click");
+      });
+    </script>
+  </body>
+</html>
+

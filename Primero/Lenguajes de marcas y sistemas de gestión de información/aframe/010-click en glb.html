@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A-Frame Interactive GLB Model</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+
+      /* Styles for the Information Panel */
+      #infoPanel {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(255, 255, 255, 0.8);
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- A-Frame Scene -->
+    <a-scene>
+      <!-- Ground Plane -->
+      <a-plane
+        rotation="-90 0 0"
+        width="20"
+        height="20"
+        color="#7BC8A4"
+        position="0 0 0"
+      ></a-plane>
+
+      <!-- Sky -->
+      <a-sky color="#ECECEC"></a-sky>
+
+      <!-- GLB Model -->
+      <a-entity
+        id="myModel"
+        gltf-model="url(objetos.glb)"
+        scale="1 1 1"
+        position="0 1.5 -3"
+        animation-mixer
+      ></a-entity>
+
+      <!-- Camera with Cursor for Interaction -->
+      <a-entity
+        camera
+        position="0 1.6 0"
+        wasd-controls
+        look-controls
+      >
+        <a-cursor
+          fuse="false"
+          material="color: black; shader: flat"
+          geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.02"
+        ></a-cursor>
+      </a-entity>
+    </a-scene>
+
+    <!-- Information Panel -->
+    <div id="infoPanel">
+      <p id="infoText">Click on a part of the model.</p>
+    </div>
+
+    <script>
+      // Function to handle click events on the model
+      function handleModelClick(event) {
+        // Prevent default behavior
+        event.preventDefault();
+
+        // Access the intersected object (mesh) from the event detail
+        const intersectedMesh = event.detail.intersection.object;
+
+        // Get the name of the intersected mesh
+        const partName = intersectedMesh.name || 'Unknown Part';
+
+        // Log the clicked part's name to the console
+        console.log(`Part ${partName} was clicked!`);
+
+        // Update and display the information panel
+        const infoPanel = document.getElementById('infoPanel');
+        const infoText = document.getElementById('infoText');
+        infoText.textContent = `You clicked on: ${partName}`;
+        infoPanel.style.display = 'block';
+
+        // Hide the information panel after 3 seconds
+        clearTimeout(infoPanel.hideTimeout);
+        infoPanel.hideTimeout = setTimeout(() => {
+          infoPanel.style.display = 'none';
+        }, 3000);
+
+        // Optional: Highlight the clicked part by changing its color
+        const originalColor = intersectedMesh.material.color.getHex();
+        intersectedMesh.material.color.setHex(0xff0000); // Change to red
+
+        // Revert to original color after 1 second
+        setTimeout(() => {
+          intersectedMesh.material.color.setHex(originalColor);
+        }, 1000);
+      }
+
+      // Wait for the DOM to load
+      document.addEventListener('DOMContentLoaded', () => {
+        const modelEl = document.getElementById('myModel');
+
+        // Ensure the model is loaded before adding event listeners
+        modelEl.addEventListener('model-loaded', () => {
+          console.log('Model loaded successfully.');
+
+          // Add a click event listener to the model
+          modelEl.addEventListener('click', handleModelClick);
+        });
+
+        // Handle loading errors
+        modelEl.addEventListener('model-error', (error) => {
+          console.error('Error loading model:', error);
+        });
+      });
+    </script>
+  </body>
+</html>
+

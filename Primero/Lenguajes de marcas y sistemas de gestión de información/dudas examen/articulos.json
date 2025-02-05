@@ -1,0 +1,18 @@
+[
+	{
+		"titulo":"articulo1",
+		"texto":"este es el texto del articulo 1"
+	},
+	{
+		"titulo":"articulo2",
+		"texto":"este es el texto del articulo 2"
+	},
+	{
+		"titulo":"articulo3",
+		"texto":"este es el texto del articulo 3"
+	},
+	{
+		"titulo":"articulo4",
+		"texto":"este es el texto del articulo 4"
+	}
+]	

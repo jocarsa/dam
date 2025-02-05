@@ -1,0 +1,536 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Reiniciar algunos estilos por defecto */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Ubuntu, Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado Superior */
+#top-header {
+    width: 100%;
+    background-color: #075E54;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#top-header .logo h1 {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+#top-header .logo h1 img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+#top-header .auth-buttons button {
+    background-color: #25D366;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 14px;
+}
+
+#top-header .auth-buttons button:hover {
+    background-color: #128C7E;
+}
+
+#top-header #user-info {
+    display: flex;
+    align-items: center;
+}
+
+#top-header #user-info span {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#top-header #user-info button {
+    background-color: #25D366;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 14px;
+}
+
+#top-header #user-info button:hover {
+    background-color: #128C7E;
+}
+
+/* Clase Oculta */
+.hidden {
+    display: none !important;
+}
+
+/* Contenedor */
+#container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Paneles de Autenticación */
+.auth-panel {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-panel h2 {
+    margin-bottom: 20px;
+    color: #075E54;
+    text-align: center;
+}
+
+.auth-panel input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    transition: border-color 0.3s;
+    font-size: 16px;
+}
+
+.auth-panel input:focus {
+    border-color: #25D366;
+    outline: none;
+}
+
+.auth-panel button {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    background: #25D366;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.auth-panel button:hover {
+    background: #128C7E;
+}
+
+.auth-panel button:active {
+    background: #075E54;
+}
+
+.auth-panel p {
+    text-align: center;
+    color: #666;
+}
+
+.auth-panel a {
+    color: #25D366;
+    text-decoration: none;
+}
+
+.auth-panel a:hover {
+    text-decoration: underline;
+}
+
+/* Aplicación Principal */
+.main-panel {
+    width: 100%;
+    max-width: 1920px;
+    height: 85vh;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    overflow: hidden;
+    /* Removed display: none; */
+}
+
+/* Panel Izquierdo */
+.left-pane {
+    width: 30%;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Buscar y Agregar Contactos */
+.left-pane .search-add {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.left-pane .search-add input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.left-pane .search-add input:focus {
+    border-color: #25D366;
+    outline: none;
+}
+
+.left-pane .search-add button {
+    margin-left: 10px;
+    background-color: #25D366;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 14px;
+}
+
+.left-pane .search-add button:hover {
+    background-color: #128C7E;
+}
+
+/* Sección Crear Grupo */
+.create-group {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    background: #f8f9fa;
+}
+
+.create-group input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.create-group input:focus {
+    border-color: #25D366;
+    outline: none;
+}
+
+.create-group button {
+    margin-left: 10px;
+    background-color: #25D366;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 14px;
+}
+
+.create-group button:hover {
+    background-color: #128C7E;
+}
+
+/* Lista de Contactos */
+.contact-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    background: #f8f9fa;
+}
+
+/* Elemento de Contacto */
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+    background: #fff;
+}
+
+.contact-item:hover {
+    background: #e6f7ff;
+    transform: translateX(5px);
+}
+
+.contact-item .avatar {
+    width: 40px;
+    height: 40px;
+    background: #25D366;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-item span {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Diferenciar Grupos en la Lista de Contactos */
+.contact-item.group {
+    background: #fff8e1;
+}
+
+.contact-item.group:hover {
+    background: #fff3cd;
+}
+
+.contact-item.group .avatar {
+    background: #ffc107;
+}
+
+/* Panel Derecho */
+.right-pane {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado del Chat */
+.chat-header {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: #075E54;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.chat-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.chat-header .back-button {
+    display: none; /* Oculto por defecto, se muestra en móviles */
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Mostrar botón de regresar en móviles */
+@media (max-width: 768px) {
+    .chat-header .back-button {
+        display: inline;
+    }
+}
+
+/* Caja de Chat */
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #ECE5DD;
+}
+
+.chat-message {
+    margin-bottom: 15px;
+    max-width: 60%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    position: relative;
+    word-wrap: break-word;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.chat-message.from-me {
+    background: #DCF8C6;
+    align-self: flex-end;
+    margin-left: auto;
+    text-align: right;
+    border-bottom-right-radius: 0;
+}
+
+.chat-message.from-them {
+    background: #fff;
+    align-self: flex-start;
+    margin-right: auto;
+    text-align: left;
+    border-bottom-left-radius: 0;
+    border: 1px solid #ddd;
+}
+
+/* Recibo de Lectura */
+.read-receipt {
+    font-size: 12px;
+    color: #999;
+    margin-left: 5px;
+}
+
+/* Área de Entrada de Chat */
+.chat-input-area {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    background: #f0f2f5;
+    position: relative;
+}
+
+.chat-input-area input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.chat-input-area input:focus {
+    border-color: #25D366;
+    outline: none;
+}
+
+.chat-input-area button {
+    margin-left: 10px;
+    background-color: #25D366;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 14px;
+}
+
+.chat-input-area button:hover {
+    background-color: #128C7E;
+}
+
+/* Indicador de Escritura */
+.typing-indicator {
+    padding: 5px 20px;
+    font-style: italic;
+    color: #666;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+    .main-panel {
+        flex-direction: column;
+        height: 80vh;
+    }
+    .left-pane, .right-pane {
+        width: 100%;
+        height: 100%;
+    }
+    .left-pane {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+    /* Ocultar o mostrar paneles según clases */
+    .hidden-on-mobile {
+        display: none;
+    }
+    .right-pane.hidden-on-mobile {
+        display: none;
+    }
+    .right-pane.full-width {
+        width: 100%;
+    }
+}
+
+/* Estilos de Foto de Perfil */
+#profile-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/* Estilos de Imagen de Chat */
+.chat-image {
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* Estilos del Selector de Emojis */
+.emoji-picker {
+    position: absolute;
+    bottom: 60px; /* Ajustar según el diseño */
+    left: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    max-height: 150px;
+    overflow-y: auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.emoji-picker.hidden {
+    display: none;
+}
+
+.emoji-picker .emoji {
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.emoji-picker .emoji:hover {
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
+/* Estilos de Botones */
+.chat-input-area button {
+    margin-right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+/* Placeholder de Avatar */
+.avatar {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+.chat-input-area button {
+	padding:3px;
+	margin:0px !important;
+}

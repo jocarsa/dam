@@ -1,0 +1,10 @@
+/*
+	Le damos un estilo básico al botón de guardar
+*/
+#guardar{
+      	position:absolute;
+      	right:20px;
+      	top:20px;
+      	padding:10px;
+      	z-index:1000;
+      }

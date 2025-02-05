@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Calculadora de Factura - Calculadra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            color: #555;
+        }
+        input[type="number"], input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            border: none;
+            color: #fff;
+            margin-top: 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 4px;
+        }
+        .result p {
+            margin: 5px 0;
+            color: #333;
+        }
+        .saved-calculations {
+            margin-top: 30px;
+        }
+        .saved-calculations h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .saved-calculations ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .saved-calculations li {
+            background: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .saved-calculations li:hover {
+            background: #e2e6ea;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="calculadra.png" alt="Calculadra">
+    <h1>Calculadora de Factura</h1>
+    <form id="calculatorForm">
+        <label for="tituloCalculo">Título del Cálculo:</label>
+        <input type="text" id="tituloCalculo" name="tituloCalculo" placeholder="Introduce un título para este cálculo" required>
+
+        <label for="baseImponible">Base Imponible (€):</label>
+        <input type="number" id="baseImponible" name="baseImponible" min="0" step="0.01" required>
+
+        <label for="irpf">Tramo de IRPF:</label>
+        <select id="irpf" name="irpf" required>
+            <option value="" disabled selected>Selecciona un tramo de IRPF</option>
+            <!-- Opciones de IRPF -->
+            <option value="0.19">19%</option>
+            <option value="0.24">24%</option>
+            <option value="0.30">30%</option>
+            <option value="0.37">37%</option>
+            <option value="0.45">45%</option>
+        </select>
+
+        <label for="iva">Tramo de IVA:</label>
+        <select id="iva" name="iva" required>
+            <option value="" disabled selected>Selecciona un tramo de IVA</option>
+            <!-- Opciones de IVA -->
+            <option value="0.21">21%</option>
+            <option value="0.10">10%</option>
+            <option value="0.04">4%</option>
+        </select>
+
+        <button type="submit">Calcular</button>
+        <button type="button" id="saveCalculationBtn" style="background: #007bff;">Guardar Cálculo</button>
+    </form>
+
+    <div class="result" id="result" style="display:none;">
+        <h2>Resultados:</h2>
+        <p id="totalIVA"></p>
+        <p id="totalIRPF"></p>
+        <p id="totalFactura"></p>
+        <p id="ordenAplicacion"></p>
+    </div>
+
+    <div class="saved-calculations">
+        <h2>Cálculos Guardados</h2>
+        <ul id="calculationsList">
+            <!-- Lista de cálculos guardados -->
+        </ul>
+    </div>
+</div>
+
+<script>
+    // Función para calcular y mostrar resultados
+    function calculate() {
+        // Obtener valores del formulario
+        const baseImponible = parseFloat(document.getElementById('baseImponible').value);
+        const irpf = parseFloat(document.getElementById('irpf').value);
+        const iva = parseFloat(document.getElementById('iva').value);
+
+        // Validar entradas
+        if (isNaN(baseImponible) || isNaN(irpf) || isNaN(iva)) {
+            alert('Por favor, completa todos los campos correctamente.');
+            return null;
+        }
+
+        // Calcular IVA y IRPF
+        const totalIVA = baseImponible * iva;
+        const totalIRPF = baseImponible * irpf;
+        const totalFactura = baseImponible + totalIVA - totalIRPF;
+
+        // Determinar el orden de aplicación
+        const orden = "Primero se aplica el IVA y luego se retiene el IRPF.";
+
+        // Crear objeto de resultados
+        const resultados = {
+            totalIVA: totalIVA.toFixed(2),
+            tasaIVA: (iva * 100).toFixed(2),
+            totalIRPF: totalIRPF.toFixed(2),
+            tasaIRPF: (irpf * 100).toFixed(2),
+            totalFactura: totalFactura.toFixed(2),
+            ordenAplicacion: orden
+        };
+
+        return resultados;
+    }
+
+    // Función para mostrar resultados en el DOM
+    function showResults(resultados) {
+        if (!resultados) return;
+
+        document.getElementById('totalIVA').innerText = `Total IVA (${resultados.tasaIVA}%): €${resultados.totalIVA}`;
+        document.getElementById('totalIRPF').innerText = `Total IRPF (${resultados.tasaIRPF}%): €${resultados.totalIRPF}`;
+        document.getElementById('totalFactura').innerText = `Total de la Factura: €${resultados.totalFactura}`;
+        document.getElementById('ordenAplicacion').innerText = `Orden de Aplicación: ${resultados.ordenAplicacion}`;
+
+        document.getElementById('result').style.display = 'block';
+    }
+
+    // Manejar el envío del formulario para calcular
+    document.getElementById('calculatorForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const resultados = calculate();
+        showResults(resultados);
+    });
+
+    // Función para guardar cálculo en localStorage
+    function saveCalculation() {
+        const titulo = document.getElementById('tituloCalculo').value.trim();
+        if (titulo === "") {
+            alert('Por favor, introduce un título para el cálculo.');
+            return;
+        }
+
+        const resultados = calculate();
+        if (!resultados) return;
+
+        const baseImponible = parseFloat(document.getElementById('baseImponible').value);
+        const irpf = parseFloat(document.getElementById('irpf').value);
+        const iva = parseFloat(document.getElementById('iva').value);
+
+        // Crear objeto del cálculo
+        const calculo = {
+            titulo: titulo,
+            baseImponible: baseImponible,
+            irpf: irpf,
+            iva: iva,
+            resultados: resultados,
+            fecha: new Date().toISOString()
+        };
+
+        // Obtener cálculos existentes de localStorage
+        let calculosGuardados = JSON.parse(localStorage.getItem('calculos')) || [];
+
+        // Añadir el nuevo cálculo
+        calculosGuardados.push(calculo);
+
+        // Guardar de nuevo en localStorage
+        localStorage.setItem('calculos', JSON.stringify(calculosGuardados));
+
+        // Actualizar la lista de cálculos guardados
+        displaySavedCalculations();
+
+        alert('Cálculo guardado correctamente.');
+    }
+
+    // Añadir evento al botón de guardar cálculo
+    document.getElementById('saveCalculationBtn').addEventListener('click', saveCalculation);
+
+    // Función para mostrar cálculos guardados en la lista
+    function displaySavedCalculations() {
+        const calculationsList = document.getElementById('calculationsList');
+        calculationsList.innerHTML = ''; // Limpiar lista
+
+        const calculosGuardados = JSON.parse(localStorage.getItem('calculos')) || [];
+
+        if (calculosGuardados.length === 0) {
+            const li = document.createElement('li');
+            li.textContent = 'No hay cálculos guardados.';
+            li.style.cursor = 'default';
+            calculationsList.appendChild(li);
+            return;
+        }
+
+        calculosGuardados.forEach((calculo, index) => {
+            const li = document.createElement('li');
+            li.textContent = calculo.titulo;
+            li.title = `Guardado el: ${new Date(calculo.fecha).toLocaleString()}`;
+            li.dataset.index = index;
+            li.addEventListener('click', () => loadCalculation(index));
+            calculationsList.appendChild(li);
+        });
+    }
+
+    // Función para cargar un cálculo guardado en el formulario
+    function loadCalculation(index) {
+        const calculosGuardados = JSON.parse(localStorage.getItem('calculos')) || [];
+        const calculo = calculosGuardados[index];
+        if (!calculo) {
+            alert('Cálculo no encontrado.');
+            return;
+        }
+
+        // Cargar datos en el formulario
+        document.getElementById('tituloCalculo').value = calculo.titulo;
+        document.getElementById('baseImponible').value = calculo.baseImponible;
+        document.getElementById('irpf').value = calculo.irpf;
+        document.getElementById('iva').value = calculo.iva;
+
+        // Mostrar resultados
+        showResults(calculo.resultados);
+
+        // Opcional: desplazarse al formulario
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Inicializar la lista de cálculos guardados al cargar la página
+    window.onload = function() {
+        displaySavedCalculations();
+    };
+</script>
+</body>
+</html>

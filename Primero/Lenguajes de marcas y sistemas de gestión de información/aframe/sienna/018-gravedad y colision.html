@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A-Frame Interactive Box Grid with Pointer Lock + Physics</title>
+    
+    <!-- A-Frame 1.6.0 -->
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    
+    <!-- 1) Include the A-Frame Physics System (using cannon.js under the hood) -->
+  <script src="https://unpkg.com/aframe-physics-system-fork/dist/aframe-physics-system.min.js"></script>
+
+
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        /* Prevent text selection to ensure right-click works smoothly */
+        -webkit-user-select: none; /* Chrome/Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+ */
+        user-select: none; /* Standard */
+      }
+
+      /* Instruction Overlay */
+      #instruction {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        text-align: center;
+        z-index: 1;
+        cursor: pointer;
+      }
+
+      /* Hide the instruction when not needed */
+      #instruction.hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Instruction Overlay -->
+    <div id="instruction">Click to enter VR / Engage Pointer Lock</div>
+
+    <!-- 2) Add "physics" attribute to enable gravity and physics in the scene -->
+    <a-scene physics="gravity: -9.8;">
+      <a-assets>
+        <!-- Define a mixin for box materials -->
+        <a-mixin
+          id="material1"
+          material="src: bloque.jpg; color: #ffcccc;"
+        ></a-mixin>
+        <a-mixin
+          id="material2"
+          material="src: bloque.jpg; color: #ccffcc;"
+        ></a-mixin>
+        <a-mixin
+          id="material3"
+          material="src: bloque.jpg; color: #ccccff;"
+        ></a-mixin>
+      </a-assets>
+
+      <!-- Sky -->
+      <a-sky color="#ECECEC"></a-sky>
+
+      
+
+      <!-- 4) Create a "player rig" that holds the camera. 
+               - dynamic-body: the player collides with boxes/ground and is affected by gravity.
+               - wasd-controls / look-controls: basic movement + mouselook.
+               - Start it a bit above ground (y=2) so we don't spawn underground.
+      -->
+      <a-entity
+        id="player"
+			  dynamic-body="mass: 5; shape: box;"
+			  position="0 1 0"
+			  wasd-controls
+			  look-controls
+      >
+        <!-- The camera sits inside the rig -->
+        <a-entity
+          id="camera"
+          camera
+        >
+          <a-cursor
+            id="cursor"
+            fuse="false"
+            raycaster="objects: .clickable"
+            material="color: black; shader: flat"
+            geometry="primitive: ring; radiusInner: 0.005; radiusOuter: 0.01"
+          ></a-cursor>
+        </a-entity>
+      </a-entity>
+    </a-scene>
+
+    <script>
+      let memoria = [];
+
+      // Prevent the default context menu from appearing on right-click
+      window.addEventListener(
+        "contextmenu",
+        function (e) {
+          e.preventDefault();
+        },
+        false
+      );
+
+      // Reference to the A-Frame scene and the instruction overlay
+      const sceneEl = document.querySelector("a-scene");
+      const instructionEl = document.getElementById("instruction");
+
+      // A helper function to create a box in the scene
+      // 5) Mark each box as static-body so the player can collide with it.
+      function createBox(position, id, material) {
+        const caja = document.createElement("a-box");
+        caja.setAttribute("position", position);
+        caja.setAttribute("rotation", "0 0 0");
+        caja.setAttribute("mixin", "material" + material);
+        caja.setAttribute("class", "clickable");
+        caja.setAttribute("depth", "1");
+        caja.setAttribute("height", "1");
+        caja.setAttribute("width", "1");
+        caja.setAttribute("identificador", id);
+
+        // Mark this box as a static physics body (it won't move on collision)
+        caja.setAttribute("static-body", "");
+
+        caja.addEventListener("click", function (event) {
+          console.log("Left-clicked on:", caja);
+          caja.parentNode.removeChild(caja);
+          // Remove from memoria as well
+          memoria.splice(id, 1);
+          localStorage.setItem("memoria", JSON.stringify(memoria));
+        });
+
+        // Use 'contextmenu' for right-click
+        caja.addEventListener("contextmenu", function (event) {
+          event.preventDefault(); // Prevent default browser context menu
+          console.log("Right-clicked on:", caja);
+
+          // Create a new box directly above this one
+          const currentPosition = caja.getAttribute("position");
+          const newPosition = {
+            x: currentPosition.x,
+            y: currentPosition.y + 1,
+            z: currentPosition.z,
+          };
+          createBox(
+            `${newPosition.x} ${newPosition.y} ${newPosition.z}`,
+            memoria.length, // new ID
+            Math.ceil(Math.random() * 3)
+          );
+          // Also store the new box in memory & localStorage
+          memoria.push({
+            x: newPosition.x,
+            y: newPosition.y,
+            z: newPosition.z,
+            mat: Math.ceil(Math.random() * 3),
+          });
+          localStorage.setItem("memoria", JSON.stringify(memoria));
+        });
+
+        sceneEl.appendChild(caja);
+      }
+
+      // Initialize memoria
+      if (localStorage.getItem("memoria") == null) {
+        console.log("No hay memoria previa, cargo una nueva");
+        const gridSize = 5;
+        for (let x = -gridSize; x <= gridSize; x++) {
+          for (let z = -gridSize; z <= gridSize; z++) {
+            for (let y = -5; y <= 0; y++) {
+              memoria.push({
+                x: x,
+                y: y,
+                z: z,
+                mat: Math.ceil(Math.random() * 3),
+              });
+            }
+          }
+        }
+      } else {
+        console.log("Si que hay memoria previa, cargo la memoria existente");
+        memoria = JSON.parse(localStorage.getItem("memoria"));
+      }
+
+      // Save the memory (in case we just created it)
+      localStorage.setItem("memoria", JSON.stringify(memoria));
+
+      // Re-create the boxes from memoria
+      memoria.forEach(function (celda, index) {
+        createBox(`${celda.x} ${celda.y} ${celda.z}`, index, celda.mat);
+      });
+
+      // === Pointer Lock & Instruction Overlay handling ===
+      // Hide the instruction overlay once the user interacts with the scene
+      const playerEl = document.querySelector("#player");
+      playerEl.addEventListener("click", function () {
+        instructionEl.classList.add("hidden");
+      });
+
+      document.addEventListener("pointerlockchange", function () {
+        if (
+          document.pointerLockElement === sceneEl.canvas ||
+          document.mozPointerLockElement === sceneEl.canvas ||
+          document.webkitPointerLockElement === sceneEl.canvas
+        ) {
+          // Pointer lock is active
+          console.log("Pointer Lock Engaged");
+          instructionEl.classList.add("hidden");
+        } else {
+          // Pointer lock is inactive
+          console.log("Pointer Lock Disengaged");
+          instructionEl.classList.remove("hidden");
+        }
+      });
+
+      document.addEventListener("pointerlockerror", function () {
+        alert("Error attempting to enable pointer lock.");
+        instructionEl.classList.remove("hidden");
+      });
+
+      // Ensure the instruction overlay prompts the user to click to engage pointer lock
+      instructionEl.addEventListener("click", function () {
+        // Trigger a click on the camera rig to engage pointer lock via look-controls
+        playerEl.emit("click");
+      });
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<div class="articulo">
+			<h3>Titulo del articulo</h3>
+			<p>Texto del articulo</p>
+			<img src="loquesea.png">
+		</div>
+	</body>
+	<script>
+		let contenedor = document.querySelector("body")
+		for(let i = 0;i<10;i++){
+			let div = document.createElement("div")
+			div.classList.add("articulo")
+				let titulo = document.createElement("h3")
+				titulo.textContent = "Titulo del articulo"
+				div.appendChild(titulo)
+				let parrafo = document.createElement("p")
+				parrafo.textContent = "Texto del articulo"
+				div.appendChild(parrafo)
+				let imagen = document.createElement("img")
+				imagen.setAttribute("src","")
+				div.appendChild(imagen)
+			contenedor.appendChild("div")
+		}
+	</script>
+</html>

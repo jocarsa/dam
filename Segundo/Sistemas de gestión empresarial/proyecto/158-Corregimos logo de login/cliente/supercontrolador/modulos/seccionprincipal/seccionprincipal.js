@@ -5,7 +5,8 @@ function cargaGraficas(){
     		return result.json()
     	})
     	.then(function(datos){
-    	console.log("el servidor dice ok")
+    		console.log("el servidor dice ok")
+    		console.log(datos)
     		let nuevografico = new JVGrafica(datos,"#dc143c","table tbody","Resgistros en cada tabla");
 			nuevografico.anillo()
     	})

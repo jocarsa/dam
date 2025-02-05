@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body{background:lightgrey;font-family:sans-serif;}
+        main{width:600px;background:white;padding:20px;margin:auto;text-align:center;}
+        input{width:100%;box-sizing:border-box;padding:10px;}
+        #resultado{min-height:400px;height:400px;border:1px solid lightgrey;margin-bottom:20px;box-sizing:border-box;padding:10px;text-align:justify;overflow-y:scroll;}
+        #pensando img{margin:auto;width:40px;}
+    </style>
+</head>
+<body>
+<main>
+    <h1>jocarsa | magenta</h1>
+    <div id="resultado"></div>
+    <div id="pensando"></div>
+    <input speech x-webkit-speech id="entrada">
+    <button onclick="startDictation()">🎤 Start Dictation</button>
+</main>
+<script>
+    let resultado = document.querySelector("input")
+    let respuesta = document.querySelector("#resultado")
+    let pensando = document.querySelector("#pensando")
+
+    function envia(){
+        console.log("ok procesando")
+        pensando.innerHTML = "<img src='loading.gif'>"
+        let peticion = resultado.value;
+        resultado.value = ""
+        fetch("http://127.0.0.1:5000/chat?query="+encodeURI(peticion))
+        .then(function(response){
+            return response.json()
+        })
+        .then(function(datos){
+            pensando.innerHTML = ""
+            respuesta.innerHTML += datos.response+"<hr>"
+            respuesta.scrollTop = 100000000000
+
+            // Fix: Cancel previous speech before starting new one
+            let synth = window.speechSynthesis;
+            synth.cancel();
+
+            let speech = new SpeechSynthesisUtterance(datos.response);
+            speech.lang = "es-ES";  // Ensure Spanish language
+            speech.rate = 1; // Normal speed
+            speech.pitch = 1; // Normal pitch
+            speech.volume = 1; // Full volume
+
+            synth.speak(speech);
+            console.log("ok hasta aqui")
+        })
+    }
+
+    function startDictation() {
+        if ('webkitSpeechRecognition' in window) {
+            console.log("ok empezando")
+            let recognition = new webkitSpeechRecognition();
+            recognition.lang = 'es-ES';  // Set language
+            recognition.interimResults = false;
+            recognition.maxAlternatives = 1;
+
+            recognition.onresult = function(event) {
+                console.log("hecho:")
+                document.getElementById('entrada').value = event.results[0][0].transcript;
+                setTimeout("envia()", 1000)
+            };
+
+            recognition.start();
+        } else {
+            alert("Speech recognition is not supported in this browser.");
+        }
+    }
+</script>
+</body>
+</html>
